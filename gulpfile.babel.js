@@ -19,9 +19,8 @@ gulp.task("default", ()=>
     runSequence(
         "clean",
         "js"
-    );
+    )
 );
-
 
 gulp.task('clean', ()=>
     del(
@@ -31,21 +30,42 @@ gulp.task('clean', ()=>
 );
 
 
+
+
+
+//JS
+
 gulp.task("lint", ()=>
     gulp
         .src(src+"/js/**/*.js")
         .pipe($.eslint())
         .pipe($.eslint.format())
-        .pipe($.eslint.failAfterError());
+        .pipe($.eslint.failAfterError())
 );
 
 
 gulp.task("js", ['lint'], ()=>
     gulp
-        .src(src+"/js/**/*.js")
+        .src([
+            src+"/js/**/*.js"
+        ])
         .pipe($.sourcemaps.init())
         .pipe($.babel())
         .pipe($.concat("js.js"))
         .pipe($.sourcemaps.write("."))
-        .pipe(gulp.dest(dist+"/js"));
+        .pipe(gulp.dest(dist+"/js"))
+        .pipe($.size({title: "javascript"}))
+);
+
+
+
+
+//Images
+
+gulp.task("images", ()=>
+    gulp
+        .src(src+"/img")
+        .pipe($.imagemin())
+        .pipe(gulp.dest(dist+"/img"))
+        .pipe($.size({title: "images"}))
 );
