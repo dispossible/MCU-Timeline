@@ -1,0 +1,12 @@
+.btn {
+    background: $color-primary;
+    padding: 8px 16px;
+    border-radius: 3px;
+    color: $color-text_alt;
+    font-family: $fontFamily;
+    font-size: $rem;
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+}

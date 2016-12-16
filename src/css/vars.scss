@@ -1,1 +1,15 @@
-$color: #444;
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+
+$fontFamily: "Open Sans", Tahoma, Geneva, Helvetica, Arial, sans-serif, "GNU Unifont", Symbola, EversonMono, "DejaVu Sans", "Arial Unicode MS", Dingbats;
+$rem: 14px;
+
+
+$color-primary: #444;
+$color-accent: #444;
+$color-text: #444;
+$color-text_alt: #fff;
+$color-bg: #fff;

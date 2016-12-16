@@ -1,7 +1,16 @@
-(function(){
+(function(w,d){
 
-    window.add = (a,b)=>{
-        return a+b;
-    };
+    //Load fonts
+    WebFont.load({
+        google: {
+            families: ['Open Sans']
+        }
+    });
 
-})();
+
+
+
+
+
+
+})(window,document);

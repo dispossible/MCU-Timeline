@@ -85,7 +85,7 @@ gulp.task("lint", ()=>
 );
 
 
-gulp.task("js", ['lint'], ()=>{
+gulp.task("js", ['lint'], ()=>
     gulp
         .src(src+"/js/**/*.js")
         .pipe($.sourcemaps.init())
@@ -95,7 +95,7 @@ gulp.task("js", ['lint'], ()=>{
         .pipe($.sourcemaps.write("."))
         .pipe(gulp.dest(dist))
         .pipe($.size({title: "javascript"}))
-});
+);
 
 
 

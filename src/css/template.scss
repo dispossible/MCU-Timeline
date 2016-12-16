@@ -1,7 +1,14 @@
 @import "reset";
 @import "vars";
 
+@import "base";
+@import "layout";
+
+@import "modules";
+
+@import "utils";
+
 body {
-    color: #fff;
-    background: $color;
+    color: $color-text;
+    background: $color-bg;
 }

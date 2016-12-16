@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "lodash": "^4.17.2",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "webfontloader": "^1.6.27"
   }
 }
