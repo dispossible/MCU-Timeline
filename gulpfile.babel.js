@@ -18,15 +18,46 @@ const $ = gulpLoadPlugins();
 gulp.task("default", ()=>
     runSequence(
         "clean",
-        "js"
+        "copy",
+        "js",
+        "images",
+        "style",
+        "html",
+        "size"
     )
 );
 
-gulp.task('clean', ()=>
+gulp.task("watch", ()=>{
+    gulp.watch(src+"js/**/*.js",["js"]);
+    gulp.watch(src+"img/**/*.{jpg,png,gif,svg}",["images"]);
+    gulp.watch(src+"css/**/*.scss",["style"]);
+    gulp.watch(src+"/*.html",["html"]);
+});
+
+gulp.task("clean", ()=>
     del(
-        ['.tmp', 'dist/*'],
+        [".tmp", "dist/*"],
         { dot: true }
     )
+);
+
+gulp.task("copy", ()=>
+    gulp
+        .src(
+            [
+                src + "/*.*",
+                "!" + src + "/*.html"
+            ],
+            {dot: true}
+        )
+        .pipe(gulp.dest(dist))
+        .pipe($.size({title: "root files"}))
+);
+
+gulp.task("size", ()=>
+    gulp
+        .src(dist+"/**/*")
+        .pipe($.size({title: "site"}))
 );
 
 
@@ -51,9 +82,10 @@ gulp.task("js", ['lint'], ()=>
         ])
         .pipe($.sourcemaps.init())
         .pipe($.babel())
-        .pipe($.concat("js.js"))
+        .pipe($.concat("script.min.js"))
+        .pipe($.uglify())
         .pipe($.sourcemaps.write("."))
-        .pipe(gulp.dest(dist+"/js"))
+        .pipe(gulp.dest(dist))
         .pipe($.size({title: "javascript"}))
 );
 
@@ -64,8 +96,42 @@ gulp.task("js", ['lint'], ()=>
 
 gulp.task("images", ()=>
     gulp
-        .src(src+"/img")
-        .pipe($.imagemin())
-        .pipe(gulp.dest(dist+"/img"))
+        .src(src+"/img/**/*.{jpg,png,gif,svg}")
+        .pipe($.cache($.imagemin()))
+        .pipe(gulp.dest(dist))
         .pipe($.size({title: "images"}))
+);
+
+
+
+
+//Styles
+
+gulp.task("style", ()=>
+    gulp
+        .src(src+"/css/template.scss")
+        .pipe($.sourcemaps.init())
+        .pipe($.sass().on("error",$.sass.logError))
+        .pipe($.autoprefixer({browsers: "> 1%"}))
+        .pipe($.cssnano())
+        .pipe($.concat('style.min.css'))
+        .pipe($.sourcemaps.write("."))
+        .pipe(gulp.dest(dist))
+        .pipe($.size({title: "style"}))
+);
+
+
+
+
+// HTML
+
+gulp.task("html", ()=>
+    gulp
+        .src(src+"/*.html")
+        .pipe($.htmlmin({
+            removeComments: true,
+            collapseWhitespace: true
+        }))
+        .pipe(gulp.dest(dist))
+        .pipe($.size({title: "html"}))
 );

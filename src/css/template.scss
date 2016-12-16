@@ -1,4 +1,5 @@
-$color: #444;
+@import "reset";
+@import "vars";
 
 body {
     background: $color;

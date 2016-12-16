@@ -1,9 +1,7 @@
 (function(){
 
-
-    const settings = {
-        
+    window.add = (a,b)=>{
+        return a+b;
     };
-
 
 })();
