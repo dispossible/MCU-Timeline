@@ -9,6 +9,7 @@ import gulp from 'gulp';
 import del from 'del';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import runSequence from 'run-sequence';
+import mainBowerFiles from 'main-bower-files';
 
 const $ = gulpLoadPlugins();
 
@@ -19,6 +20,7 @@ gulp.task("default", ()=>
     runSequence(
         "clean",
         "copy",
+        "bower",
         "js",
         "images",
         "style",
@@ -28,9 +30,9 @@ gulp.task("default", ()=>
 );
 
 gulp.task("watch", ()=>{
-    gulp.watch(src+"js/**/*.js",["js"]);
-    gulp.watch(src+"img/**/*.{jpg,png,gif,svg}",["images"]);
-    gulp.watch(src+"css/**/*.scss",["style"]);
+    gulp.watch(src+"/js/**/*.js",["js"]);
+    gulp.watch(src+"/img/**/*.{jpg,png,gif,svg}",["images"]);
+    gulp.watch(src+"/css/**/*.scss",["style"]);
     gulp.watch(src+"/*.html",["html"]);
 });
 
@@ -66,6 +68,14 @@ gulp.task("size", ()=>
 
 //JS
 
+gulp.task("bower", ()=>
+    gulp
+        .src(mainBowerFiles())
+        .pipe($.uglify())
+        .pipe(gulp.dest(dist+"/lib"))
+        .pipe($.size({title: "libs"}))
+);
+
 gulp.task("lint", ()=>
     gulp
         .src(src+"/js/**/*.js")
@@ -75,19 +85,17 @@ gulp.task("lint", ()=>
 );
 
 
-gulp.task("js", ['lint'], ()=>
+gulp.task("js", ['lint'], ()=>{
     gulp
-        .src([
-            src+"/js/**/*.js"
-        ])
+        .src(src+"/js/**/*.js")
         .pipe($.sourcemaps.init())
         .pipe($.babel())
-        .pipe($.concat("script.min.js"))
+        .pipe($.concat("script.js"))
         .pipe($.uglify())
         .pipe($.sourcemaps.write("."))
         .pipe(gulp.dest(dist))
         .pipe($.size({title: "javascript"}))
-);
+});
 
 
 
@@ -114,7 +122,7 @@ gulp.task("style", ()=>
         .pipe($.sass().on("error",$.sass.logError))
         .pipe($.autoprefixer({browsers: "> 1%"}))
         .pipe($.cssnano())
-        .pipe($.concat('style.min.css'))
+        .pipe($.concat('style.css'))
         .pipe($.sourcemaps.write("."))
         .pipe(gulp.dest(dist))
         .pipe($.size({title: "style"}))

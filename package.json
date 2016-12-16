@@ -19,6 +19,7 @@
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "babel-preset-env": "^1.1.1",
+    "bower": "^1.8.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
@@ -34,6 +35,7 @@
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
+    "main-bower-files": "^2.13.1",
     "run-sequence": "^1.2.2"
   }
 }
