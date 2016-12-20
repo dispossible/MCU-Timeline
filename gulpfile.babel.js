@@ -87,7 +87,11 @@ gulp.task("lint", ()=>
 
 gulp.task("js", ['lint'], ()=>
     gulp
-        .src(src+"/js/**/*.js")
+        .src([
+            src+"/js/data.js",
+            src+"/js/core.js",
+            src+"/js/**/*.js",
+        ])
         .pipe($.sourcemaps.init())
         .pipe($.babel())
         .pipe($.concat("script.js"))
