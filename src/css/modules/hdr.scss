@@ -1,0 +1,30 @@
+.hdr {
+    background: $color-primary;
+    color: $color-text_alt;
+    padding: 8px;
+    @media(min-width: 700px){
+        padding: 16px;
+    }
+    &-logo {
+        font-weight: bold;
+        font-family: Arial, sans-sreif;
+        text-transform: uppercase;
+        vertical-align: middle;
+        font-size: 2em;
+        margin-bottom: 8px;
+        @media(min-width: 450px){
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: 8px;
+        }
+        @media(min-width: 700px){
+            font-size: 2.5em;
+            margin-right: 16px;
+        }
+    }
+    &-tagline {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+}

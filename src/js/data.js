@@ -368,7 +368,7 @@ const mcuData = [
     },
     {
         "type": "Film",
-        "name": "Avengers: Infinity War, Part 1",
+        "name": "Avengers: Infinity War Part 1",
         "releaseDate": [2018, 4, 4],
     },
     {
@@ -383,7 +383,7 @@ const mcuData = [
     },
     {
         "type": "Film",
-        "name": "Avengers: Infinity War, Part 2",
+        "name": "Avengers: Infinity War Part 2",
         "releaseDate": [2019, 4, 3],
     }
     /*{

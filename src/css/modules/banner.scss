@@ -1,0 +1,8 @@
+.banner {
+    height: 300px;
+    margin-bottom: 16px;
+    background: black;
+    @media(min-width: 700px){
+        height: 400px;
+    }
+}

@@ -1,0 +1,24 @@
+.lnk {
+    background: none;
+    border: 0;
+    padding: 0;
+    display: inline;
+    color: $color-primary;
+    text-decoration: underline;
+    font-family: $fontFamily;
+    font-size: 1em;
+    line-height: 1em;
+    cursor: pointer;
+    &_ftr {
+        color: $color-text_alt;
+        margin: 8px auto;
+        display: inline-block;
+        width: 100%;
+        font-size: 0.8em;
+        @media(min-width: 500px){
+            margin: 0 16px;
+            display: inline-block;
+            width: auto;
+        }
+    }
+}
