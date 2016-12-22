@@ -8,9 +8,11 @@
     font-family: $fontFamily;
     font-size: 1em;
     line-height: 1em;
+    outline: 0;
     cursor: pointer;
     &_ftr {
         color: $color-text_alt;
+        text-decoration: none;
         margin: 8px auto;
         display: inline-block;
         width: 100%;
@@ -19,6 +21,9 @@
             margin: 0 16px;
             display: inline-block;
             width: auto;
+        }
+        &:hover {
+            color: darken($color-text_alt,20);
         }
     }
 }

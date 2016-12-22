@@ -89,12 +89,21 @@ gulp.task("js", ['lint'], ()=>
     gulp
         .src([
             src+"/js/data.js",
+            src+"/js/objects/show.js",
+            src+"/js/objects/*.js",
             src+"/js/core.js",
             src+"/js/**/*.js",
         ])
         .pipe($.sourcemaps.init())
         .pipe($.babel())
         .pipe($.concat("script.js"))
+        .pipe($.jsWrapper({
+            safeUndef: true,
+            globals: {
+                "window": "w",
+                "document": "d"
+            }
+        }))
         .pipe($.uglify())
         .pipe($.sourcemaps.write("."))
         .pipe(gulp.dest(dist))
