@@ -1,6 +1,6 @@
 $(function(){
 
     let $ban = $("[data-banner]");
-    new Banner($ban);
+    w.MCU.banner = new Banner($ban);
 
 });

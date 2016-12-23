@@ -36,7 +36,7 @@ gulp.task("watch", ()=>{
     browserSync({
         notify: false,
         logPrefix: 'WSK',
-        scrollElementMapping: ['main'],
+        scrollElementMapping: ['body'],
         // https: true,
         server: dist,
         port: 3000
