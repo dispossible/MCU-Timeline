@@ -29,11 +29,12 @@ mcuData.forEach(function(show){
 
 });
 
-data.sort((a,b)=>{
-    return a.releaseDate - b.releaseDate;
-});
-
 MCU.data = data;
 
 
 
+
+
+// data.sort((a,b)=>{
+//     return a.releaseDate - b.releaseDate;
+// });

@@ -13,3 +13,25 @@ $color-accent: #607D8B;
 $color-text: #444;
 $color-text_alt: #fff;
 $color-bg: #37474F;
+
+
+
+
+
+@mixin cover(){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

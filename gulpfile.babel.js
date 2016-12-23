@@ -10,6 +10,7 @@ import del from 'del';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import runSequence from 'run-sequence';
 import mainBowerFiles from 'main-bower-files';
+import browserSync from 'browser-sync';
 
 const $ = gulpLoadPlugins();
 
@@ -25,15 +26,26 @@ gulp.task("default", ()=>
         "images",
         "style",
         "html",
-        "size"
+        "size",
+        "watch"
     )
 );
 
 gulp.task("watch", ()=>{
-    gulp.watch(src+"/js/**/*.js",["js"]);
-    gulp.watch(src+"/img/**/*.{jpg,png,gif,svg}",["images"]);
-    gulp.watch(src+"/css/**/*.scss",["style"]);
-    gulp.watch(src+"/*.html",["html"]);
+
+    browserSync({
+        notify: false,
+        logPrefix: 'WSK',
+        scrollElementMapping: ['main'],
+        // https: true,
+        server: dist,
+        port: 3000
+    })
+
+    gulp.watch(src+"/js/**/*.js",["js", browserSync.reload]);
+    gulp.watch(src+"/img/**/*.{jpg,png,gif,svg}",["images", browserSync.reload]);
+    gulp.watch(src+"/css/**/*.scss",["style", browserSync.reload]);
+    gulp.watch(src+"/*.html",["html", browserSync.reload]);
 });
 
 gulp.task("clean", ()=>
@@ -119,7 +131,7 @@ gulp.task("images", ()=>
     gulp
         .src(src+"/img/**/*.{jpg,png,gif,svg}")
         .pipe($.cache($.imagemin()))
-        .pipe(gulp.dest(dist))
+        .pipe(gulp.dest(dist+"/img"))
         .pipe($.size({title: "images"}))
 );
 
