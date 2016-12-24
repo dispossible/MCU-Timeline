@@ -1,0 +1,157 @@
+.timeline {
+    padding: 0 16px;
+
+    &-ctrls {
+        margin-bottom: 16px;
+        text-align: right;
+    }
+
+    &-list {
+        padding-left: 16px;
+        border-left: 2px solid rgba(white,0.6);
+        margin-bottom: 64px;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -2px;
+            width: 2px;
+            height: 16px;
+            background: $color-bg;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: -2px;
+            width: 2px;
+            height: 64px;
+            background: linear-gradient(180deg, rgba(white,0.6), transparent);
+        }
+    }
+
+    &-card {
+        padding: 16px;
+        margin-bottom: 16px;
+        background: white;
+        border-radius: 3px;
+        box-shadow: 0 3px 2px 1px rgba(black,0.4);
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            right: 100%;
+            top: 16px;
+            width: 16px;
+            height: 2px;
+            background: rgba(white,0.6);
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 12px;
+            right: 100%;
+            margin-right: 12px;
+            width: 10px;
+            height: 10px;
+            background: $color-primary;
+            border-radius: 99px;
+        }
+        &_film {
+            &:after {
+                width: 14px;
+                height: 14px;
+                top: 10px;
+                margin-right: 10px;
+            }
+        }
+        &_short,
+        &_episode {
+            margin-left: 16px;
+            &:before {
+                width: 32px;
+            }
+            &:after {
+                top: 13px;
+                margin-right: 28px;
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+
+
+    &-title {
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        margin-bottom: 8px;
+    }
+
+    &-subTitle {
+        font-size: 0.8em;
+        color: rgba($color-text,0.8);
+        display: inline-block;
+    }
+
+    &-type {
+        text-transform: uppercase;
+        color: rgba($color-text,0.6);
+        font-weight: bold;
+        font-family: Passion One, Arial, sans-sreif;
+        letter-spacing: 1px;
+        font-size: 1.3em;
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 8px;
+        width: 30%;
+        @media(min-width: 540px){
+            width: 20%;
+        }
+        @media(min-width: 650px){
+            width: 15%;
+        }
+    }
+
+    &-detail {
+        display: inline-block;
+        vertical-align: top;
+        width: 70%;
+        @media(min-width: 540px){
+            width: 80%;
+        }
+        @media(min-width: 650px){
+            width: 85%;
+        }
+    }
+
+    &-epsTitle {
+        border-bottom: 1px solid rgba(black,0.2);
+        padding: 8px 0 4px;
+        margin-bottom: 8px;
+        width: 66%;
+        font-weight: normal;
+    }
+
+    &-eps {
+        list-style: none;
+        padding-left: 8px;
+    }
+    &-ep {
+        padding-bottom: 6px;
+    }
+    &-epNum {
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 8px;
+        width: 2em;
+        color: rgba($color-text,0.8);
+        text-align: right;
+    }
+    &-epName {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(calc(100% - 2em) - 8px);
+    }
+}

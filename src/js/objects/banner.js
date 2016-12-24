@@ -112,12 +112,14 @@ class Banner {
                 canvas.height = this.height;
             });
 
-            this.particles[0] = this.populateSmoke();
+            this.particles[0] = this.populateSmoke(0,0.5);
             this.particles[1] = this.populateSmoke(50);
             this.particles[2] = this.populateFire();
 
             this.ctx[4].globalAlpha = 0.1;
+            this.ctx[4].globalCompositeOperation = "screen";
             this.ctx[8].globalAlpha = 0.1;
+            this.ctx[8].globalCompositeOperation = "screen";
             this.ctx[1].filter = "blur(4px)";
 
             this.drawStatics();
@@ -130,8 +132,6 @@ class Banner {
 
     //Main animation loop
     loop(){
-
-        this.ctx[0].clearRect(0,0,this.width,this.height);
 
         if( this.resized ) this.resize();
 
@@ -164,10 +164,14 @@ class Banner {
         this.ctx[0].drawImage( this.canvas[9],  0, 0 + (top/1.6), this.width, this.height );
         this.ctx[0].drawImage( this.canvas[8],  0, 0 + (top/2), this.width, this.height );
         this.ctx[0].drawImage( this.canvas[7],  0, 0 + (top/3), this.width, this.height );
+        this.ctx.globalCompositeOperation = "screen";
         this.ctx[0].drawImage( this.canvas[6],  0, 0 + (top/4), this.width, this.height );
+        this.ctx.globalCompositeOperation = "source-over";
         this.ctx[0].drawImage( this.canvas[5],  0, 0 + (top/5), this.width, this.height );
         this.ctx[0].drawImage( this.canvas[4],  0, 0 + (top/6), this.width, this.height );
+        this.ctx.globalCompositeOperation = "screen";
         this.ctx[0].drawImage( this.canvas[3],  0, 0 + (top/8), this.width, this.height );
+        this.ctx.globalCompositeOperation = "source-over";
         this.ctx[0].drawImage( this.canvas[2],  0, 0 + (top/10), this.width, this.height );
         this.ctx.globalCompositeOperation = "screen";
         this.ctx[0].drawImage( this.canvas[1],  0, 0 + (top/30), this.width, this.height );
@@ -266,8 +270,9 @@ class Banner {
 
 
 
-    populateSmoke( height ){
+    populateSmoke( height, speed ){
         if( !_.isNumber(height) ) height = 0;
+        if( !_.isNumber(speed) ) speed = 1;
         let array = [];
         let count = this.width / 6;
 
@@ -279,7 +284,7 @@ class Banner {
                     y: (Math.random() * (this.height / 2)) + (this.height / 2) + height
                 },
                 vel: {
-                    x: Math.random(),
+                    x: Math.random() * speed,
                     y: 0
                 },
                 rotate: Math.random() * 360,
@@ -310,7 +315,7 @@ class Banner {
                     x: (Math.random() * 2) + 1,
                     y: ((Math.random() * 1) + 0.5) * -1
                 },
-                size: (Math.random() * 1) + 1,
+                size: (Math.random() * 2) + 1,
                 color: [
                     Math.random() * 60,
                     (Math.random() * 30) + 70,

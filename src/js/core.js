@@ -10,31 +10,12 @@ WebFont.load({
 w.MCU = {};
 
 
-//Load Data
-let data = [];
 
-mcuData.forEach(function(show){
+//Analytics
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    if( show.type === "Television" ){
-        show.episodes.forEach(function(episode){
-            data.push( new Episode(show, episode) );
-        });
-    } else
-    if( show.type === "Film" ){
-        data.push( new Film(show) );
-    } else
-    if( show.type === "Short Film" ) {
-        data.push( new Short(show) );
-    }
-
-});
-
-MCU.data = data;
-
-
-
-
-
-// data.sort((a,b)=>{
-//     return a.releaseDate - b.releaseDate;
-// });
+ga('create', 'UA-40732084-2', 'auto');
+ga('send', 'pageview');
