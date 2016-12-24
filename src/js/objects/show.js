@@ -1,11 +1,13 @@
 class Show {
 
-    constructor(name, releaseDate, order, crono, type){
+    constructor(show, type){
 
-        this.name = name;
-        this.releaseDate = new Date(...releaseDate);
+        let crono = ( _.isNumber(show.cronoOrder) )? show.cronoOrder : show.watchOrder + 100000;
+
+        this.name = show.name;
+        this.releaseDate = new Date(...show.releaseDate);
         this.type = type;
-        this.order = order;
+        this.order = show.watchOrder;
         this.crono = crono;
 
     }
@@ -13,7 +15,7 @@ class Show {
 
     getHtml(){
 
-        let html = `<div class="timeline-card timeline-card_${this.type}">
+        let html = `<div class="timeline-card timeline-card_${this.type} ${(this.releaseDate > _.now())?"is-unreleased":""}">
 
                 <div class="timeline-type"> ${this.type} </div>`+
 

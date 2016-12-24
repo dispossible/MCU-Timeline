@@ -3,7 +3,13 @@
 
     &-ctrls {
         margin-bottom: 16px;
+        text-align: left;
+    }
+    &-ctrlsL {
+        display: inline-block;
+        width: 40%;
         text-align: right;
+        vertical-align: bottom;
     }
 
     &-list {
@@ -66,18 +72,28 @@
                 margin-right: 10px;
             }
         }
+        &_short{
+            .is-showShorts & {
+                display: block;
+            }
+        }
+        &_episode{
+            .is-showTv & {
+                display: block;
+            }
+        }
         &_short,
         &_episode {
-            margin-left: 16px;
-            &:before {
-                width: 32px;
-            }
+            display: none;
             &:after {
                 top: 13px;
-                margin-right: 28px;
+                margin-right: 12px;
                 width: 8px;
                 height: 8px;
             }
+        }
+        &.is-unreleased {
+            opacity: 0.6;
         }
     }
 
@@ -105,10 +121,7 @@
         display: inline-block;
         vertical-align: top;
         padding-right: 8px;
-        width: 30%;
-        @media(min-width: 540px){
-            width: 20%;
-        }
+        width: 20%;
         @media(min-width: 650px){
             width: 15%;
         }
@@ -117,8 +130,8 @@
     &-detail {
         display: inline-block;
         vertical-align: top;
-        width: 70%;
-        @media(min-width: 540px){
+        width: 100%;
+        @media(min-width: 400px){
             width: 80%;
         }
         @media(min-width: 650px){
@@ -140,6 +153,9 @@
     }
     &-ep {
         padding-bottom: 6px;
+        &.is-unreleased {
+            opacity: 0.6;
+        }
     }
     &-epNum {
         display: inline-block;

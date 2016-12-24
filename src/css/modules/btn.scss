@@ -1,12 +1,53 @@
 .btn {
-    background: $color-primary;
-    padding: 8px 16px;
+    padding: 18px 18px;
     border-radius: 3px;
-    color: $color-text_alt;
-    font-family: $fontFamily;
-    font-size: $rem;
+    font-size: 0;
     display: inline-block;
     margin: 0;
     border: 0;
     cursor: pointer;
+    position: relative;
+    background: {
+        color: $color-primary;
+        position: center center;
+        repeat: no-repeat;
+    }
+    outline: 0;
+    margin-left: 8px;
+    &:after {
+        content: "";
+        @include cover();
+        opacity: 0.7;
+        background: {
+            position: center center;
+            repeat: no-repeat;
+        }
+    }
+    
+
+    &:hover {
+        background-color: saturate(lighten($color-primary,5),20);
+    }
+
+    &_short {
+        &:after {
+            background: {
+                image: url("img/ic_movie_white_24px.svg");
+            }
+        }
+        .is-showShorts &:after {
+            opacity: 1;
+        }
+    }
+
+    &_tv {
+        &:after {
+            background: {
+                image: url("img/ic_tv_white_24px.svg");
+            }
+        }
+        .is-showTv &:after {
+            opacity: 1;
+        }
+    }
 }

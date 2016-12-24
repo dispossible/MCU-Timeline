@@ -39,16 +39,35 @@ class Timeline{
             if( $(this).attr("data-toggle") === "short" )
                 e.data.that.showShorts = !e.data.that.showShorts;
 
+            e.data.that.setClasses();
+
+        });
+
+        $("[data-sort]").on("change",{"that":this},function(e){
+
+            console.log(e);
+
+            e.data.that.order = $(this).val();
+
+            e.data.that.sort();
             e.data.that.render();
 
         });
 
-        
-
-
-
+        this.setClasses();
         this.sort();
         this.render();
+    }
+
+
+    setClasses(){
+
+        if( this.showTV ) this.el.parent().addClass("is-showTv");
+        else this.el.parent().removeClass("is-showTv");
+
+        if( this.showShorts ) this.el.parent().addClass("is-showShorts");
+        else this.el.parent().removeClass("is-showShorts");
+
     }
 
 
@@ -82,9 +101,6 @@ class Timeline{
         for( let i = 0 ; i < this.data.length ; i++ ){
 
             let show = this.data[i];
-            if( show.type === "short" && !this.showShorts ) return;
-            if( show.type === "episode" && !this.showTV ) return;
-
 
             if( show.type === "episode" ){
 

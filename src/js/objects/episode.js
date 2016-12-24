@@ -3,18 +3,27 @@ class Episode extends Show {
     constructor(show, episode){
 
         episode.releaseDate.push( episode.episode );
-        let crono = ( _.isNumber(episode.cronoOrder) )? episode.cronoOrder : episode.watchOrder + 100000;
 
-        super(episode.title, episode.releaseDate, episode.watchOrder, crono, "episode");
-        this.show = show.name;
+        let showName = show.name;
+
+        //Map episode object onto show object
+        show.name = episode.title;
+        show.releaseDate = episode.releaseDate;
+        show.watchOrder = episode.watchOrder;
+        show.cronoOrder = episode.cronoOrder;
+
+        super(show, "episode");
+
+        this.show = showName;
         this.season = episode.season;
         this.episodeNumber = episode.episode;
+
     }
 
 
     getHtml(episodes){
 
-        let html = `<div class="timeline-card timeline-card_${this.type}">
+        let html = `<div class="timeline-card timeline-card_${this.type} ${(this.releaseDate > _.now())?"is-unreleased":""}">
 
                 <div class="timeline-type"> TV </div>`+
 
@@ -38,7 +47,7 @@ class Episode extends Show {
 
     getEpisode(){
 
-        let html = `<li class="timeline-ep">
+        let html = `<li class="timeline-ep ${(this.releaseDate > _.now())?"is-unreleased":""}">
                 <span class="timeline-epNum"> ${this.episodeNumber} </span>
                 <span class="timeline-epName"> ${this.name} </span>
             </li>`;

@@ -11,6 +11,25 @@ w.MCU = {};
 
 
 
+//Create Main Objects
+$(function(){
+
+    let $ban = $("[data-banner]");
+    w.MCU.banner = new Banner($ban);
+
+
+    let el = $("[data-timeline]");
+    w.MCU.timeline = new Timeline(el, mcuData);
+
+    
+    $("[data-modal]").each((i,el)=>{
+        new Modal(el);
+    });
+
+});
+
+
+
 //Analytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,0 +1,20 @@
+.select {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 60%;
+
+    label {
+        display: block;
+        color: rgba($color-text_alt,0.8);
+        margin-bottom: 4px;
+        text-align: left;
+        font-family: Passion One, Arial, sans-sreif;
+        font-size: 1.2em;
+    }
+    select {
+        padding: 8px;
+        border-radius: 3px;
+        cursor: pointer;
+        background: white;
+    }
+}

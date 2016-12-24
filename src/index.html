@@ -25,13 +25,18 @@
                     </div>
                 </noscript>
                 <div class="timeline-ctrls">
-                    <select data-short>
-                        <option value="watch">Watch Order</option>
-                        <option value="release">Release Order</option>
-                        <option value="crono">Chronological Order</option>
-                    </select>
-                    <button class="btn" data-toggle="tv">Show TV Shows</button>
-                    <button class="btn" data-toggle="short">Show Short Films</button>
+                    <div class="select">
+                        <label for="sort">Sort By</label>
+                        <select id="sort" data-sort>
+                            <option value="watch">Watch Order</option>
+                            <option value="release">Release Order</option>
+                            <option value="crono">Chronological Order</option>
+                        </select>
+                    </div><!--
+                    --><div class="timeline-ctrlsL">
+                        <button class="btn btn_tv" data-toggle="tv" title="Toggle TV Shows">Toggle TV Shows</button><!--
+                        --><button class="btn btn_short" data-toggle="short" title="Toggle Short Films">Toggle Short Films</button>
+                    </div>
                 </div>
                 <div class="timeline-list" data-timeline>
                     
@@ -40,8 +45,8 @@
         </main>
 
         <footer class="ftr">
-            <button class="lnk lnk_ftr" type="button" data-button="about">About</button><!--
-            --><button class="lnk lnk_ftr" type="button" data-button="contact">Contact</button><!--
+            <button class="lnk lnk_ftr" type="button" data-modal="about">About</button><!--
+            --><button class="lnk lnk_ftr" type="button" data-modal="contact">Contact</button><!--
             --><a class="lnk lnk_ftr" href="https://github.com/dispossible/MCU-Timeline/issues" target="_blank">Issues</a>
         </footer>
         
