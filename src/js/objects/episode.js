@@ -4,19 +4,18 @@ class Episode extends Show {
 
         episode.releaseDate.push( episode.episode );
 
-        let showName = show.name;
+        super({
+            name: episode.title,
+            releaseDate: episode.releaseDate,
+            watchOrder: episode.watchOrder,
+            cronoOrder: episode.cronoOrder,
+        }, "episode");
 
-        //Map episode object onto show object
-        show.name = episode.title;
-        show.releaseDate = episode.releaseDate;
-        show.watchOrder = episode.watchOrder;
-        show.cronoOrder = episode.cronoOrder;
-
-        super(show, "episode");
-
-        this.show = showName;
+        this.show = show.name;
         this.season = episode.season;
         this.episodeNumber = episode.episode;
+
+        console.log(this);
 
     }
 

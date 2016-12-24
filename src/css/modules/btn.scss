@@ -50,4 +50,15 @@
             opacity: 1;
         }
     }
+
+
+    &_modal {
+        &:after {
+            background: {
+                image: url("img/ic_close_white_24px.svg");
+            }
+            opacity: 1;
+        }
+        float: right;
+    }
 }

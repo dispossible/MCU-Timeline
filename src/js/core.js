@@ -21,9 +21,9 @@ $(function(){
     let el = $("[data-timeline]");
     w.MCU.timeline = new Timeline(el, mcuData);
 
-    
+
     $("[data-modal]").each((i,el)=>{
-        new Modal(el);
+        new Modal($(el));
     });
 
 });
