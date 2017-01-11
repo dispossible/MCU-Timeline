@@ -54,6 +54,7 @@ class Show {
         let suffix = "th";
         if( date.getDate() % 10 === 1 && date.getDate() !== 11 ) suffix = "st";
         if( date.getDate() % 10 === 2 && date.getDate() !== 12 ) suffix = "nd";
+        if( date.getDate() % 10 === 3 && date.getDate() !== 13 ) suffix = "rd";
 
         return date.getDate() + suffix + " " + months[date.getMonth()] + " " + date.getFullYear();
 
