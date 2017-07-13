@@ -157,6 +157,7 @@ class Banner {
         if( offset > top ) top = 0;
         else top -= offset;
 
+        this.ctx[0].clearRect(0,0,this.width,this.height);
         this.ctx[0].drawImage( this.canvas[13], 0, 0 + (top/1), this.width, this.height );
         this.ctx[0].drawImage( this.canvas[12], 0, 0 + (top/1.1), this.width, this.height );
         this.ctx[0].drawImage( this.canvas[11], 0, 0 + (top/1.2), this.width, this.height );

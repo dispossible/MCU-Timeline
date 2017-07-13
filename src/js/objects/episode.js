@@ -15,8 +15,6 @@ class Episode extends Show {
         this.season = episode.season;
         this.episodeNumber = episode.episode;
 
-        console.log(this);
-
     }
 
 
