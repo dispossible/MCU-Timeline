@@ -2,14 +2,24 @@
     padding: 0 16px;
 
     &-ctrls {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
         text-align: left;
     }
     &-ctrlsL {
-        display: inline-block;
-        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
         text-align: right;
         vertical-align: bottom;
+        margin-top: 16px;
+        @media(min-width: 500px){
+            display: inline-block;
+            width: 40%;
+            margin: 0;
+        }
+        & > *:not(:first-child) {
+            margin-left: 8px;
+        }
     }
 
     &-list {
@@ -17,23 +27,41 @@
         border-left: 2px solid rgba(white,0.6);
         margin-bottom: 64px;
         position: relative;
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -2px;
-            width: 2px;
-            height: 16px;
-            background: $color-bg;
+        .is-showFilms &,
+        .is-showShorts &,
+        .is-showTv & {
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -2px;
+                width: 2px;
+                height: 16px;
+                background: $color-bg;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: -2px;
+                width: 2px;
+                height: 64px;
+                background: linear-gradient(180deg, rgba(white,0.6), transparent);
+            }
         }
-        &:after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: -2px;
-            width: 2px;
-            height: 64px;
-            background: linear-gradient(180deg, rgba(white,0.6), transparent);
+        .is-flipped & {
+            margin-top: 32px;
+            &:before {
+                background: linear-gradient(0deg, rgba(white,0.6), transparent);
+                top: auto;
+                bottom: 100%;
+            }
+            &:after {
+                width: 8px;
+                height: 2px;
+                background: rgba(white,0.6);
+                margin-left: -3px;
+            }
         }
     }
 
@@ -65,11 +93,15 @@
             border-radius: 99px;
         }
         &_film {
+            display: none;
             &:after {
                 width: 14px;
                 height: 14px;
                 top: 10px;
                 margin-right: 10px;
+            }
+            .is-showFilms & {
+                display: block;
             }
         }
         &_short{

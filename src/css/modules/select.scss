@@ -1,7 +1,11 @@
 .select {
     display: inline-block;
     vertical-align: bottom;
-    width: 60%;
+    width: 100%;
+
+    @media(min-width: 500px){
+        width: 60%;
+    }
 
     label {
         display: block;
@@ -16,5 +20,6 @@
         border-radius: 3px;
         cursor: pointer;
         background: white;
+        width: 100%;
     }
 }

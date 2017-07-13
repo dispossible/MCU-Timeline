@@ -26,8 +26,11 @@ class Timeline{
         //Ctrls
         this.showTV = true;
         this.showShorts = true;
+        this.showFilms = true;
 
         this.order = "watch";
+
+        this.flipOrder = false;
 
 
         //Bind ctrls
@@ -39,18 +42,31 @@ class Timeline{
             if( $(this).attr("data-toggle") === "short" )
                 e.data.that.showShorts = !e.data.that.showShorts;
 
+            if( $(this).attr("data-toggle") === "film" )
+                e.data.that.showFilms = !e.data.that.showFilms;
+
             e.data.that.setClasses();
 
         });
 
         $("[data-sort]").on("change",{"that":this},function(e){
 
-            console.log(e);
-
             e.data.that.order = $(this).val();
 
             e.data.that.sort();
             e.data.that.render();
+
+        });
+
+        $("[data-flip]").on("click", e => {
+
+            this.flipOrder = !this.flipOrder;
+
+            if( this.flipOrder ) this.el.parent().addClass("is-flipped");
+            else this.el.parent().removeClass("is-flipped");
+
+            this.sort();
+            this.render();
 
         });
 
@@ -67,6 +83,9 @@ class Timeline{
 
         if( this.showShorts ) this.el.parent().addClass("is-showShorts");
         else this.el.parent().removeClass("is-showShorts");
+
+        if( this.showFilms ) this.el.parent().addClass("is-showFilms");
+        else this.el.parent().removeClass("is-showFilms");
 
     }
 
@@ -89,6 +108,10 @@ class Timeline{
             this.data.sort((a,b)=>{
                 return a.crono - b.crono;
             });
+        }
+
+        if( this.flipOrder ){
+            this.data.reverse();
         }
 
     }
