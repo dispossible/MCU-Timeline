@@ -16,3 +16,10 @@
         flex-shrink: 0;
     }
 }
+
+.l-parallax {
+    perspective: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}

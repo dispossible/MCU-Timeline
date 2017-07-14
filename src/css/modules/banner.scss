@@ -1,25 +1,68 @@
 .banner {
-    margin-bottom: 16px;
-    background: black;
     position: relative;
-    height: 400px;
+    min-height: 70vh;
+    padding: 25%;
+    transform-style: preserve-3d;
+
+    background: {
+        image: url("img/bannerFull.jpg");
+        position: center top;
+        size: cover;
+    }
+
     canvas {
         @include cover();
+        z-index: 5;
     }
-    &.is-loading:before {
+
+    &:after {
         content: "";
         position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -32px 0 0 -32px;
-        width: 64px;
-        height: 64px;
+        bottom: 0;
+        right: 0;
+        z-index: 6;
         border: {
+            width: 5vh 100vw 0 0;
             style: solid;
-            width: 4px;
-            color: rgba(white,0.6) transparent;
-            radius: 999px;
+            color: transparent $color-bg transparent transparent;
         }
-        animation: spin 2s linear infinite;
+        transition: 200ms;
+        @media(min-width: 1400px){
+            border-top-width: 10vh;
+        }
+    }
+
+    @supports(transform-style: preserve-3d){
+        background-image: none;
+        &-layer {
+            @include cover();
+            display: none;
+            background: inherit;
+
+            &_one {
+                background-image: url("img/banner1.png");
+                z-index: 4;
+                transform: translateZ(0);
+            }
+            &_two {
+                background-image: url("img/banner2.png");
+                z-index: 3;
+                transform: translateZ(-50px) scale(1.6);
+            }
+            &_three {
+                background-image: url("img/banner3.png");
+                z-index: 2;
+                transform: translateZ(-100px) scale(2.1);
+            }
+            &_four {
+                background-image: url("img/banner4.png");
+                z-index: 1;
+                transform: translateZ(-150px) scale(3.6);
+            }
+        }
+
+        &.is-loaded #{&}-layer {
+            display: block;
+        }
     }
 }

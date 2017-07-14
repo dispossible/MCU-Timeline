@@ -22,7 +22,9 @@
             repeat: no-repeat;
         }
     }
-    
+    &::-moz-focus-inner {
+        border: 0;
+    }
 
     &:hover {
         background-color: saturate(lighten($color-primary,5),20);

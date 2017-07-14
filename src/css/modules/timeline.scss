@@ -1,5 +1,7 @@
 .timeline {
-    padding: 0 16px;
+    padding: 32px 16px 0;
+    background: $color-bg;
+    position: relative;
 
     &-ctrls {
         margin-bottom: 24px;

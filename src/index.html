@@ -9,51 +9,57 @@
         <link rel="canonical" href="/">
     </head>
     <body class="l-page">
+        <div class="l-parallax">
         
-        <header class="hdr">
-            <div class="hdr-logo">MARVEL</div>
-            <div class="hdr-tagline">Cinematic Universe Timeline</div>
-        </header>
-
-        <section class="banner is-loading" data-banner></section>
+            <header class="hdr">
+                <div class="hdr-logo">MARVEL</div>
+                <div class="hdr-tagline">Cinematic Universe Timeline</div>
+            </header>
         
-        <main class="timeline l-pageContent">
-            <div class="l-wrap">
-                <noscript>
-                    <div class="warn">
-                        Warning! This page requires JavaScript to render correctly.
+            <section class="banner is-loading" data-banner>
+                <div class="banner-layer banner-layer_one"></div>
+                <div class="banner-layer banner-layer_two"></div>
+                <div class="banner-layer banner-layer_three"></div>
+                <div class="banner-layer banner-layer_four"></div>
+            </section>
+            
+            <main class="timeline l-pageContent">
+                <div class="l-wrap">
+                    <noscript>
+                        <div class="warn">
+                            Warning! This page requires JavaScript to render correctly.
+                        </div>
+                    </noscript>
+                    <div class="timeline-ctrls">
+                        <div class="select">
+                            <label for="sort">Sort By</label>
+                            <select id="sort" data-sort>
+                                <option value="watch">Watch Order</option>
+                                <option value="release">Release Order</option>
+                                <option value="crono">Chronological Order</option>
+                            </select>
+                        </div><!--
+                        --><div class="timeline-ctrlsL">
+                            <button class="btn btn_flip" data-flip title="Reverse Order">Reverse Order</button><!--
+                            --><button class="btn btn_film" data-toggle="film" title="Toggle Films">Toggle Films</button><!--
+                            --><button class="btn btn_tv" data-toggle="tv" title="Toggle TV Shows">Toggle TV Shows</button><!--
+                            --><button class="btn btn_short" data-toggle="short" title="Toggle Short Films">Toggle Short Films</button>
+                        </div>
                     </div>
-                </noscript>
-                <div class="timeline-ctrls">
-                    <div class="select">
-                        <label for="sort">Sort By</label>
-                        <select id="sort" data-sort>
-                            <option value="watch">Watch Order</option>
-                            <option value="release">Release Order</option>
-                            <option value="crono">Chronological Order</option>
-                        </select>
-                    </div><!--
-                    --><div class="timeline-ctrlsL">
-                        <button class="btn btn_flip" data-flip title="Reverse Order">Reverse Order</button><!--
-                        --><button class="btn btn_film" data-toggle="film" title="Toggle Films">Toggle Films</button><!--
-                        --><button class="btn btn_tv" data-toggle="tv" title="Toggle TV Shows">Toggle TV Shows</button><!--
-                        --><button class="btn btn_short" data-toggle="short" title="Toggle Short Films">Toggle Short Films</button>
-                    </div>
+                    <div class="timeline-list" data-timeline></div>
                 </div>
-                <div class="timeline-list" data-timeline></div>
-            </div>
-        </main>
+            </main>
 
-        <footer class="ftr">
-            <button class="lnk lnk_ftr" type="button" data-modal="about">About</button><!--
-            <button class="lnk lnk_ftr" type="button" data-modal="contact">Contact</button>
-            --><a class="lnk lnk_ftr" href="https://github.com/dispossible/MCU-Timeline/issues" target="_blank">Issues</a>
-        </footer>
+            <footer class="ftr">
+                <button class="lnk lnk_ftr" type="button" data-modal="about">About</button><!--
+                --><a class="lnk lnk_ftr" href="https://github.com/dispossible/MCU-Timeline/issues" target="_blank">Issues</a>
+            </footer>
+        </div>
         
 
-        <script async src="lib/lodash.js"></script>
-        <script async src="lib/jquery.js"></script>
-        <script async src="lib/webfontloader.js"></script>
-        <script async src="script.js"></script>
+        <script defer src="lib/lodash.js"></script>
+        <script defer src="lib/jquery.js"></script>
+        <script defer src="lib/webfontloader.js"></script>
+        <script defer src="script.js"></script>
     </body>
 </html>

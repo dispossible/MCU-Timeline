@@ -2,6 +2,8 @@
     background: $color-primary;
     color: $color-text_alt;
     padding: 16px;
+    position: relative;
+    z-index: 6;
     @media(min-width: 700px){
         display: flex;
         justify-content: space-between;
