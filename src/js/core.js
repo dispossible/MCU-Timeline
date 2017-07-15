@@ -26,6 +26,11 @@ $(function(){
         new Modal($(el));
     });
 
+    //Bugfix for Chrome pan-scrolling
+    $(".l-parallax").on("scroll",e=>{
+        $(e.target).scrollLeft(0);
+    });
+
 });
 
 

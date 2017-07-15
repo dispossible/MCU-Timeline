@@ -12,8 +12,6 @@ class Modal{
 
             <p> Marvel logo and characters belong to <a href='//marvel.com/'>Marvel&copy;</a>. </p>
 
-            <p> Stock assets contributed by <a href='http://cgartiste.deviantart.com'> DeviantArt: The Big Jay </a>. </p>
-
             <p> Tools used include; Node, Gulp, Bower, Babel, Photoshop, Sublime Text, Jquery, and Lodash. </p>`;
 
         this.el = $("<div class='modal'></div>");
