@@ -3,6 +3,8 @@
     text-align: center;
     padding: 8px;
     margin-top: 16px;
+    position: relative;
+    z-index: 6;
     @media(min-width: 500px){
         padding: 12px;
     }

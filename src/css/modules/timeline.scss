@@ -2,6 +2,7 @@
     padding: 32px 16px 0;
     background: $color-bg;
     position: relative;
+    box-shadow: 0 1000px 0 1000px $color-bg;
 
     &-ctrls {
         margin-bottom: 24px;
