@@ -12,7 +12,9 @@ class Modal{
 
             <p> Marvel logo and characters belong to <a href='//marvel.com/'>Marvel&copy;</a>. </p>
 
-            <p> Tools used include; Node, Gulp, Bower, Babel, Photoshop, Sublime Text, Jquery, and Lodash. </p>`;
+            <p> Tools used include; Node, Gulp, Bower, Babel, Photoshop, Sublime Text, Jquery, and Lodash. </p>
+
+            <p> If you would like to contribute towards my server costs to keep this site running then <a target="_blank" href="//paypal.me/dispossible">PayPal donations</a> would be gratefully accepted. </p>`;
 
         this.el = $("<div class='modal'></div>");
         this.overlay = $("<div class='modal-overlay'></div>");
