@@ -24,9 +24,9 @@ class Timeline{
 
 
         //Ctrls
+        this.showFilms = true;
         this.showTV = true;
         this.showShorts = true;
-        this.showFilms = true;
 
         this.order = "watch";
 
@@ -46,6 +46,8 @@ class Timeline{
                 e.data.that.showFilms = !e.data.that.showFilms;
 
             e.data.that.setClasses();
+            e.data.that.sort();
+            e.data.that.render();
 
         });
 
@@ -125,6 +127,10 @@ class Timeline{
 
             let show = this.data[i];
 
+            if( !show.isVisible(this.showFilms, this.showTV, this.showShorts) ){
+                continue;
+            }
+
             if( show.type === "episode" ){
 
                 let eps = "";
@@ -133,7 +139,7 @@ class Timeline{
                     let show2 = this.data[ii];
                     if( show2.show === show.show ){
                         eps += show2.getEpisode();
-                    } else {
+                    } else if( show2.isVisible(this.showFilms, this.showTV, this.showShorts) ) {
                         break;
                     }
                 }

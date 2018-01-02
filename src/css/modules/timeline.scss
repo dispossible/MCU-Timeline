@@ -96,30 +96,15 @@
             border-radius: 99px;
         }
         &_film {
-            display: none;
             &:after {
                 width: 14px;
                 height: 14px;
                 top: 10px;
                 margin-right: 10px;
             }
-            .is-showFilms & {
-                display: block;
-            }
-        }
-        &_short{
-            .is-showShorts & {
-                display: block;
-            }
-        }
-        &_episode{
-            .is-showTv & {
-                display: block;
-            }
         }
         &_short,
         &_episode {
-            display: none;
             &:after {
                 top: 13px;
                 margin-right: 12px;

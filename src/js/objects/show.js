@@ -4,6 +4,12 @@ class Show {
 
         let crono = ( _.isNumber(show.cronoOrder) )? show.cronoOrder : show.watchOrder + 100000;
 
+        const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+        if( _.isString(show.releaseDate[1]) ){
+            show.releaseDate[1] = months.indexOf( show.releaseDate[1] );
+        }
+
         this.name = show.name;
         this.releaseDate = new Date(...show.releaseDate);
         this.type = type;
@@ -58,6 +64,14 @@ class Show {
 
         return date.getDate() + suffix + " " + months[date.getMonth()] + " " + date.getFullYear();
 
+    }
+
+    isVisible(showFilm,showTv,showShort){
+        return (
+            (this.type === "film" && showFilm) ||
+            (this.type === "episode" && showTv) ||
+            (this.type === "short" && showShort)
+        );
     }
 
 }

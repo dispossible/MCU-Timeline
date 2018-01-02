@@ -369,28 +369,28 @@ const mcuData = [
         "type": "Television",
         "name": "The Defenders",
         "episodes": [
-            {"season": 1, "episode": 1, "title": "-", "releaseDate": [2017, 7, 18], "watchOrder": 1921},
-            {"season": 1, "episode": 2, "title": "-", "releaseDate": [2017, 7, 18], "watchOrder": 1922},
-            {"season": 1, "episode": 3, "title": "-", "releaseDate": [2017, 7, 18], "watchOrder": 1923},
-            {"season": 1, "episode": 4, "title": "-", "releaseDate": [2017, 7, 18], "watchOrder": 1924},
-            {"season": 1, "episode": 5, "title": "-", "releaseDate": [2017, 7, 18], "watchOrder": 1925},
-            {"season": 1, "episode": 6, "title": "-", "releaseDate": [2017, 7, 18], "watchOrder": 1926},
-            {"season": 1, "episode": 7, "title": "-", "releaseDate": [2017, 7, 18], "watchOrder": 1927},
-            {"season": 1, "episode": 8, "title": "-", "releaseDate": [2017, 7, 18], "watchOrder": 1928},
+            {"season": 1, "episode": 1, "title": "The H Word", "releaseDate": [2017, 7, 18], "watchOrder": 1921},
+            {"season": 1, "episode": 2, "title": "Mean Right Hook", "releaseDate": [2017, 7, 18], "watchOrder": 1922},
+            {"season": 1, "episode": 3, "title": "Worst Behavior", "releaseDate": [2017, 7, 18], "watchOrder": 1923},
+            {"season": 1, "episode": 4, "title": "Royal Dragon", "releaseDate": [2017, 7, 18], "watchOrder": 1924},
+            {"season": 1, "episode": 5, "title": "Take Shelter", "releaseDate": [2017, 7, 18], "watchOrder": 1925},
+            {"season": 1, "episode": 6, "title": "Ashes, Ashes", "releaseDate": [2017, 7, 18], "watchOrder": 1926},
+            {"season": 1, "episode": 7, "title": "Fish in the Jailhouse", "releaseDate": [2017, 7, 18], "watchOrder": 1927},
+            {"season": 1, "episode": 8, "title": "The Defenders", "releaseDate": [2017, 7, 18], "watchOrder": 1928},
         ]
     },
     {
         "type": "Television",
         "name": "Inhumans",
         "episodes": [
-            {"season": 1, "episode": 1, "title": "-", "releaseDate": [2017, 9, 29], "watchOrder": 1930},
-            {"season": 1, "episode": 2, "title": "-", "releaseDate": [2017, 9, 29], "watchOrder": 1940},
-            {"season": 1, "episode": 3, "title": "-", "releaseDate": [2017, 9, 29], "watchOrder": 1950},
-            {"season": 1, "episode": 4, "title": "-", "releaseDate": [2017, 9, 29], "watchOrder": 1960},
-            {"season": 1, "episode": 5, "title": "-", "releaseDate": [2017, 9, 29], "watchOrder": 1970},
-            {"season": 1, "episode": 6, "title": "-", "releaseDate": [2017, 9, 29], "watchOrder": 1980},
-            {"season": 1, "episode": 7, "title": "-", "releaseDate": [2017, 9, 29], "watchOrder": 1990},
-            {"season": 1, "episode": 8, "title": "-", "releaseDate": [2017, 9, 29], "watchOrder": 2000}
+            {"season": 1, "episode": 1, "title": "Behold... The Inhumans", "releaseDate": [2017, 8, 29], "watchOrder": 1930},
+            {"season": 1, "episode": 2, "title": "Those Who Would Destroy Us", "releaseDate": [2017, 8, 29], "watchOrder": 1940},
+            {"season": 1, "episode": 3, "title": "Divide and Conquer", "releaseDate": [2017, 9, 6], "watchOrder": 1950},
+            {"season": 1, "episode": 4, "title": "Make Way for... Medusa", "releaseDate": [2017, 9, 13], "watchOrder": 1960},
+            {"season": 1, "episode": 5, "title": "Something Inhuman This Way Comes...", "releaseDate": [2017, 9, 20], "watchOrder": 1970},
+            {"season": 1, "episode": 6, "title": "The Gentleman's Name is Gorgon", "releaseDate": [2017, 9, 27], "watchOrder": 1980},
+            {"season": 1, "episode": 7, "title": "Havoc in the Hidden Land", "releaseDate": [2017, 10, 3], "watchOrder": 1990},
+            {"season": 1, "episode": 8, "title": "...And Finally: Black Bolt", "releaseDate": [2017, 10, 10], "watchOrder": 2000}
         ]
     },
     {
@@ -403,77 +403,106 @@ const mcuData = [
         "type": "Television",
         "name": "The Punisher",
         "episodes": [
-            {"season": 1, "episode": 1, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2011},
-            {"season": 1, "episode": 2, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2012},
-            {"season": 1, "episode": 3, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2013},
-            {"season": 1, "episode": 4, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2014},
-            {"season": 1, "episode": 5, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2015},
-            {"season": 1, "episode": 6, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2016},
-            {"season": 1, "episode": 7, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2017},
-            {"season": 1, "episode": 8, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2018},
-            {"season": 1, "episode": 9, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2019},
-            {"season": 1, "episode": 10, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2020},
-            {"season": 1, "episode": 11, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2021},
-            {"season": 1, "episode": 12, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2022},
-            {"season": 1, "episode": 13, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2023},
+            {"season": 1, "episode": 1, "title": "3 AM", "releaseDate": [2017, 10, 17], "watchOrder": 2011},
+            {"season": 1, "episode": 2, "title": "Two Dead Men", "releaseDate": [2017, 10, 17], "watchOrder": 2012},
+            {"season": 1, "episode": 3, "title": "Kandahar", "releaseDate": [2017, 10, 17], "watchOrder": 2013},
+            {"season": 1, "episode": 4, "title": "Resupply", "releaseDate": [2017, 10, 17], "watchOrder": 2014},
+            {"season": 1, "episode": 5, "title": "Gunner", "releaseDate": [2017, 10, 17], "watchOrder": 2015},
+            {"season": 1, "episode": 6, "title": "The Judas Goat", "releaseDate": [2017, 10, 17], "watchOrder": 2016},
+            {"season": 1, "episode": 7, "title": "Crosshairs", "releaseDate": [2017, 10, 17], "watchOrder": 2017},
+            {"season": 1, "episode": 8, "title": "Cold Steel", "releaseDate": [2017, 10, 17], "watchOrder": 2018},
+            {"season": 1, "episode": 9, "title": "Front Toward Enemy", "releaseDate": [2017, 10, 17], "watchOrder": 2019},
+            {"season": 1, "episode": 10, "title": "Virtue of the Vicious", "releaseDate": [2017, 10, 17], "watchOrder": 2020},
+            {"season": 1, "episode": 11, "title": "Danger Close", "releaseDate": [2017, 10, 17], "watchOrder": 2021},
+            {"season": 1, "episode": 12, "title": "Home", "releaseDate": [2017, 10, 17], "watchOrder": 2022},
+            {"season": 1, "episode": 13, "title": "Memento Mori", "releaseDate": [2017, 10, 17], "watchOrder": 2023},
+        ]
+    },
+    {
+        "type": "Television",
+        "name": "Agents of S.H.I.E.L.D.",
+        "releaseDate": [2017, "Dec", 1],
+        "episodes": [
+            {"season": 5, "episode": 1, "title": "Orientation", "releaseDate": [2017, "Dec", 1], "watchOrder": 2025},
+            {"season": 5, "episode": 2, "title": "Orientation", "releaseDate": [2017, "Dec", 1], "watchOrder": 2026},
+            {"season": 5, "episode": 3, "title": "A Life Spent", "releaseDate": [2017, "Dec", 8], "watchOrder": 2027},
+            {"season": 5, "episode": 4, "title": "A Life Earned", "releaseDate": [2017, "Dec", 15], "watchOrder": 2028},
+            {"season": 5, "episode": 5, "title": "Rewind", "releaseDate": [2017, "Dec", 22], "watchOrder": 2029},
+            {"season": 5, "episode": 6, "title": "Fun &amp; Games", "releaseDate": [2018, "Jan", 5], "watchOrder": 2030},
+            {"season": 5, "episode": 7, "title": "Together or Not at All", "releaseDate": [2018, "Jan", 12], "watchOrder": 2031},
+            {"season": 5, "episode": 8, "title": "The Last Day", "releaseDate": [2018, "Jan", 19], "watchOrder": 2032},
+            {"season": 5, "episode": 9, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2050},
+            {"season": 5, "episode": 10, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2051},
+            {"season": 5, "episode": 11, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2052},
+            {"season": 5, "episode": 12, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2053},
+            {"season": 5, "episode": 13, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2054},
+            {"season": 5, "episode": 14, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2055},
+            {"season": 5, "episode": 15, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2056},
+            {"season": 5, "episode": 16, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2057},
+            {"season": 5, "episode": 17, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2058},
+            {"season": 5, "episode": 18, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2059},
+            {"season": 5, "episode": 19, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2060},
+            {"season": 5, "episode": 20, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2061},
+            {"season": 5, "episode": 21, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2062},
+            {"season": 5, "episode": 22, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2063}
         ]
     },
     {
         "type": "Film",
         "name": "Black Panther",
-        "releaseDate": [2018, 1, 16],
-        "watchOrder": 2025
+        "releaseDate": [2018, "Feb", 16],
+        "watchOrder": 2035
     },
     {
         "type": "Film",
         "name": "Avengers: Infinity War",
-        "releaseDate": [2018, 4, 4],
-        "watchOrder": 2030
+        "releaseDate": [2018, "May", 4],
+        "watchOrder": 2040
     },
     {
         "type": "Film",
         "name": "Ant-Man and the Wasp",
-        "releaseDate": [2018, 6, 6],
-        "watchOrder": 2040
+        "releaseDate": [2018, "Jul", 6],
+        "watchOrder": 2045
     },
     {
         "type": "Television",
         "name": "Cloak & Dagger",
         "episodes": [
-            {"season": 1, "episode": 1, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2050},
-            {"season": 1, "episode": 2, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2060},
-            {"season": 1, "episode": 3, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2070},
-            {"season": 1, "episode": 4, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2080},
-            {"season": 1, "episode": 5, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2090},
-            {"season": 1, "episode": 6, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2100},
-            {"season": 1, "episode": 7, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2110},
-            {"season": 1, "episode": 8, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2120},
-            {"season": 1, "episode": 9, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2130},
-            {"season": 1, "episode": 10, "title": "-", "releaseDate": [2017, 11, 31], "watchOrder": 2140},
+            {"season": 1, "episode": 1, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2100},
+            {"season": 1, "episode": 2, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2101},
+            {"season": 1, "episode": 3, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2102},
+            {"season": 1, "episode": 4, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2103},
+            {"season": 1, "episode": 5, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2104},
+            {"season": 1, "episode": 6, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2105},
+            {"season": 1, "episode": 7, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2106},
+            {"season": 1, "episode": 8, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2107},
+            {"season": 1, "episode": 9, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2108},
+            {"season": 1, "episode": 10, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2109},
         ]
     },
     {
         "type": "Film",
         "name": "Captain Marvel",
-        "releaseDate": [2019, 2, 8],
-        "watchOrder": 2150
+        "releaseDate": [2019, "Mar", 8],
+        "watchOrder": 2130
     },
     {
         "type": "Film",
         "name": "Avengers: Untitled",
-        "releaseDate": [2019, 4, 3],
-        "watchOrder": 2160
+        "releaseDate": [2019, "May", 3],
+        "watchOrder": 2150
     },
     {
         "type": "Film",
         "name": "Spiderman: Untitled",
-        "releaseDate": [2019, 5, 5],
-        "watchOrder": 2170
+        "releaseDate": [2019, "Jul", 5],
+        "watchOrder": 2200
     },
     {
         "type": "Film",
         "name": "Guardians of the Galaxy Vol. 3",
-        "releaseDate": [2020, 0, 1],
-        "watchOrder": 2180
-    }
+        "releaseDate": [2020, "Jan", 1],
+        "watchOrder": 2250
+    },
 ];
