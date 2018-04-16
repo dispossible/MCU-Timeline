@@ -14,9 +14,6 @@ w.MCU = {};
 //Create Main Objects
 $(function(){
 
-    let $ban = $("[data-banner]");
-    w.MCU.banner = new Banner($ban);
-
 
     let el = $("[data-timeline]");
     w.MCU.timeline = new Timeline(el, mcuData);

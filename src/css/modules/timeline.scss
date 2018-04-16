@@ -10,19 +10,12 @@
     }
     &-ctrlsL {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
         text-align: right;
         vertical-align: bottom;
-        margin-top: 16px;
-        @media(min-width: 500px){
-            display: inline-block;
-            width: 40%;
-            margin: 0;
-        }
-        & > *:not(:first-child) {
-            margin-left: 8px;
-        }
+        margin-top: 8px;
     }
 
     &-list {

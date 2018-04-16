@@ -2,11 +2,6 @@
     display: inline-block;
     vertical-align: bottom;
     width: 100%;
-
-    @media(min-width: 500px){
-        width: 60%;
-    }
-
     label {
         display: block;
         color: rgba($color-text_alt,0.8);

@@ -1,24 +1,41 @@
 .btn {
-    padding: 18px 18px;
+    padding: 6px 12px;
     border-radius: 3px;
-    font-size: 0;
     display: inline-block;
-    margin: 0;
+    color: rgba(white,0.5);
+    margin: 8px 0 0;
     border: 0;
     cursor: pointer;
     position: relative;
     background: {
-        color: $color-primary;
+        color: desaturate(darken($color-primary,10),30);
         position: center center;
         repeat: no-repeat;
     }
     outline: 0;
+    flex-grow: 1;
+    flex-basis: 100%;
+    @media(min-width: 350px){
+        flex-basis: 40%;
+        &:nth-of-type(even) {
+            margin-left: 8px;
+        }
+    }
+    @media(min-width: 600px){
+        flex-basis: 20%;
+        &:not(:first-child) {
+            margin-left: 8px;
+        }
+    }
     &:after {
         content: "";
-        @include cover();
+        display: inline-block;
+        vertical-align: -9px;
+        padding: 14px;
+        margin-left: 8px;
         opacity: 0.5;
         background: {
-            position: center center;
+            position: center;
             repeat: no-repeat;
         }
     }
@@ -36,8 +53,12 @@
                 image: url("img/ic_movie_white_24px.svg");
             }
         }
-        .is-showShorts &:after {
-            opacity: 1;
+        .is-showShorts & {
+            background: $color-primary;
+            color: white;
+            &:after {
+                opacity: 1;
+            }
         }
     }
 
@@ -47,8 +68,12 @@
                 image: url("img/ic_tv_white_24px.svg");
             }
         }
-        .is-showTv &:after {
-            opacity: 1;
+        .is-showTv & {
+            background: $color-primary;
+            color: white;
+            &:after {
+                opacity: 1;
+            }
         }
     }
 
@@ -58,12 +83,18 @@
                 image: url("img/ic_local_movies_white_24px.svg");
             }
         }
-        .is-showFilms &:after {
-            opacity: 1;
+        .is-showFilms & {
+            background: $color-primary;
+            color: white;
+            &:after {
+                opacity: 1;
+            }
         }
     }
 
     &_flip {
+        background: $color-primary;
+        color: white;
         &:after {
             opacity: 1;
             background: {
@@ -72,13 +103,17 @@
             transition: transform 200ms cubic-bezier(0.5,0,0,1);
             transform: rotate(180deg);
         }
-        .is-flipped &:after {
-            transform: rotate(0deg);
+        .is-flipped & {
+            &:after {
+                transform: rotate(0deg);
+            }
         }
     }
 
 
     &_modal {
+        background: $color-primary;
+        color: white;
         &:after {
             background: {
                 image: url("img/ic_close_white_24px.svg");
