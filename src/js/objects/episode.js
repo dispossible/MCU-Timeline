@@ -18,9 +18,9 @@ class Episode extends Show {
     }
 
 
-    getHtml(episodes){
+    getHtml(episodes,isReleased){
 
-        let html = `<div class="timeline-card timeline-card_${this.type} ${(this.releaseDate > _.now())?"is-unreleased":""}">
+        let html = `<div class="timeline-card timeline-card_${this.type} ${isReleased?"":"is-unreleased"}">
 
                 <div class="timeline-type"> TV </div>`+
 

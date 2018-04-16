@@ -431,20 +431,22 @@ const mcuData = [
             {"season": 5, "episode": 6, "title": "Fun &amp; Games", "releaseDate": [2018, "Jan", 5], "watchOrder": 2030},
             {"season": 5, "episode": 7, "title": "Together or Not at All", "releaseDate": [2018, "Jan", 12], "watchOrder": 2031},
             {"season": 5, "episode": 8, "title": "The Last Day", "releaseDate": [2018, "Jan", 19], "watchOrder": 2032},
-            {"season": 5, "episode": 9, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2050},
-            {"season": 5, "episode": 10, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2051},
-            {"season": 5, "episode": 11, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2052},
-            {"season": 5, "episode": 12, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2053},
-            {"season": 5, "episode": 13, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2054},
-            {"season": 5, "episode": 14, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2055},
-            {"season": 5, "episode": 15, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2056},
-            {"season": 5, "episode": 16, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2057},
-            {"season": 5, "episode": 17, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2058},
-            {"season": 5, "episode": 18, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2059},
-            {"season": 5, "episode": 19, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2060},
-            {"season": 5, "episode": 20, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2061},
-            {"season": 5, "episode": 21, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2062},
-            {"season": 5, "episode": 22, "title": "-", "releaseDate": [2018, "Dec", 1], "watchOrder": 2063}
+            {"season": 5, "episode": 9, "title": "Best Laid Plans", "releaseDate": [2018, "Jan", 26], "watchOrder": 2033},
+            {"season": 5, "episode": 10, "title": "Past Life", "releaseDate": [2018, "Feb", 2], "watchOrder": 2034},
+            {"season": 5, "episode": 11, "title": "All the Comforts of Home", "releaseDate": [2018, "Mar", 2], "watchOrder": 2070},
+            {"season": 5, "episode": 12, "title": "The Real Deal", "releaseDate": [2018, "Mar", 9], "watchOrder": 2071},
+            {"season": 5, "episode": 13, "title": "Principia", "releaseDate": [2018, "Mar", 16], "watchOrder": 2072},
+            {"season": 5, "episode": 14, "title": "The Devil Complex", "releaseDate": [2018, "Mar", 23], "watchOrder": 2073},
+            {"season": 5, "episode": 15, "title": "Rise and Shine", "releaseDate": [2018, "Mar", 30], "watchOrder": 2074},
+            {"season": 5, "episode": 16, "title": "Inside Voices", "releaseDate": [2018, "Apr", 6], "watchOrder": 2075},
+            {"season": 5, "episode": 17, "title": "The Honeymoon", "releaseDate": [2018, "Apr", 13], "watchOrder": 2076},
+            {"season": 5, "episode": 18, "title": "All Roads Lead...", "releaseDate": [2018, "Apr", 20], "watchOrder": 2077},
+            {"season": 5, "episode": 19, "title": "Option Two", "releaseDate": [2018, "Apr", 27], "watchOrder": 2078},
+            //Does Avengers 3 go here?
+            {"season": 5, "episode": 20, "title": "The One Who Will Save Us All", "releaseDate": [2018, "May", 4], "watchOrder": 2080},
+            //Or maybe here?
+            {"season": 5, "episode": 21, "title": "F = G (m1 x m2) / d2", "releaseDate": [2018, "May", 11], "watchOrder": 2085},
+            {"season": 5, "episode": 22, "title": "The End", "releaseDate": [2018, "May", 18], "watchOrder": 2090}
         ]
     },
     {
@@ -454,44 +456,82 @@ const mcuData = [
         "watchOrder": 2035
     },
     {
-        "type": "Film",
-        "name": "Avengers: Infinity War",
-        "releaseDate": [2018, "May", 4],
-        "watchOrder": 2040
+        "type": "Television",
+        "name": "Jessica Jones",
+        "episodes": [
+            {"season": 2, "episode": 1, "title": "AKA Start at the Beginning", "releaseDate": [2018, "Mar", 8], "watchOrder": 2050},
+            {"season": 2, "episode": 2, "title": "AKA Freak Accident", "releaseDate": [2018, "Mar", 8], "watchOrder": 2051},
+            {"season": 2, "episode": 3, "title": "AKA Sole Survivor", "releaseDate": [2018, "Mar", 8], "watchOrder": 2052},
+            {"season": 2, "episode": 4, "title": "AKA God Help the Hobo", "releaseDate": [2018, "Mar", 8], "watchOrder": 2053},
+            {"season": 2, "episode": 5, "title": "AKA The Octopus", "releaseDate": [2018, "Mar", 8], "watchOrder": 2054},
+            {"season": 2, "episode": 6, "title": "AKA Facetime", "releaseDate": [2018, "Mar", 8], "watchOrder": 2055},
+            {"season": 2, "episode": 7, "title": "AKA I Want Your Cray Cray", "releaseDate": [2018, "Mar", 8], "watchOrder": 2056},
+            {"season": 2, "episode": 8, "title": "AKA Ain't We Got Fun", "releaseDate": [2018, "Mar", 8], "watchOrder": 2057},
+            {"season": 2, "episode": 9, "title": "AKA Shark in the Bathtub, Monster in the Bed", "releaseDate": [2018, "Mar", 8], "watchOrder": 2058},
+            {"season": 2, "episode": 10, "title": "AKA Pork Chop", "releaseDate": [2018, "Mar", 8], "watchOrder": 2059},
+            {"season": 2, "episode": 11, "title": "AKA Three Lives and Counting", "releaseDate": [2018, "Mar", 8], "watchOrder": 2060},
+            {"season": 2, "episode": 12, "title": "AKA Pray for My Patsy", "releaseDate": [2018, "Mar", 8], "watchOrder": 2061},
+            {"season": 2, "episode": 13, "title": "AKA Playland", "releaseDate": [2018, "Mar", 8], "watchOrder": 2062}
+        ]
     },
     {
         "type": "Film",
-        "name": "Ant-Man and the Wasp",
-        "releaseDate": [2018, "Jul", 6],
-        "watchOrder": 2045
+        "name": "Avengers: Infinity War",
+        "releaseDate": [2018, "May", 4],
+        "watchOrder": 2095
     },
     {
         "type": "Television",
         "name": "Cloak & Dagger",
         "episodes": [
-            {"season": 1, "episode": 1, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2100},
-            {"season": 1, "episode": 2, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2101},
-            {"season": 1, "episode": 3, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2102},
-            {"season": 1, "episode": 4, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2103},
-            {"season": 1, "episode": 5, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2104},
-            {"season": 1, "episode": 6, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2105},
-            {"season": 1, "episode": 7, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2106},
-            {"season": 1, "episode": 8, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2107},
-            {"season": 1, "episode": 9, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2108},
-            {"season": 1, "episode": 10, "title": "-", "releaseDate": [2018, "Dec", 31], "watchOrder": 2109},
+            {"season": 1, "episode": 1, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2100},
+            {"season": 1, "episode": 2, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2101},
+            {"season": 1, "episode": 3, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2102},
+            {"season": 1, "episode": 4, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2103},
+            {"season": 1, "episode": 5, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2104},
+            {"season": 1, "episode": 6, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2105},
+            {"season": 1, "episode": 7, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2106},
+            {"season": 1, "episode": 8, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2107},
+            {"season": 1, "episode": 9, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2108},
+            {"season": 1, "episode": 10, "title": "-", "releaseDate": [2018, "Jun", 7], "watchOrder": 2109},
         ]
+    },
+    {
+        "type": "Television",
+        "name": "Luke Cage",
+        "episodes": [
+            {"season": 2, "episode": 1, "title": "Soul Brother #1", "releaseDate": [2018, "Jun", 22], "watchOrder": 2120},
+            {"season": 2, "episode": 2, "title": "Straighten It Out", "releaseDate": [2018, "Jun", 22], "watchOrder": 2121},
+            {"season": 2, "episode": 3, "title": "Wig Out", "releaseDate": [2018, "Jun", 22], "watchOrder": 2122},
+            {"season": 2, "episode": 4, "title": "I Get Physical", "releaseDate": [2018, "Jun", 22], "watchOrder": 2123},
+            {"season": 2, "episode": 5, "title": "-", "releaseDate": [2018, "Jun", 22], "watchOrder": 2124},
+            {"season": 2, "episode": 6, "title": "-", "releaseDate": [2018, "Jun", 22], "watchOrder": 2125},
+            {"season": 2, "episode": 7, "title": "-", "releaseDate": [2018, "Jun", 22], "watchOrder": 2126},
+            {"season": 2, "episode": 8, "title": "-", "releaseDate": [2018, "Jun", 22], "watchOrder": 2127},
+            {"season": 2, "episode": 9, "title": "-", "releaseDate": [2018, "Jun", 22], "watchOrder": 2128},
+            {"season": 2, "episode": 10, "title": "-", "releaseDate": [2018, "Jun", 22], "watchOrder": 2129},
+            {"season": 2, "episode": 11, "title": "-", "releaseDate": [2018, "Jun", 22], "watchOrder": 2130},
+            {"season": 2, "episode": 12, "title": "-", "releaseDate": [2018, "Jun", 22], "watchOrder": 2131},
+            {"season": 2, "episode": 13, "title": "-", "releaseDate": [2018, "Jun", 22], "watchOrder": 2132},
+        ]
+    },
+    {
+        "type": "Film",
+        "name": "Ant-Man and the Wasp",
+        "releaseDate": [2018, "Jul", 6],
+        "watchOrder": 2140
     },
     {
         "type": "Film",
         "name": "Captain Marvel",
         "releaseDate": [2019, "Mar", 8],
-        "watchOrder": 2130
+        "watchOrder": 2150
     },
     {
         "type": "Film",
         "name": "Avengers: Untitled",
         "releaseDate": [2019, "May", 3],
-        "watchOrder": 2150
+        "watchOrder": 2160
     },
     {
         "type": "Film",
@@ -505,4 +545,9 @@ const mcuData = [
         "releaseDate": [2020, "Jan", 1],
         "watchOrder": 2250
     },
+    //These exist, but I have no more info...
+    //  Jessica Jones Season 3
+    //  Punisher Season 2
+    //  Dare Devil Season 3
+    //  Iron Fist Season 2
 ];

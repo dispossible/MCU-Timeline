@@ -134,18 +134,22 @@ class Timeline{
             if( show.type === "episode" ){
 
                 let eps = "";
+                let isReleased = false;
 
                 for( var ii = i ; ii < this.data.length ; ii++ ){
                     let show2 = this.data[ii];
                     if( show2.show === show.show ){
                         eps += show2.getEpisode();
+                        if( show2.releaseDate < _.now() ){
+                            isReleased = true;
+                        }
                     } else if( show2.isVisible(this.showFilms, this.showTV, this.showShorts) ) {
                         break;
                     }
                 }
                 i = ii-1;
 
-                list += show.getHtml(eps);
+                list += show.getHtml(eps,isReleased);
 
             } else {
                 list += show.getHtml();
