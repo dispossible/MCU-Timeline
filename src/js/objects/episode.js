@@ -26,7 +26,7 @@ class Episode extends Show {
 
                 `<div class="timeline-detail">
 
-                    <h2 class="timeline-title"> ${this.show} <span class="timeline-subTitle"> Season ${this.season} </span> </h2>
+                    <h2 class="timeline-title"> ${this.show} <small class="timeline-subTitle"> Season ${this.season} </small> </h2>
                     
                     <h3 class="timeline-epsTitle">Episodes</h3>
 
@@ -44,10 +44,11 @@ class Episode extends Show {
 
     getEpisode(){
 
-        let html = `<li class="timeline-ep ${(this.releaseDate > _.now())?"is-unreleased":""}">
-                <span class="timeline-epNum"> ${this.episodeNumber} </span>
-                <span class="timeline-epName"> ${this.name} </span>
-            </li>`;
+        let html = `<li class="timeline-ep ${(this.releaseDate > _.now())?"is-unreleased":""}">`+
+                `<span class="timeline-epNum"> ${this.episodeNumber} </span>`+
+                `<span class="timeline-epName"> ${this.name} </span>`+
+                //`<time class="timeline-release"> ${this.writeDate(this.releaseDate)} </time>`+
+            `</li>`;
 
         return html;
 

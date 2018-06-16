@@ -29,7 +29,7 @@ class Show {
 
                     <h2 class="timeline-title"> ${this.name} </h2>
 
-                    <p class="timeline-date">${this.writeDate(this.releaseDate)} </p>
+                    <time class="timeline-date">${this.writeDate(this.releaseDate)}</time>
 
                 </div>
 

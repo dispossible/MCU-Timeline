@@ -8,7 +8,7 @@
         margin-bottom: 24px;
         text-align: left;
     }
-    &-ctrlsL {
+    &-btns {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -181,6 +181,5 @@
     &-epName {
         display: inline-block;
         vertical-align: top;
-        width: calc(calc(100% - 2em) - 8px);
     }
 }

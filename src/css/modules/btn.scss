@@ -5,7 +5,6 @@
     color: rgba(white,0.5);
     margin: 8px 0 0;
     border: 0;
-    cursor: pointer;
     position: relative;
     background: {
         color: desaturate(darken($color-primary,10),30);
@@ -43,13 +42,6 @@
     }
     &::-moz-focus-inner {
         border: 0;
-    }
-
-    &:hover {
-        color: white;
-        &:after {
-            opacity: 1;
-        }
     }
 
     &_short {
