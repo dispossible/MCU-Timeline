@@ -1,3 +1,9 @@
+import WebFont from "webfontloader";
+import mcuData from './data.json';
+import Timeline from './objects/timeline';
+import Modal from './objects/Modal';
+
+
 //Load fonts
 WebFont.load({
     google: {
@@ -7,28 +13,18 @@ WebFont.load({
 
 
 //Global
-w.MCU = {};
-
+window.MCU = {};
 
 
 //Create Main Objects
-$(function(){
+const el = document.querySelector("[data-timeline]");
+const timeline = new Timeline(el, mcuData.shows);
+
+document.querySelectorAll("[data-modal]").forEach(el=>new Modal(el));
 
 
-    let el = $("[data-timeline]");
-    w.MCU.timeline = new Timeline(el, mcuData);
-
-
-    $("[data-modal]").each((i,el)=>{
-        new Modal($(el));
-    });
-
-    //Bugfix for Chrome pan-scrolling
-    $(".l-parallax").on("scroll",e=>{
-        $(e.target).scrollLeft(0);
-    });
-
-});
+//Prerender
+export default timeline.render.bind(timeline);
 
 
 

@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>MCU Timeline</title>
         <meta name="description" content="A complete timeline of the Marvel Cinematic Universe">
-        <link rel="stylesheet" href="style.css">
         <link rel="canonical" href="/">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,6 +12,7 @@
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f11e22">
         <meta name="theme-color" content="#f11e22">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body class="l-page">
     
@@ -44,19 +44,15 @@
                         --><button class="btn btn_short" data-toggle="short" title="Short Films">Short Films</button>
                     </div>
                 </div>
-                <div class="timeline-list" data-timeline></div>
+                <div class="timeline-list" data-timeline>{{prerender}}</div>
             </div>
         </main>
 
         <footer class="ftr">
-            <button class="lnk lnk_ftr" type="button" data-modal="about">About</button><!--
+            <button class="lnk lnk_ftr" type="button" data-modal>About</button><!--
             --><a class="lnk lnk_ftr" href="https://github.com/dispossible/MCU-Timeline/issues" target="_blank">Issues</a>
         </footer>
         
-
-        <script defer src="lib/lodash.js"></script>
-        <script defer src="lib/jquery.js"></script>
-        <script defer src="lib/webfontloader.js"></script>
-        <script defer src="script.js"></script>
+        <script defer src="app.js"></script>
     </body>
 </html>

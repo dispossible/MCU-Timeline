@@ -1,10 +1,8 @@
-class Modal{
+export default class Modal {
 
     constructor(el){
 
         this.button = el;
-
-        this.type = this.button.attr("data-modal");
 
         this.aboutContent = `<h2> MCU Timeline </h2>
 
@@ -16,38 +14,41 @@ class Modal{
 
             <p> If you would like to contribute towards my server costs to keep this site running then <a target="_blank" href="//paypal.me/dispossible">PayPal donations</a> would be gratefully accepted. </p>`;
 
-        this.el = $("<div class='modal'></div>");
-        this.overlay = $("<div class='modal-overlay'></div>");
-        this.closeBtn = $("<button class='btn btn_modal'>Close</button>");
-        this.content =  $("<div class='modal-content'></div>");
 
-        this.content.append(this.closeBtn);
-        this.content.append(this.aboutContent);
-        this.el.append(this.overlay);
-        this.el.append(this.content);
+        this.el = document.createElement("div");
+        this.el.classList.add("modal");
+
+        this.overlay = document.createElement("div");
+        this.overlay.classList.add("modal-overlay");
+
+        this.closeBtn = document.createElement("button");
+        this.closeBtn.classList.add("btn","btn_modal");
+        this.closeBtn.innerText = "Close";
+
+        this.content = document.createElement("div");
+        this.content.classList.add("modal-content");
+
+        this.content.appendChild(this.closeBtn);
+        this.content.innerHTML = this.aboutContent;
+
+        this.el.appendChild(this.overlay);
+        this.el.appendChild(this.content);
 
 
-        this.button.on("click",{that:this},function(e){
-            e.data.that.open();
-        });
-        this.closeBtn.on("click",{that:this},function(e){
-            e.data.that.close();
-        });
-        this.overlay.on("click",{that:this},function(e){
-            e.data.that.close();
-        });
+        this.button.addEventListener("click", this.open);
+        this.closeBtn.addEventListener("click", this.close);
+        this.overlay.addEventListener("click",this.close);
 
-
-        $("body").append(this.el);
+        document.body.appendChild(this.el);
 
     }
 
     open(){
-        this.el.addClass("is-open");
+        this.el.classList.add("is-open");
     }
 
     close(){
-        this.el.removeClass("is-open");
+        this.el.classList.remove("is-open");
     }
 
 }

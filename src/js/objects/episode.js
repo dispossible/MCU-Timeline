@@ -1,4 +1,6 @@
-class Episode extends Show {
+import Show from './show';
+
+export default class Episode extends Show {
 
     constructor(show, episode){
 
@@ -44,7 +46,7 @@ class Episode extends Show {
 
     getEpisode(){
 
-        let html = `<li class="timeline-ep ${(this.releaseDate > _.now())?"is-unreleased":""}">`+
+        let html = `<li class="timeline-ep ${(this.releaseDate > Date.now())?"is-unreleased":""}">`+
                 `<span class="timeline-epNum"> ${this.episodeNumber} </span>`+
                 `<span class="timeline-epName"> ${this.name} </span>`+
                 //`<time class="timeline-release"> ${this.writeDate(this.releaseDate)} </time>`+

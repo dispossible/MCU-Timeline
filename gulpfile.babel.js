@@ -1,170 +1,69 @@
-//Vars
-var src = "src";
-var dist = "dist";
+import { series, parallel, src, dest, watch } from 'gulp';
 
-
-//imports
-import pkg from './package.json';
-import gulp from 'gulp';
+import webpack  from 'webpack-stream';
+import webpackConfig from './webpack.config';
 import del from 'del';
-import gulpLoadPlugins from 'gulp-load-plugins';
-import runSequence from 'run-sequence';
-import mainBowerFiles from 'main-bower-files';
-import browserSync from 'browser-sync';
 
-const $ = gulpLoadPlugins();
+import imageMin from 'gulp-imagemin';
+import postCss from 'gulp-postcss';
+import sass from 'gulp-sass';
+import rename from 'gulp-rename';
+import htmlMin from 'gulp-htmlmin';
+import inject from 'gulp-inject-string';
 
-
-
-//Tasks
-gulp.task("default", ()=>
-    runSequence(
-        "clean",
-        "copy",
-        "bower",
-        "js",
-        "images",
-        "style",
-        "html",
-        "size",
-        "watch"
-    )
-);
-
-gulp.task("watch", ()=>{
-
-    browserSync({
-        notify: false,
-        logPrefix: 'WSK',
-        scrollElementMapping: ['body'],
-        // https: true,
-        server: dist,
-        port: 3000
-    })
-
-    gulp.watch(src+"/js/**/*.js",["js", browserSync.reload]);
-    gulp.watch(src+"/img/**/*.{jpg,png,gif,svg}",["images", browserSync.reload]);
-    gulp.watch(src+"/css/**/*.scss",["style", browserSync.reload]);
-    gulp.watch(src+"/*.html",["html", browserSync.reload]);
-});
-
-gulp.task("clean", ()=>
-    del(
-        [".tmp", "dist/*"],
-        { dot: true }
-    )
-);
-
-gulp.task("copy", ()=>
-    gulp
-        .src(
-            [
-                src + "/*.*",
-                "!" + src + "/*.html"
-            ],
-            {dot: true}
-        )
-        .pipe(gulp.dest(dist))
-        .pipe($.size({title: "root files"}))
-);
-
-gulp.task("size", ()=>
-    gulp
-        .src(dist+"/**/*")
-        .pipe($.size({title: "site"}))
-);
+import { parseData, getHtml } from './src/js/objects/timeline';
+import mcuData from './src/js/data.json';
 
 
+function clean(){
+    return del(['dist/*']);
+}
 
+function staticFiles(){
+    return src(["src/*.*","!src/*.html"])
+        .pipe(dest("dist/"));
+}
 
+function runWebpack(){
+    return src('src/js/index.js')
+        .pipe(webpack(webpackConfig))
+        .pipe(dest("dist/"));
+}
 
-//JS
+function compressImages(){
+    return src("src/img/**/*.{jpg,png,gif,svg}")
+        .pipe(imageMin())
+        .pipe(dest("dist/img/"));
+}
 
-gulp.task("bower", ()=>
-    gulp
-        .src(mainBowerFiles())
-        .pipe($.uglify())
-        .pipe(gulp.dest(dist+"/lib"))
-        .pipe($.size({title: "libs"}))
-);
+function styling(){
+    return src("src/css/template.scss")
+        .pipe(sass().on('error',sass.logError))
+        .pipe(postCss())
+        .pipe(rename("style.css"))
+        .pipe(dest("dist/"));
+}
 
-gulp.task("lint", ()=>
-    gulp
-        .src(src+"/js/**/*.js")
-        .pipe($.eslint())
-        .pipe($.eslint.format())
-        .pipe($.eslint.failAfterError())
-);
-
-
-gulp.task("js", ['lint'], ()=>
-    gulp
-        .src([
-            src+"/js/data.js",
-            src+"/js/objects/show.js",
-            src+"/js/objects/*.js",
-            src+"/js/core.js",
-            src+"/js/**/*.js",
-        ])
-        .pipe($.sourcemaps.init())
-        .pipe($.babel())
-        .pipe($.concat("script.js"))
-        .pipe($.jsWrapper({
-            safeUndef: true,
-            globals: {
-                "window": "w",
-                "document": "d"
-            }
-        }))
-        .pipe($.uglify())
-        .pipe($.sourcemaps.write("."))
-        .pipe(gulp.dest(dist))
-        .pipe($.size({title: "javascript"}))
-);
-
-
-
-
-//Images
-
-gulp.task("images", ()=>
-    gulp
-        .src(src+"/img/**/*.{jpg,png,gif,svg}")
-        .pipe($.cache($.imagemin()))
-        .pipe(gulp.dest(dist+"/img"))
-        .pipe($.size({title: "images"}))
-);
-
-
-
-
-//Styles
-
-gulp.task("style", ()=>
-    gulp
-        .src(src+"/css/template.scss")
-        .pipe($.sourcemaps.init())
-        .pipe($.sass().on("error",$.sass.logError))
-        .pipe($.autoprefixer({browsers: "> 1%"}))
-        .pipe($.cssnano())
-        .pipe($.concat('style.css'))
-        .pipe($.sourcemaps.write("."))
-        .pipe(gulp.dest(dist))
-        .pipe($.size({title: "style"}))
-);
-
-
-
-
-// HTML
-
-gulp.task("html", ()=>
-    gulp
-        .src(src+"/*.html")
-        .pipe($.htmlmin({
+function createHtml(){
+    const list = getHtml( parseData(mcuData.shows) );
+    return src("src/index.html")
+        .pipe(inject.replace("{{prerender}}",list))
+        .pipe(htmlMin({
             removeComments: true,
             collapseWhitespace: true
         }))
-        .pipe(gulp.dest(dist))
-        .pipe($.size({title: "html"}))
-);
+        .pipe(dest("dist/"));
+}
+
+
+
+export default series( clean, parallel(staticFiles, runWebpack, compressImages, styling, createHtml) );
+
+export function watcher(cb){
+    watch("src/js/**",runWebpack);
+    watch("src/img/**",compressImages);
+    watch("src/css/**",styling);
+    watch("src/*.html",createHtml);
+    watch(["src/*.*","!src/*.html"],staticFiles);
+    cb();
+};

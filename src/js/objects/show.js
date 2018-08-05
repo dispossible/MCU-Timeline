@@ -1,12 +1,15 @@
-class Show {
+import isNumber from 'lodash/isNumber';
+import isString from 'lodash/isString';
+
+export default class Show {
 
     constructor(show, type){
 
-        let crono = ( _.isNumber(show.cronoOrder) )? show.cronoOrder : show.watchOrder + 100000;
+        let crono = ( isNumber(show.cronoOrder) )? show.cronoOrder : show.watchOrder + 100000;
 
         const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-        if( _.isString(show.releaseDate[1]) ){
+        if( isString(show.releaseDate[1]) ){
             show.releaseDate[1] = months.indexOf( show.releaseDate[1] );
         }
 
@@ -21,7 +24,7 @@ class Show {
 
     getHtml(){
 
-        let html = `<div class="timeline-card timeline-card_${this.type} ${(this.releaseDate > _.now())?"is-unreleased":""}">
+        let html = `<div class="timeline-card timeline-card_${this.type} ${(this.releaseDate > Date.now())?"is-unreleased":""}">
 
                 <div class="timeline-type"> ${this.type} </div>`+
 

@@ -1,26 +1,75 @@
-class Timeline{
+import Episode from './episode';
+import Film from './film';
+import Short from './short';
+
+
+export function parseData(dataIn){
+    const data = [];
+    dataIn.forEach(show=>{
+        if( show.type === "Television" ){
+            show.episodes.forEach(episode=>{
+                data.push( new Episode(show, episode) );
+            });
+        } else
+        if( show.type === "Film" ){
+            data.push( new Film(show) );
+        } else
+        if( show.type === "Short Film" ) {
+            data.push( new Short(show) );
+        }
+    });
+    return data;
+};
+
+
+export function getHtml(data, showFilms = true, showTV = true, showShorts = true){
+    let list = "";
+
+    for( let i = 0 ; i < data.length ; i++ ){
+
+        let show = data[i];
+
+        if( !show.isVisible(showFilms, showTV, showShorts) ){
+            continue;
+        }
+
+        if( show.type === "episode" ){
+
+            let eps = "";
+            let isReleased = false;
+
+            for( var ii = i ; ii < data.length ; ii++ ){
+                let show2 = data[ii];
+                if( show2.show === show.show ){
+                    eps += show2.getEpisode();
+                    if( show2.releaseDate < Date.now() ){
+                        isReleased = true;
+                    }
+                } else if( show2.isVisible(showFilms, showTV, showShorts) ) {
+                    break;
+                }
+            }
+            i = ii-1;
+
+            list += show.getHtml(eps,isReleased);
+
+        } else {
+            list += show.getHtml();
+        }
+
+    }
+
+    return list;
+};
+
+
+
+export default class Timeline {
 
     constructor(el, dataIn){
 
         this.el = el;
-
-        //this.data = data;
-
-        //Load Data
-        this.data = [];
-        dataIn.forEach(show=>{
-            if( show.type === "Television" ){
-                show.episodes.forEach(episode=>{
-                    this.data.push( new Episode(show, episode) );
-                });
-            } else
-            if( show.type === "Film" ){
-                this.data.push( new Film(show) );
-            } else
-            if( show.type === "Short Film" ) {
-                this.data.push( new Short(show) );
-            }
-        });
+        this.data = parseData(dataIn);
 
 
         //Ctrls
@@ -34,60 +83,64 @@ class Timeline{
 
 
         //Bind ctrls
-        $("[data-toggle]").on("click",{"that":this},function(e){
+        const toggleBtns = document.querySelectorAll("[data-toggle]");
+        if( toggleBtns.length > 0 ){
+            toggleBtns[0].parentElement.addEventListener("click", e => {
+                const el = e.target.closest("[data-toggle]");
+                if( !el ) return;
 
-            if( $(this).attr("data-toggle") === "tv" )
-                e.data.that.showTV = !e.data.that.showTV;
+                if( el.getAttribute("data-toggle") === "tv" )
+                    this.showTV = !this.showTV;
 
-            if( $(this).attr("data-toggle") === "short" )
-                e.data.that.showShorts = !e.data.that.showShorts;
+                if( el.getAttribute("data-toggle") === "short" )
+                    this.showShorts = !this.showShorts;
 
-            if( $(this).attr("data-toggle") === "film" )
-                e.data.that.showFilms = !e.data.that.showFilms;
+                if( el.getAttribute("data-toggle") === "film" )
+                    this.showFilms = !this.showFilms;
 
-            e.data.that.setClasses();
-            e.data.that.sort();
-            e.data.that.render();
+                this.setClasses();
+                this.sort();
+                this.render();
+            });
+        }
 
-        });
+        const sort = document.querySelector("[data-sort]");
+        if( sort ){
+            sort.addEventListener("change", e => {
+                this.order = e.target.value;
+                this.sort();
+                this.render();
+            });
+        }
 
-        $("[data-sort]").on("change",{"that":this},function(e){
+        const flip = document.querySelector("[data-flip]");
+        if(flip){
+            flip.addEventListener("click", e => {
+                this.flipOrder = !this.flipOrder;
 
-            e.data.that.order = $(this).val();
+                if( this.flipOrder ) this.el.parentElement.classList.add("is-flipped");
+                else this.el.parentElement.classList.remove("is-flipped");
 
-            e.data.that.sort();
-            e.data.that.render();
-
-        });
-
-        $("[data-flip]").on("click", e => {
-
-            this.flipOrder = !this.flipOrder;
-
-            if( this.flipOrder ) this.el.parent().addClass("is-flipped");
-            else this.el.parent().removeClass("is-flipped");
-
-            this.sort();
-            this.render();
-
-        });
+                this.sort();
+                this.render();
+            });
+        }
 
         this.setClasses();
         this.sort();
         this.render();
     }
 
-
     setClasses(){
 
-        if( this.showTV ) this.el.parent().addClass("is-showTv");
-        else this.el.parent().removeClass("is-showTv");
+        if( this.showTV ) this.el.parentElement.classList.add("is-showTv");
+        else this.el.parentElement.classList.remove("is-showTv");
 
-        if( this.showShorts ) this.el.parent().addClass("is-showShorts");
-        else this.el.parent().removeClass("is-showShorts");
+        if( this.showShorts ) this.el.parentElement.classList.add("is-showShorts");
+        else this.el.parentElement.classList.remove("is-showShorts");
 
-        if( this.showFilms ) this.el.parent().addClass("is-showFilms");
-        else this.el.parent().removeClass("is-showFilms");
+        if( this.showFilms ) this.el.parentElement.classList.add("is-showFilms");
+        else this.el.parentElement.classList.remove("is-showFilms");
 
     }
 
@@ -120,46 +173,7 @@ class Timeline{
 
 
     render(){
-
-        let list = "";
-
-        for( let i = 0 ; i < this.data.length ; i++ ){
-
-            let show = this.data[i];
-
-            if( !show.isVisible(this.showFilms, this.showTV, this.showShorts) ){
-                continue;
-            }
-
-            if( show.type === "episode" ){
-
-                let eps = "";
-                let isReleased = false;
-
-                for( var ii = i ; ii < this.data.length ; ii++ ){
-                    let show2 = this.data[ii];
-                    if( show2.show === show.show ){
-                        eps += show2.getEpisode();
-                        if( show2.releaseDate < _.now() ){
-                            isReleased = true;
-                        }
-                    } else if( show2.isVisible(this.showFilms, this.showTV, this.showShorts) ) {
-                        break;
-                    }
-                }
-                i = ii-1;
-
-                list += show.getHtml(eps,isReleased);
-
-            } else {
-                list += show.getHtml();
-            }
-
-        }
-
-        this.el.html(list);
-
+        this.el.innerHTML = getHtml(this.data, this.showFilms, this.showTV, this.showShorts);
     }
-
 
 }
