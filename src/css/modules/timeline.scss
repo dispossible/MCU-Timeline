@@ -2,112 +2,49 @@
     padding: 32px 16px 0;
     background: $color-bg;
     position: relative;
-    box-shadow: 0 1000px 0 1000px $color-bg;
 
     &-ctrls {
         margin-bottom: 24px;
         text-align: left;
-    }
-    &-btns {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-        text-align: right;
-        vertical-align: bottom;
-        margin-top: 8px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 8px;
+        @media(min-width: 450px){
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(min-width: 600px){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 
     &-list {
-        padding-left: 16px;
-        border-left: 2px solid rgba(white,0.6);
-        margin-bottom: 64px;
         position: relative;
-        .is-showFilms &,
-        .is-showShorts &,
-        .is-showTv & {
-            &:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: -2px;
-                width: 2px;
-                height: 16px;
-                background: $color-bg;
-            }
-            &:after {
-                content: "";
-                position: absolute;
-                top: 100%;
-                left: -2px;
-                width: 2px;
-                height: 64px;
-                background: linear-gradient(180deg, rgba(white,0.6), transparent);
-            }
-        }
-        .is-flipped & {
-            margin-top: 32px;
-            &:before {
-                background: linear-gradient(0deg, rgba(white,0.6), transparent);
-                top: auto;
-                bottom: 100%;
-            }
-            &:after {
-                width: 8px;
-                height: 2px;
-                background: rgba(white,0.6);
-                margin-left: -3px;
-            }
-        }
     }
 
     &-card {
-        padding: 16px;
         margin-bottom: 16px;
         background: white;
-        border-radius: 3px;
-        box-shadow: 0 3px 2px 1px rgba(black,0.4);
+        border-radius: 6px;
+        overflow: hidden;
         position: relative;
-        &:before {
-            content: "";
-            position: absolute;
-            right: 100%;
-            top: 16px;
-            width: 16px;
-            height: 2px;
-            background: rgba(white,0.6);
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            top: 12px;
-            right: 100%;
-            margin-right: 12px;
-            width: 10px;
-            height: 10px;
-            background: $color-primary;
-            border-radius: 99px;
-        }
-        &_film {
-            &:after {
-                width: 14px;
-                height: 14px;
-                top: 10px;
-                margin-right: 10px;
-            }
-        }
-        &_short,
-        &_episode {
-            &:after {
-                top: 13px;
-                margin-right: 12px;
-                width: 8px;
-                height: 8px;
-            }
-        }
         &.is-unreleased {
             opacity: 0.6;
         }
+        @media(min-width: 400px){
+            display: grid;
+            grid-template-columns: 120px 2fr;
+        }
+    }
+
+    &-posterFrame {
+        background: black;
+    }
+
+    &-poster {
+        max-width: 100%;
+        max-height: 200px;
+        display: block;
+        margin: auto;
     }
 
 
@@ -134,52 +71,57 @@
         display: inline-block;
         vertical-align: top;
         padding-right: 8px;
-        width: 20%;
-        @media(min-width: 650px){
-            width: 15%;
-        }
     }
 
     &-detail {
+        padding: 16px;
         display: inline-block;
         vertical-align: top;
         width: 100%;
-        @media(min-width: 400px){
-            width: 80%;
-        }
-        @media(min-width: 650px){
-            width: 85%;
-        }
     }
 
     &-epsTitle {
-        border-bottom: 1px solid rgba(black,0.2);
-        padding: 8px 0 4px;
-        margin-bottom: 8px;
-        width: 66%;
+        border-top: 4px solid $color-bg;
+        padding: 16px 16px 8px;
         font-weight: normal;
+        font-weight: bold;
     }
 
     &-eps {
-        list-style: none;
-        padding-left: 8px;
+        @media(min-width: 400px){
+            grid-column: 1 / 3;
+        }
     }
+
+    &-epList {
+        list-style: none;
+        padding: 16px;
+    }
+
     &-ep {
-        padding-bottom: 6px;
+        padding-bottom: 8px;
+        display: grid;
+        grid-template-columns: 2em 1fr auto;
         &.is-unreleased {
             opacity: 0.6;
         }
     }
+
     &-epNum {
         display: inline-block;
         vertical-align: top;
         padding-right: 8px;
-        width: 2em;
         color: rgba($color-text,0.8);
         text-align: right;
     }
+
     &-epName {
         display: inline-block;
         vertical-align: top;
+    }
+
+    &-release {
+        color: rgba($color-text,0.8);
+        padding-left: 8px;
     }
 }

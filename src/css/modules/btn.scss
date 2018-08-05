@@ -3,7 +3,6 @@
     border-radius: 3px;
     display: inline-block;
     color: rgba(white,0.5);
-    margin: 8px 0 0;
     border: 0;
     position: relative;
     background: {
@@ -13,20 +12,11 @@
     }
     transition: 300ms ease;
     outline: 0;
-    flex-grow: 1;
-    flex-basis: 100%;
-    @media(min-width: 350px){
-        flex-basis: 40%;
-        &:nth-of-type(even) {
-            margin-left: 8px;
-        }
+
+    &:focus {
+        box-shadow: 1px 1px 0 0 rgba(white,0.8);
     }
-    @media(min-width: 600px){
-        flex-basis: 20%;
-        &:not(:first-child) {
-            margin-left: 8px;
-        }
-    }
+
     &:after {
         content: "";
         display: inline-block;
@@ -40,6 +30,7 @@
             repeat: no-repeat;
         }
     }
+
     &::-moz-focus-inner {
         border: 0;
     }

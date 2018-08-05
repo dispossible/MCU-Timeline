@@ -126,6 +126,14 @@ export default class Timeline {
             });
         }
 
+
+        this.el.addEventListener("error", e => {
+            if( e.target.tagName === "IMG" ){
+                e.target.remove();
+            }
+        }, true);
+
+
         this.setClasses();
         this.sort();
         this.render();

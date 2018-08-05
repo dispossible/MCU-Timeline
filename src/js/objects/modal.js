@@ -35,9 +35,9 @@ export default class Modal {
         this.el.appendChild(this.content);
 
 
-        this.button.addEventListener("click", this.open);
-        this.closeBtn.addEventListener("click", this.close);
-        this.overlay.addEventListener("click",this.close);
+        this.button.addEventListener("click", this.open.bind(this));
+        this.closeBtn.addEventListener("click", this.close.bind(this));
+        this.overlay.addEventListener("click",this.close.bind(this));
 
         document.body.appendChild(this.el);
 

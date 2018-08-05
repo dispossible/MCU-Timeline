@@ -1,5 +1,6 @@
 import isNumber from 'lodash/isNumber';
 import isString from 'lodash/isString';
+import padStart from 'lodash/padStart';
 
 export default class Show {
 
@@ -18,6 +19,7 @@ export default class Show {
         this.type = type;
         this.order = show.watchOrder;
         this.crono = crono;
+        this.imgSrc = show.img;
 
     }
 
@@ -26,13 +28,17 @@ export default class Show {
 
         let html = `<div class="timeline-card timeline-card_${this.type} ${(this.releaseDate > Date.now())?"is-unreleased":""}">
 
-                <div class="timeline-type"> ${this.type} </div>`+
+                <div class="timeline-posterFrame">
+                    <img class="timeline-poster" src="img/poster/${this.imgSrc}" alt="Poster for ${this.name}"/>
+                </div>
 
-                `<div class="timeline-detail">
+                <div class="timeline-detail">
+
+                    <div class="timeline-type"> ${this.type} </div>
 
                     <h2 class="timeline-title"> ${this.name} </h2>
 
-                    <time class="timeline-date">${this.writeDate(this.releaseDate)}</time>
+                    <time class="timeline-date">Released: ${this.writeDate(this.releaseDate)}</time>
 
                 </div>
 
@@ -67,6 +73,10 @@ export default class Show {
 
         return date.getDate() + suffix + " " + months[date.getMonth()] + " " + date.getFullYear();
 
+    }
+
+    writeShortDate(date){
+        return padStart(date.getDate(), 2, "0") + "/" + padStart(date.getMonth() + 1, 2, "0") + "/" + date.getFullYear();
     }
 
     isVisible(showFilm,showTv,showShort){
