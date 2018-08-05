@@ -89,14 +89,18 @@ export default class Timeline {
                 const el = e.target.closest("[data-toggle]");
                 if( !el ) return;
 
-                if( el.getAttribute("data-toggle") === "tv" )
+                if( el.getAttribute("data-toggle") === "tv" ){
                     this.showTV = !this.showTV;
-
-                if( el.getAttribute("data-toggle") === "short" )
+                    gtag({ event: "Toggle TV visibility", value: this.showTV });
+                }
+                else if( el.getAttribute("data-toggle") === "short" ){
                     this.showShorts = !this.showShorts;
-
-                if( el.getAttribute("data-toggle") === "film" )
+                    gtag({ event: "Toggle Shorts visibility", value: this.showShorts });
+                }
+                else if( el.getAttribute("data-toggle") === "film" ){
                     this.showFilms = !this.showFilms;
+                    gtag({ event: "Toggle Film visibility", value: this.showFilms });
+                }
 
                 this.setClasses();
                 this.sort();
@@ -108,6 +112,7 @@ export default class Timeline {
         if( sort ){
             sort.addEventListener("change", e => {
                 this.order = e.target.value;
+                gtag({ event: "Change sort type", value: this.order });
                 this.sort();
                 this.render();
             });
@@ -120,6 +125,8 @@ export default class Timeline {
 
                 if( this.flipOrder ) this.el.parentElement.classList.add("is-flipped");
                 else this.el.parentElement.classList.remove("is-flipped");
+
+                gtag({ event: "Flip sort order", value: this.flipOrder });
 
                 this.sort();
                 this.render();

@@ -4,6 +4,15 @@ import Timeline from './objects/timeline';
 import Modal from './objects/Modal';
 
 
+//Analytics
+window.dataLayer = window.dataLayer || [];
+window.gtag = function(){
+	dataLayer.push(arguments);
+};
+gtag('js', new Date());
+gtag('config', 'UA-40732084-2');
+
+
 //Load fonts
 WebFont.load({
     google: {
@@ -21,18 +30,3 @@ const el = document.querySelector("[data-timeline]");
 const timeline = new Timeline(el, mcuData.shows);
 
 document.querySelectorAll("[data-modal]").forEach(el=>new Modal(el));
-
-
-//Prerender
-export default timeline.render.bind(timeline);
-
-
-
-//Analytics
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-40732084-2', 'auto');
-ga('send', 'pageview');

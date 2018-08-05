@@ -8,9 +8,7 @@ export default class Modal {
 
             <p> Code and design created by <a href='//dispossible.com'>Dispossible</a>, and the open source project is available on <a href='https://github.com/dispossible/MCU-Timeline'>GitHub</a>. </p>
 
-            <p> Marvel logo and characters belong to <a href='//marvel.com/'>Marvel&copy;</a>. </p>
-
-            <p> Tools used include; Node, Gulp, Bower, Babel, Photoshop, Sublime Text, Jquery, and Lodash. </p>
+            <p> Marvel logo, images and characters belong to <a href='//marvel.com/'>Marvel&copy;</a>. </p>
 
             <p> If you would like to contribute towards my server costs to keep this site running then <a target="_blank" href="//paypal.me/dispossible">PayPal donations</a> would be gratefully accepted. </p>`;
 

@@ -29,7 +29,9 @@ export default class Show {
         let html = `<div class="timeline-card timeline-card_${this.type} ${(this.releaseDate > Date.now())?"is-unreleased":""}">
 
                 <div class="timeline-posterFrame">
-                    <img class="timeline-poster" src="img/poster/${this.imgSrc}" alt="Poster for ${this.name}"/>
+                    ${(isString(this.imgSrc))?`
+                        <img class="timeline-poster" src="img/poster/${this.imgSrc}" alt="Poster for ${this.name}"/>
+                    `:``}
                 </div>
 
                 <div class="timeline-detail">
