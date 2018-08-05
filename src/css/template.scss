@@ -1,9 +1,9 @@
-@import "reset";
-@import "vars";
+@import "./reset.scss";
+@import "./vars.scss";
 
-@import "base";
-@import "layout";
+@import "./base.scss";
+@import "./layout.scss";
 
-@import "modules";
+@import "./modules.scss";
 
-@import "utils";
+@import "./utils.scss";

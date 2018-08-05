@@ -26,8 +26,8 @@ export default class Modal {
         this.content = document.createElement("div");
         this.content.classList.add("modal-content");
 
-        this.content.appendChild(this.closeBtn);
         this.content.innerHTML = this.aboutContent;
+        this.content.appendChild(this.closeBtn);
 
         this.el.appendChild(this.overlay);
         this.el.appendChild(this.content);

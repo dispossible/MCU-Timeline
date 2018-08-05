@@ -6,7 +6,6 @@ import del from 'del';
 
 import imageMin from 'gulp-imagemin';
 import postCss from 'gulp-postcss';
-import sass from 'gulp-sass';
 import rename from 'gulp-rename';
 import htmlMin from 'gulp-htmlmin';
 import inject from 'gulp-inject-string';
@@ -38,7 +37,6 @@ function compressImages(){
 
 function styling(){
     return src("src/css/template.scss")
-        .pipe(sass().on('error',sass.logError))
         .pipe(postCss())
         .pipe(rename("style.css"))
         .pipe(dest("dist/"));
