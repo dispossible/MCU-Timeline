@@ -40,7 +40,7 @@ export function getHtml(data, showFilms = true, showTV = true, showShorts = true
 
             for( var ii = i ; ii < data.length ; ii++ ){
                 let show2 = data[ii];
-                if( show2.show === show.show ){
+                if( show2.show === show.show && show2.season === show.season ){
                     eps += show2.getEpisode();
                     if( show2.releaseDate < Date.now() ){
                         isReleased = true;
