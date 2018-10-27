@@ -23,39 +23,25 @@ export default class Episode extends Show {
 
 
     getHtml(episodes,isReleased){
+        let imgSrc = (isString(this.imgSrc))? `img/poster/${this.imgSrc}` : `img/poster/default.jpg`;
 
         let html = `<div class="timeline-card timeline-card_${this.type} ${isReleased?"":"is-unreleased"}">
-
                 <div class="timeline-posterFrame">
-                    ${(isString(this.imgSrc))?`
-                        <img class="timeline-poster" src="img/poster/${this.imgSrc}" alt="Poster for ${this.show}"/>
-                    `:``}
+                    <img class="timeline-poster" src="${imgSrc}" alt="Poster for ${this.show}"/>
                 </div>
-
                 <div class="timeline-detail">
-
                     <div class="timeline-type"> TV </div>
-
                     <h2 class="timeline-title"> ${this.show} <small class="timeline-subTitle"> Season ${this.season} </small> </h2>
-
                     <time class="timeline-date">Released: ${this.writeDate(this.releaseDate)}</time>
-
                 </div>
-
                 <div class="timeline-eps">
-                    
                     <h3 class="timeline-epsTitle">Episodes</h3>
-
                     <ol class="timeline-epList">
                         ${episodes}
                     </ol>
-
                 </div>
-
             </div>`;
-
         return html;
-
     }
 
     getEpisode(){

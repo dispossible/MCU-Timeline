@@ -26,24 +26,17 @@ export default class Show {
 
     getHtml(){
 
+        let imgSrc = (isString(this.imgSrc))? `img/poster/${this.imgSrc}` : `img/poster/default.jpg`;
+
         let html = `<div class="timeline-card timeline-card_${this.type} ${(this.releaseDate > Date.now())?"is-unreleased":""}">
-
                 <div class="timeline-posterFrame">
-                    ${(isString(this.imgSrc))?`
-                        <img class="timeline-poster" src="img/poster/${this.imgSrc}" alt="Poster for ${this.name}"/>
-                    `:``}
+                    <img class="timeline-poster" src="${imgSrc}" alt="Poster for ${this.name}"/>
                 </div>
-
                 <div class="timeline-detail">
-
                     <div class="timeline-type"> ${this.type} </div>
-
                     <h2 class="timeline-title"> ${this.name} </h2>
-
                     <time class="timeline-date">Released: ${this.writeDate(this.releaseDate)}</time>
-
                 </div>
-
             </div>`;
 
         return html;

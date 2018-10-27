@@ -5,11 +5,8 @@ export default class Modal {
         this.button = el;
 
         this.aboutContent = `<h2> MCU Timeline </h2>
-
             <p> Code and design created by <a href='//dispossible.com'>Dispossible</a>, and the open source project is available on <a href='https://github.com/dispossible/MCU-Timeline'>GitHub</a>. </p>
-
             <p> Marvel logo, images and characters belong to <a href='//marvel.com/'>Marvel&copy;</a>. </p>
-
             <p> If you would like to contribute towards my server costs to keep this site running then <a target="_blank" href="//paypal.me/dispossible">PayPal donations</a> would be gratefully accepted. </p>`;
 
 

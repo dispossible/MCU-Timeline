@@ -581,7 +581,7 @@
         {
             "type": "Television",
             "name": "Iron Fist",
-            "img": null,
+            "img": "IronFist2.jpg",
             "episodes": [
                 {"season": 2, "episode": 1, "title": "The Fury of Iron Fist", "releaseDate": [2018, "Sep", 7], "watchOrder": 2200},
                 {"season": 2, "episode": 2, "title": "The City's Not for Burning", "releaseDate": [2018, "Sep", 7], "watchOrder": 2201},
@@ -596,8 +596,29 @@
             ]
         },
         {
+            "type": "Television",
+            "name": "Daredevil",
+            "img": "Daredevil3.jpg",
+            "episodes": [
+                {"season": 3, "episode": 1, "title": "Resurrection", "releaseDate": [2018, "Oct", 19], "watchOrder": 2220},
+                {"season": 3, "episode": 2, "title": "Please", "releaseDate": [2018, "Oct", 19], "watchOrder": 2221},
+                {"season": 3, "episode": 3, "title": "No Good Deed", "releaseDate": [2018, "Oct", 19], "watchOrder": 2222},
+                {"season": 3, "episode": 4, "title": "Blindsided", "releaseDate": [2018, "Oct", 19], "watchOrder": 2223},
+                {"season": 3, "episode": 5, "title": "The Perfect Game", "releaseDate": [2018, "Oct", 19], "watchOrder": 2224},
+                {"season": 3, "episode": 6, "title": "The Devil You Know", "releaseDate": [2018, "Oct", 19], "watchOrder": 2225},
+                {"season": 3, "episode": 7, "title": "Aftermath", "releaseDate": [2018, "Oct", 19], "watchOrder": 2226},
+                {"season": 3, "episode": 8, "title": "Upstairs/Downstairs", "releaseDate": [2018, "Oct", 19], "watchOrder": 2227},
+                {"season": 3, "episode": 9, "title": "Revelations", "releaseDate": [2018, "Oct", 19], "watchOrder": 2228},
+                {"season": 3, "episode": 10, "title": "Karen", "releaseDate": [2018, "Oct", 19], "watchOrder": 2229},
+                {"season": 3, "episode": 11, "title": "Reunion", "releaseDate": [2018, "Oct", 19], "watchOrder": 2230},
+                {"season": 3, "episode": 12, "title": "One Last Shot", "releaseDate": [2018, "Oct", 19], "watchOrder": 2231},
+                {"season": 3, "episode": 13, "title": "A New Napkin", "releaseDate": [2018, "Oct", 19], "watchOrder": 2232}
+            ]
+        },
+        {
             "type": "Film",
             "name": "Captain Marvel",
+            "img": "CaptainMarvel1.jpg",
             "releaseDate": [2019, "Mar", 8],
             "cronoOrder": 400,
             "watchOrder": 2250
