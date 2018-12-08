@@ -616,6 +616,26 @@
             ]
         },
         {
+            "type": "Television",
+            "name": "Runaways",
+            "img": "Runaways2.jpg",
+            "episodes": [
+                {"season": 2, "episode": 1, "title": "Gimmie Shelter", "releaseDate": [2018, "Dec", 21], "watchOrder": 2235},
+                {"season": 2, "episode": 2, "title": "Radio One", "releaseDate": [2018, "Dec", 21], "watchOrder": 2236},
+                {"season": 2, "episode": 3, "title": "Double Zeros", "releaseDate": [2018, "Dec", 21], "watchOrder": 2237},
+                {"season": 2, "episode": 4, "title": "Old School", "releaseDate": [2018, "Dec", 21], "watchOrder": 2238},
+                {"season": 2, "episode": 5, "title": "Rock Bottom", "releaseDate": [2018, "Dec", 21], "watchOrder": 2239},
+                {"season": 2, "episode": 6, "title": "Bury Another", "releaseDate": [2018, "Dec", 21], "watchOrder": 2240},
+                {"season": 2, "episode": 7, "title": "Last Rites", "releaseDate": [2018, "Dec", 21], "watchOrder": 2241},
+                {"season": 2, "episode": 8, "title": "Past Life", "releaseDate": [2018, "Dec", 21], "watchOrder": 2242},
+                {"season": 2, "episode": 9, "title": "Big Shot", "releaseDate": [2018, "Dec", 21], "watchOrder": 2243},
+                {"season": 2, "episode": 10, "title": "Hostile Takeover", "releaseDate": [2018, "Dec", 21], "watchOrder": 2244},
+                {"season": 2, "episode": 11, "title": "Last Waltz", "releaseDate": [2018, "Dec", 21], "watchOrder": 2245},
+                {"season": 2, "episode": 12, "title": "Earth Angel", "releaseDate": [2018, "Dec", 21], "watchOrder": 2246},
+                {"season": 2, "episode": 13, "title": "Split Up", "releaseDate": [2018, "Dec", 21], "watchOrder": 2247}
+            ]
+        },
+        {
             "type": "Film",
             "name": "Captain Marvel",
             "img": "CaptainMarvel1.jpg",
@@ -625,8 +645,9 @@
         },
         {
             "type": "Film",
-            "name": "Avengers: Untitled",
-            "releaseDate": [2019, "May", 3],
+            "name": "Avengers: Endgame",
+            "img": "Avengers4.jpg",
+            "releaseDate": [2019, "Apr", 26],
             "watchOrder": 2300
         },
         {
