@@ -636,31 +636,89 @@
             ]
         },
         {
+            "type": "Television",
+            "name": "The Punisher",
+            "img": "Punisher2.jpg",
+            "episodes": [
+                {"season": 2, "episode": 1, "title": "Roadhouse Blues", "releaseDate": [2019, "Jan", 18], "watchOrder": 2250},
+                {"season": 2, "episode": 2, "title": "Fight or Flight", "releaseDate": [2019, "Jan", 18], "watchOrder": 2251},
+                {"season": 2, "episode": 3, "title": "Trouble the Water", "releaseDate": [2019, "Jan", 18], "watchOrder": 2252},
+                {"season": 2, "episode": 4, "title": "Scar Tissue", "releaseDate": [2019, "Jan", 18], "watchOrder": 2253},
+                {"season": 2, "episode": 5, "title": "One-Eyed Jacks", "releaseDate": [2019, "Jan", 18], "watchOrder": 2254},
+                {"season": 2, "episode": 6, "title": "Nakazat", "releaseDate": [2019, "Jan", 18], "watchOrder": 2255},
+                {"season": 2, "episode": 7, "title": "One Bad Day", "releaseDate": [2019, "Jan", 18], "watchOrder": 2256},
+                {"season": 2, "episode": 8, "title": "My Brother's Keeper", "releaseDate": [2019, "Jan", 18], "watchOrder": 2257},
+                {"season": 2, "episode": 9, "title": "Flustercluck", "releaseDate": [2019, "Jan", 18], "watchOrder": 2258},
+                {"season": 2, "episode": 10, "title": "The Dark Hearts of Men", "releaseDate": [2019, "Jan", 18], "watchOrder": 2259},
+                {"season": 2, "episode": 11, "title": "The Abyss", "releaseDate": [2019, "Jan", 18], "watchOrder": 2260},
+                {"season": 2, "episode": 12, "title": "Collision Course", "releaseDate": [2019, "Jan", 18], "watchOrder": 2261},
+                {"season": 2, "episode": 13, "title": "The Whirlwind", "releaseDate": [2019, "Jan", 18], "watchOrder": 2262}
+            ]
+        },
+        {
             "type": "Film",
             "name": "Captain Marvel",
             "img": "CaptainMarvel1.jpg",
             "releaseDate": [2019, "Mar", 8],
             "cronoOrder": 400,
-            "watchOrder": 2250
+            "watchOrder": 2300
+        },
+        {
+            "type": "Television",
+            "name": "Cloak & Dagger",
+            "img": "CloakAndDagger2.jpg",
+            "episodes": [
+                {"season": 2, "episode": 1, "title": "Restless Energy", "releaseDate": [2019, "Apr", 4], "watchOrder": 2351},
+                {"season": 2, "episode": 2, "title": "White Lines", "releaseDate": [2019, "Apr", 4], "watchOrder": 2352},
+                {"season": 2, "episode": 3, "title": "Shadow Selves", "releaseDate": [2019, "Apr", 11], "watchOrder": 2353},
+                {"season": 2, "episode": 4, "title": "Rabbit Hold", "releaseDate": [2019, "Apr", 18], "watchOrder": 2354},
+                {"season": 2, "episode": 5, "title": "Alignment Chart", "releaseDate": [2019, "Apr", 25], "watchOrder": 2355},
+                {"season": 2, "episode": 6, "title": "Untitled", "releaseDate": [2019, "May", 2], "watchOrder": 2356},
+                {"season": 2, "episode": 7, "title": "Untitled", "releaseDate": [2019, "May", 9], "watchOrder": 2357},
+                {"season": 2, "episode": 8, "title": "Untitled", "releaseDate": [2019, "May", 6], "watchOrder": 2358},
+                {"season": 2, "episode": 9, "title": "Untitled", "releaseDate": [2019, "May", 23], "watchOrder": 2359},
+                {"season": 2, "episode": 10, "title": "Untitled", "releaseDate": [2019, "May", 30], "watchOrder": 2360}
+            ]
         },
         {
             "type": "Film",
             "name": "Avengers: Endgame",
             "img": "Avengers4.jpg",
             "releaseDate": [2019, "Apr", 26],
-            "watchOrder": 2300
+            "watchOrder": 2400
+        },
+        {
+            "type": "Television",
+            "name": "Agents of S.H.I.E.L.D.",
+            "img": "AoS6.jpg",
+            "episodes": [
+                {"season": 6, "episode": 1, "title": "Missing Pieces", "releaseDate": [2019, "May", 10], "watchOrder": 2420},
+                {"season": 6, "episode": 2, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2421},
+                {"season": 6, "episode": 3, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2422},
+                {"season": 6, "episode": 4, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2423},
+                {"season": 6, "episode": 5, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2424},
+                {"season": 6, "episode": 6, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2425},
+                {"season": 6, "episode": 7, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2426},
+                {"season": 6, "episode": 8, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2427},
+                {"season": 6, "episode": 9, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2428},
+                {"season": 6, "episode": 10, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2429},
+                {"season": 6, "episode": 11, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2430},
+                {"season": 6, "episode": 12, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2431},
+                {"season": 6, "episode": 13, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2432}
+            ]
         },
         {
             "type": "Film",
-            "name": "Spiderman: Untitled",
+            "name": "Spiderman: Far From Home",
+            "img": "SpiderMan2.jpg",
             "releaseDate": [2019, "Jul", 5],
-            "watchOrder": 2350
+            "watchOrder": 2550
         },
         {
             "type": "Film",
             "name": "Guardians of the Galaxy Vol. 3",
             "releaseDate": [2020, "Jan", 1],
-            "watchOrder": 2400
+            "watchOrder": 2600
         }
     ]
 }
