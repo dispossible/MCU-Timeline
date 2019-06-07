@@ -673,11 +673,11 @@
                 {"season": 2, "episode": 3, "title": "Shadow Selves", "releaseDate": [2019, "Apr", 11], "watchOrder": 2353},
                 {"season": 2, "episode": 4, "title": "Rabbit Hold", "releaseDate": [2019, "Apr", 18], "watchOrder": 2354},
                 {"season": 2, "episode": 5, "title": "Alignment Chart", "releaseDate": [2019, "Apr", 25], "watchOrder": 2355},
-                {"season": 2, "episode": 6, "title": "Untitled", "releaseDate": [2019, "May", 2], "watchOrder": 2356},
-                {"season": 2, "episode": 7, "title": "Untitled", "releaseDate": [2019, "May", 9], "watchOrder": 2357},
-                {"season": 2, "episode": 8, "title": "Untitled", "releaseDate": [2019, "May", 6], "watchOrder": 2358},
-                {"season": 2, "episode": 9, "title": "Untitled", "releaseDate": [2019, "May", 23], "watchOrder": 2359},
-                {"season": 2, "episode": 10, "title": "Untitled", "releaseDate": [2019, "May", 30], "watchOrder": 2360}
+                {"season": 2, "episode": 6, "title": "B Sides", "releaseDate": [2019, "May", 2], "watchOrder": 2356},
+                {"season": 2, "episode": 7, "title": "Vikingtown Sound", "releaseDate": [2019, "May", 9], "watchOrder": 2357},
+                {"season": 2, "episode": 8, "title": "Two Player", "releaseDate": [2019, "May", 16], "watchOrder": 2358},
+                {"season": 2, "episode": 9, "title": "Blue Note", "releaseDate": [2019, "May", 23], "watchOrder": 2359},
+                {"season": 2, "episode": 10, "title": "Level Up", "releaseDate": [2019, "May", 30], "watchOrder": 2360}
             ]
         },
         {
@@ -693,18 +693,18 @@
             "img": "AoS6.jpg",
             "episodes": [
                 {"season": 6, "episode": 1, "title": "Missing Pieces", "releaseDate": [2019, "May", 10], "watchOrder": 2420},
-                {"season": 6, "episode": 2, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2421},
-                {"season": 6, "episode": 3, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2422},
-                {"season": 6, "episode": 4, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2423},
-                {"season": 6, "episode": 5, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2424},
-                {"season": 6, "episode": 6, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2425},
-                {"season": 6, "episode": 7, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2426},
-                {"season": 6, "episode": 8, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2427},
-                {"season": 6, "episode": 9, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2428},
-                {"season": 6, "episode": 10, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2429},
-                {"season": 6, "episode": 11, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2430},
-                {"season": 6, "episode": 12, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2431},
-                {"season": 6, "episode": 13, "title": "Untitled", "releaseDate": [2019, "May", 10], "watchOrder": 2432}
+                {"season": 6, "episode": 2, "title": "Window of Opportunity", "releaseDate": [2019, "May", 17], "watchOrder": 2421},
+                {"season": 6, "episode": 3, "title": "Fear and Loathing on the Planet of Kitson", "releaseDate": [2019, "May", 24], "watchOrder": 2422},
+                {"season": 6, "episode": 4, "title": "Code Yellow", "releaseDate": [2019, "May", 31], "watchOrder": 2423},
+                {"season": 6, "episode": 5, "title": "The Other Thing", "releaseDate": [2019, "Jun", 14], "watchOrder": 2424},
+                {"season": 6, "episode": 6, "title": "Inescapable", "releaseDate": [2019, "Jun", 21], "watchOrder": 2425},
+                {"season": 6, "episode": 7, "title": "Toldja", "releaseDate": [2019, "Jun", 28], "watchOrder": 2426},
+                {"season": 6, "episode": 8, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2427},
+                {"season": 6, "episode": 9, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2428},
+                {"season": 6, "episode": 10, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2429},
+                {"season": 6, "episode": 11, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2430},
+                {"season": 6, "episode": 12, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2431},
+                {"season": 6, "episode": 13, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2432}
             ]
         },
         {

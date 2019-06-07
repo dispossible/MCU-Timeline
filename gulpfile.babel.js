@@ -64,4 +64,4 @@ export function watcher(cb){
     watch("src/*.html",createHtml);
     watch(["src/*.*","!src/*.html"],staticFiles);
     cb();
-};
+}
