@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=development gulp",
     "build-prod": "cross-env NODE_ENV=production gulp",
-    "watch": "cross-env NODE_ENV=development gulp watcher"
+    "start": "cross-env NODE_ENV=development gulp start"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.7",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.2.0",
     "cssnano": "^4.1.10",

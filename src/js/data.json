@@ -572,13 +572,6 @@
             "img": "AntMan2.jpg"
         },
         {
-            "type": "Film",
-            "name": "Avengers: Infinity War",
-            "releaseDate": [2018, "Apr", 27],
-            "watchOrder": 2190,
-            "img": "Avengers3.jpg"
-        },
-        {
             "type": "Television",
             "name": "Iron Fist",
             "img": "IronFist2.jpg",
@@ -681,30 +674,57 @@
             ]
         },
         {
+            "type": "Television",
+            "name": "Jessica Jones",
+            "img": "JessicaJones3.jpg",
+            "episodes": [
+                {"season": 3, "episode": 1, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2450},
+                {"season": 3, "episode": 2, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2451},
+                {"season": 3, "episode": 3, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2452},
+                {"season": 3, "episode": 4, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2453},
+                {"season": 3, "episode": 5, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2454},
+                {"season": 3, "episode": 6, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2455},
+                {"season": 3, "episode": 7, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2456},
+                {"season": 3, "episode": 8, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2457},
+                {"season": 3, "episode": 9, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2458},
+                {"season": 3, "episode": 10, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2459},
+                {"season": 3, "episode": 11, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2460},
+                {"season": 3, "episode": 12, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2461},
+                {"season": 3, "episode": 13, "title": "Untitled", "releaseDate": [2019, "Jun", 14], "watchOrder": 2462}
+            ]
+        },
+        {
+            "type": "Film",
+            "name": "Avengers: Infinity War",
+            "releaseDate": [2018, "Apr", 27],
+            "watchOrder": 2700,
+            "img": "Avengers3.jpg"
+        },
+        {
             "type": "Film",
             "name": "Avengers: Endgame",
             "img": "Avengers4.jpg",
             "releaseDate": [2019, "Apr", 26],
-            "watchOrder": 2400
+            "watchOrder": 2800
         },
         {
             "type": "Television",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS6.jpg",
             "episodes": [
-                {"season": 6, "episode": 1, "title": "Missing Pieces", "releaseDate": [2019, "May", 10], "watchOrder": 2420},
-                {"season": 6, "episode": 2, "title": "Window of Opportunity", "releaseDate": [2019, "May", 17], "watchOrder": 2421},
-                {"season": 6, "episode": 3, "title": "Fear and Loathing on the Planet of Kitson", "releaseDate": [2019, "May", 24], "watchOrder": 2422},
-                {"season": 6, "episode": 4, "title": "Code Yellow", "releaseDate": [2019, "May", 31], "watchOrder": 2423},
-                {"season": 6, "episode": 5, "title": "The Other Thing", "releaseDate": [2019, "Jun", 14], "watchOrder": 2424},
-                {"season": 6, "episode": 6, "title": "Inescapable", "releaseDate": [2019, "Jun", 21], "watchOrder": 2425},
-                {"season": 6, "episode": 7, "title": "Toldja", "releaseDate": [2019, "Jun", 28], "watchOrder": 2426},
-                {"season": 6, "episode": 8, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2427},
-                {"season": 6, "episode": 9, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2428},
-                {"season": 6, "episode": 10, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2429},
-                {"season": 6, "episode": 11, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2430},
-                {"season": 6, "episode": 12, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2431},
-                {"season": 6, "episode": 13, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2432}
+                {"season": 6, "episode": 1, "title": "Missing Pieces", "releaseDate": [2019, "May", 10], "watchOrder": 2850},
+                {"season": 6, "episode": 2, "title": "Window of Opportunity", "releaseDate": [2019, "May", 17], "watchOrder": 2851},
+                {"season": 6, "episode": 3, "title": "Fear and Loathing on the Planet of Kitson", "releaseDate": [2019, "May", 24], "watchOrder": 2852},
+                {"season": 6, "episode": 4, "title": "Code Yellow", "releaseDate": [2019, "May", 31], "watchOrder": 2853},
+                {"season": 6, "episode": 5, "title": "The Other Thing", "releaseDate": [2019, "Jun", 14], "watchOrder": 2854},
+                {"season": 6, "episode": 6, "title": "Inescapable", "releaseDate": [2019, "Jun", 21], "watchOrder": 2855},
+                {"season": 6, "episode": 7, "title": "Toldja", "releaseDate": [2019, "Jun", 28], "watchOrder": 2856},
+                {"season": 6, "episode": 8, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2857},
+                {"season": 6, "episode": 9, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2858},
+                {"season": 6, "episode": 10, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2859},
+                {"season": 6, "episode": 11, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2860},
+                {"season": 6, "episode": 12, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2861},
+                {"season": 6, "episode": 13, "title": "Untitled", "releaseDate": [2019, "Jul", 1], "watchOrder": 2862}
             ]
         },
         {
@@ -712,13 +732,13 @@
             "name": "Spiderman: Far From Home",
             "img": "SpiderMan2.jpg",
             "releaseDate": [2019, "Jul", 5],
-            "watchOrder": 2550
+            "watchOrder": 2900
         },
         {
             "type": "Film",
             "name": "Guardians of the Galaxy Vol. 3",
             "releaseDate": [2020, "Jan", 1],
-            "watchOrder": 2600
+            "watchOrder": 2950
         }
     ]
 }

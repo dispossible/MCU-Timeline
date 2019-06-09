@@ -3,6 +3,8 @@ import { series, parallel, src, dest, watch } from 'gulp';
 import webpack  from 'webpack-stream';
 import webpackConfig from './webpack.config';
 import del from 'del';
+import browserSync from 'browser-sync';
+const bs = browserSync.create();
 
 import imageMin from 'gulp-imagemin';
 import postCss from 'gulp-postcss';
@@ -12,6 +14,7 @@ import inject from 'gulp-inject-string';
 
 import { parseData, getHtml } from './src/js/objects/timeline';
 import mcuData from './src/js/data.json';
+
 
 
 function clean(){
@@ -39,7 +42,8 @@ function styling(){
     return src("src/css/template.scss")
         .pipe(postCss())
         .pipe(rename("style.css"))
-        .pipe(dest("dist/"));
+        .pipe(dest("dist/"))
+        .pipe(bs.stream());
 }
 
 function createHtml(){
@@ -53,15 +57,23 @@ function createHtml(){
         .pipe(dest("dist/"));
 }
 
+const build = series( clean, parallel(staticFiles, runWebpack, compressImages, styling, createHtml) );
+
+export default build;
 
 
-export default series( clean, parallel(staticFiles, runWebpack, compressImages, styling, createHtml) );
+function startServer(){
+    bs.init({
+        server: {
+            baseDir: "./dist/"
+        }
+    });
 
-export function watcher(cb){
-    watch("src/js/**",runWebpack);
-    watch("src/img/**",compressImages);
+    watch("src/js/**",runWebpack).on("change", bs.reload);
+    watch("src/img/**",compressImages).on("change", bs.reload);
     watch("src/css/**",styling);
-    watch("src/*.html",createHtml);
-    watch(["src/*.*","!src/*.html"],staticFiles);
-    cb();
+    watch("src/*.html",createHtml).on("change", bs.reload);
+    watch(["src/*.*","!src/*.html"],staticFiles).on("change", bs.reload);
 }
+
+export const start = series(build, startServer);
