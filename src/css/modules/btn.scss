@@ -1,88 +1,54 @@
 .btn {
     padding: 6px 12px;
     border-radius: 3px;
-    display: inline-block;
-    color: color-mod( white alpha(0.5) );
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-primary;
     border: 0;
     position: relative;
-    background-color: color-mod( $color-primary lightness(-10%) saturation(-30%) );
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: none;
     transition: 300ms ease;
     outline: 0;
 
-    &:focus {
-        box-shadow: 1px 1px 0 0 color-mod( white alpha(0.8) );
+    @media(min-width: 600px){
+        flex-direction: row;
+
+        svg {
+            margin-right: 8px;
+            margin-left: -4px;
+        }
     }
 
-    &:after {
-        content: "";
-        display: inline-block;
-        vertical-align: -9px;
-        padding: 14px;
-        margin-left: 8px;
-        opacity: 0.5;
-        transition: inherit;
-        background-position: center;
-        background-repeat: no-repeat;
+    &:focus {
+        text-decoration: underline;
     }
 
     &::-moz-focus-inner {
         border: 0;
     }
 
-    &_short {
-        &:after {
-            background-image: url("img/ic_movie_white_24px.svg");
-        }
-        .is-showShorts & {
-            background: $color-primary;
-            color: white;
-            &:after {
-                opacity: 1;
-            }
-        }
-    }
-
-    &_tv {
-        &:after {
-            background-image: url("img/ic_tv_white_24px.svg");
-        }
-        .is-showTv & {
-            background: $color-primary;
-            color: white;
-            &:after {
-                opacity: 1;
-            }
-        }
-    }
-
-    &_film {
-        &:after {
-            background-image: url("img/ic_local_movies_white_24px.svg");
-        }
-        .is-showFilms & {
-            background: $color-primary;
-            color: white;
-            &:after {
-                opacity: 1;
-            }
-        }
-    }
-
-    &_flip {
+    &_invert {
         background: $color-primary;
         color: white;
-        &:after {
-            opacity: 1;
-            background-image: url("img/ic_arrow_upward_white_24px.svg");
-            transition: transform 200ms cubic-bezier(0.5,0,0,1);
-            transform: rotate(180deg);
+    }
+
+    .is-hideShorts &_short {
+        opacity: 0.5;
+    }
+    .is-hideTv &_tv {
+        opacity: 0.5;
+    }
+    .is-hideFilms &_film {
+        opacity: 0.5;
+    }
+    &_flip {
+        svg {
+            transition: transform 200ms ease;
         }
-        .is-flipped & {
-            &:after {
-                transform: rotate(0deg);
-            }
+        .is-flipped & svg {
+            transform: rotate(180deg);
         }
     }
 
@@ -95,10 +61,13 @@
         right: 4px;
         font-size: 0;
         padding: 0;
-        &:after {
+        &:before {
+            content: "";
             background-image: url("img/ic_close_white_24px.svg");
             opacity: 1;
             margin: 0;
+            width: 24px;
+            height: 24px;
         }
     }
 }

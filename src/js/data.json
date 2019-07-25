@@ -12,7 +12,8 @@
             "name": "The Incredible Hulk",
             "releaseDate": [2008, 5, 13],
             "watchOrder": 20,
-            "img": "Hulk1.jpg"
+            "img": "Hulk1.jpg",
+            "notes": "The main character of this film 'Bruce Banner' is played by Edward Norton, who is re-cast following this film to be played in future appearances by Mark Ruffalo"
         },
         {
             "type": "Short Film",
@@ -569,7 +570,8 @@
             "name": "Ant-Man and the Wasp",
             "releaseDate": [2018, "Jul", 6],
             "watchOrder": 2185,
-            "img": "AntMan2.jpg"
+            "img": "AntMan2.jpg",
+            "notes": "The post credits scene of this film is idealy watched between 'Avengers: Infinity War' and 'Avengers: Endgame'. It is important to the plot of 'Avengers: Endgame'"
         },
         {
             "type": "Television",
@@ -654,7 +656,8 @@
             "img": "CaptainMarvel1.jpg",
             "releaseDate": [2019, "Mar", 8],
             "cronoOrder": 400,
-            "watchOrder": 2300
+            "watchOrder": 2300,
+            "notes": "The post credits scene of this film is idealy watched between 'Avengers: Infinity War' and 'Avengers: Endgame'"
         },
         {
             "type": "Television",
@@ -722,9 +725,9 @@
                 {"season": 6, "episode": 8, "title": "Collision Course (Part I)", "releaseDate": [2019, "Jul", 5], "watchOrder": 2857},
                 {"season": 6, "episode": 9, "title": "Collision Course (Part II)", "releaseDate": [2019, "Jul", 12], "watchOrder": 2858},
                 {"season": 6, "episode": 10, "title": "Leap", "releaseDate": [2019, "Jul", 19], "watchOrder": 2859},
-                {"season": 6, "episode": 11, "title": "Untitled", "releaseDate": [2019, "Jul", 26], "watchOrder": 2860},
-                {"season": 6, "episode": 12, "title": "Untitled", "releaseDate": [2019, "Aug", 3], "watchOrder": 2861},
-                {"season": 6, "episode": 13, "title": "Untitled", "releaseDate": [2019, "Aug", 10], "watchOrder": 2862}
+                {"season": 6, "episode": 11, "title": "From the Ashes", "releaseDate": [2019, "Jul", 26], "watchOrder": 2860},
+                {"season": 6, "episode": 12, "title": "The Sign", "releaseDate": [2019, "Aug", 3], "watchOrder": 2861},
+                {"season": 6, "episode": 13, "title": "New Life", "releaseDate": [2019, "Aug", 10], "watchOrder": 2862}
             ]
         },
         {
@@ -736,9 +739,33 @@
         },
         {
             "type": "Film",
-            "name": "Guardians of the Galaxy Vol. 3",
-            "releaseDate": [2020, "Jan", 1],
-            "watchOrder": 2950
+            "name": "Black Widow",
+            "releaseDate": [2020, "May", 1],
+            "watchOrder": 4000
+        },
+        {
+            "type": "Film",
+            "name": "The Eternals",
+            "releaseDate": [2020, "Nov", 6],
+            "watchOrder": 4100
+        },
+        {
+            "type": "Film",
+            "name": "Shang-Chi and the Legend of the Ten Rings",
+            "releaseDate": [2021, "Feb", 12],
+            "watchOrder": 4200
+        },
+        {
+            "type": "Film",
+            "name": "Doctor Strange in the Multiverse of Madness",
+            "releaseDate": [2021, "May", 7],
+            "watchOrder": 4300
+        },
+        {
+            "type": "Film",
+            "name": "Thor: Love and Thunder",
+            "releaseDate": [2021, "Nov", 5],
+            "watchOrder": 4400
         }
     ]
 }

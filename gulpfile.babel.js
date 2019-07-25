@@ -12,8 +12,10 @@ import rename from 'gulp-rename';
 import htmlMin from 'gulp-htmlmin';
 import inject from 'gulp-inject-string';
 
-import { parseData, getHtml } from './src/js/objects/timeline';
+import { parseData, sortData } from './src/js/utils';
 import mcuData from './src/js/data.json';
+import { defaults } from './src/js/components/timeline';
+import render from './src/js/render';
 
 
 
@@ -47,9 +49,11 @@ function styling(){
 }
 
 function createHtml(){
-    const list = getHtml( parseData(mcuData.shows) );
+    let data = sortData(parseData(mcuData.shows), defaults.order, defaults.flipOrder);
+    const html = render(data, defaults.showFilms, defaults.showTV, defaults.showShorts, defaults.flipOrder);
+
     return src("src/index.html")
-        .pipe(inject.replace("{{prerender}}",list))
+        .pipe(inject.replace("{{prerender}}", html))
         .pipe(htmlMin({
             removeComments: true,
             collapseWhitespace: true

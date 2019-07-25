@@ -16,9 +16,18 @@
         transition: 0ms;
     }
 
+    &-hidden {
+        position: absolute;
+        left: -99999px;
+        top: -99999px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
     &-overlay {
         @include cover();
-        background: color-mod( black alpha(0.6) );
+        background: color-mod( black alpha(0.5) );
         z-index: 1;
         opacity: 0;
         transition: 200ms ease;
@@ -32,12 +41,17 @@
         z-index: 2;
         padding: 16px;
         background: white;
-        border-radius: 3px;
-        box-shadow: 0 3px 3px 1px color-mod( black alpha(0.6) );
+        box-shadow: 0 1px 2px 0 color-mod( black alpha(0.8) );
         max-width: 500px;
         opacity: 0;
         transition: 200ms ease-in;
         transform: translateY(-20%);
+        max-height: 90vh;
+        overflow-y: auto;
+
+        @media(min-width: 600px){
+            padding: 32px;
+        }
 
         .is-open & {
             transform: translateY(0%);
@@ -48,8 +62,10 @@
 
         h2 {
             font-weight: bold;
-            font-size: 1.3em;
+            font-size: 1.5em;
             margin: 0 0 16px;
+            color: color-mod( $color-text alpha(0.8) );
+            font-family: Passion One, Arial, sans-sreif;
         }
 
         p {

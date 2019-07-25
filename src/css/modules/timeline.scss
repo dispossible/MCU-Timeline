@@ -1,50 +1,104 @@
 .timeline {
-    padding: 32px 16px 0;
     background: $color-bg;
     position: relative;
 
     &-ctrls {
+        position: sticky;
+        top: 0;
         margin-bottom: 24px;
-        text-align: left;
+        text-align: center;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 8px;
-        @media(min-width: 450px){
-            grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        background: white;
+        z-index: 10;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.4);
+        padding: 4px 0;
+        @media(min-width: 800px){
+            padding: 4px 15vw;
         }
-        @media(min-width: 600px){
-            grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &-sortCtrls {
+        margin-top: 16px;
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: 1fr;
+        @media(min-width: 350px){
+            grid-template-columns: 1fr auto;
         }
     }
 
     &-list {
         position: relative;
+        padding: 0 16px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+        max-width: 1300px;
+        margin: auto;
+        & > * {
+            display: block;
+        }
+        @media(min-width: 1000px){
+            padding: 0 32px;
+            grid-gap: 32px;
+            grid-template-columns: 1fr 1fr;
+            & > * {
+                grid-row: span 2;
+                display: flex;
+                align-items: center;
+                justify-content: stretch;
+            }
+            // This is selecting the second child element
+            & > *:first-child + * {
+                grid-column: 2;
+                grid-row: 2 / span 2;
+            }
+        }
     }
 
     &-card {
-        margin-bottom: 16px;
-        background: white;
-        border-radius: 6px;
-        overflow: hidden;
         position: relative;
+        overflow: hidden;
+        width: 100%;
         &.is-unreleased {
             opacity: 0.6;
         }
-        @media(min-width: 400px){
-            display: grid;
-            grid-template-columns: 120px 2fr;
+        margin: 0 0 32px;
+        @supports(display: grid){
+            margin: auto;
         }
     }
 
     &-posterFrame {
-        background: black;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5);
     }
 
     &-poster {
-        max-width: 100%;
-        max-height: 200px;
+        width: 65px;
+        height: 100px;
         display: block;
         margin: auto;
+        @media(min-width: 600px){
+            :not(.is-unreleased) > * > & {
+                width: 130px;
+                height: 200px;
+            }
+        }
+    }
+
+    &-vol {
+        position: absolute;
+        top: calc(0 - 0.1em);
+        right: 0;
+        padding: 8px;
+        font-size: 8em;
+        line-height: 1em;
+        font-weight: bold;
+        font-family: Passion One, Arial, sans-sreif;
+        opacity: 0.15;
     }
 
 
@@ -53,73 +107,128 @@
         font-size: 1.2em;
         line-height: 1.2em;
         padding-bottom: 8px;
+        .is-unreleased > * > & {
+            font-size: 1em;
+        }
     }
 
     &-subTitle {
-        font-size: 0.8em;
-        color: color-mod( $color-text alpha(0.8) );
-        display: inline-block;
+        display: block;
     }
 
     &-type {
         text-transform: uppercase;
-        color: color-mod( $color-text alpha(0.6) );
-        font-weight: bold;
+        color: white;
         font-family: Passion One, Arial, sans-sreif;
         letter-spacing: 1px;
-        font-size: 1.3em;
-        padding-bottom: 8px;
+        font-size: 2em;
+        position: absolute;
+        bottom: calc(100% - 0.22em);
+        right: 0;
     }
 
     &-detail {
-        padding: 16px;
-        display: inline-block;
+        padding: 16px 32px 24px 16px;
         vertical-align: top;
-        width: 100%;
+        min-height: 100px;
+        background: white;
+        margin-left: 32px;
+        padding-left: calc(32px + 16px);
+        margin-top: 32px;
+        position: relative;
+        @media(min-width: 600px){
+            :not(.is-unreleased) > & {
+                margin-left: 65px;
+                padding-left: calc(65px + 16px);
+                min-height: 200px;
+            }
+        }
     }
 
     &-epsTitle {
-        border-top: 4px solid $color-bg;
-        padding: 16px 16px 8px;
+        padding-bottom: 16px;
         font-weight: normal;
         font-weight: bold;
     }
 
     &-eps {
-        @media(min-width: 400px){
-            grid-column: 1 / 3;
-        }
+        padding-top: 16px;
     }
 
     &-epList {
         list-style: none;
-        padding: 16px;
     }
 
     &-ep {
         padding-bottom: 8px;
+        display: flex;
         display: grid;
-        grid-template-columns: 2em 1fr auto;
+        grid-template-columns: 1fr;
+        grid-gap: 8px;
+        position: relative;
         &.is-unreleased {
             opacity: 0.6;
+        }
+        @media(min-width: 400px){
+            grid-template-columns: 1fr auto;
+        }
+        @media(min-width: 600px){
+            grid-template-columns: 2em 1fr auto;
         }
     }
 
     &-epNum {
         display: inline-block;
         vertical-align: top;
-        padding-right: 8px;
         color: color-mod( $color-text alpha(0.8) );
         text-align: right;
+        position: absolute;
+        top: 0;
+        right: calc(100% + 8px);
+        @media(min-width: 600px){
+            position: static;
+        }
     }
 
     &-epName {
         display: inline-block;
         vertical-align: top;
+        flex-grow: 1;
+        padding: 0 8px;
+        @supports(display: grid){
+            padding: 0;
+        }
     }
 
     &-release {
         color: color-mod( $color-text alpha(0.8) );
-        padding-left: 8px;
+        text-align: right;
+    }
+
+    &-notes {
+        margin-top: 38px;
+        padding: 12px 16px;
+        border: 1px solid color-mod( $color-text alpha(0.6) );
+        line-height: 1.5em;
+        position: relative;
+        &:before {
+            content: "i";
+            width: 1.6em;
+            height: 1.6em;
+            color: color-mod( $color-text alpha(0.6) );
+            border: 1px solid currentColor;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.5em;
+            border-radius: 99px;
+            font-weight: bold;
+            font-size: 0.7em;
+            position: absolute;
+            top: -.8em;
+            left: -.8em;
+            line-height: 0;
+            background: white;
+        }
     }
 }

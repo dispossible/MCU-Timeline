@@ -1,13 +1,11 @@
 .hdr {
     background: $color-primary;
     color: $color-text_alt;
-    padding: 16px;
+    padding: 12px 16px 16px;
     position: relative;
     z-index: 6;
-    @media(min-width: 700px){
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    @media(min-width: 500px){
+        padding: 12px 32px 16px;
     }
     &-logo {
         font-family: Passion One, Arial, sans-sreif;
@@ -15,16 +13,11 @@
         text-transform: uppercase;
         vertical-align: middle;
         font-size: 2em;
-        margin-bottom: 8px;
+        margin-bottom: -6px;
         .wf-passionone-n4-active & {
             font-weight: normal;
             letter-spacing: -0.05em;
             font-size: 3em;
-        }
-        @media(min-width: 450px){
-            display: inline-block;
-            margin-bottom: 0;
-            margin-right: 24px;
         }
         @media(min-width: 700px){
             font-size: 2.5em;
@@ -36,7 +29,7 @@
     &-tagline {
         display: inline-block;
         vertical-align: middle;
-        font-weight: bold;
+        font-weight: normal;
         letter-spacing: 0.2em;
     }
 }
