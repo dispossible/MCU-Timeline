@@ -738,6 +738,23 @@
             "watchOrder": 2900
         },
         {
+            "type": "Television",
+            "name": "Runaways",
+            "img": "Runaways3.jpg",
+            "episodes": [
+                {"season": 3, "episode": 1, "title": "Smoke and Mirrors", "releaseDate": [2019, "Dec", 13], "watchOrder": 2920},
+                {"season": 3, "episode": 2, "title": "The Great Escape", "releaseDate": [2019, "Dec", 13], "watchOrder": 2921},
+                {"season": 3, "episode": 3, "title": "Lord of Lies", "releaseDate": [2019, "Dec", 13], "watchOrder": 2922},
+                {"season": 3, "episode": 4, "title": "Rite of Thunder", "releaseDate": [2019, "Dec", 13], "watchOrder": 2923},
+                {"season": 3, "episode": 5, "title": "Enter the Dreamland", "releaseDate": [2019, "Dec", 13], "watchOrder": 2924},
+                {"season": 3, "episode": 6, "title": "Merry Meet Again", "releaseDate": [2019, "Dec", 13], "watchOrder": 2925},
+                {"season": 3, "episode": 7, "title": "Left-Hand Path", "releaseDate": [2019, "Dec", 13], "watchOrder": 2926},
+                {"season": 3, "episode": 8, "title": "Devil's Torture Chamber", "releaseDate": [2019, "Dec", 13], "watchOrder": 2927},
+                {"season": 3, "episode": 9, "title": "The Broken Circle", "releaseDate": [2019, "Dec", 13], "watchOrder": 2928},
+                {"season": 3, "episode": 10, "title": "Cheat the Gallows", "releaseDate": [2019, "Dec", 13], "watchOrder": 2929}
+            ]
+        },
+        {
             "type": "Film",
             "name": "Black Widow",
             "releaseDate": [2020, "May", 1],
@@ -763,9 +780,15 @@
         },
         {
             "type": "Film",
+            "name": "Spiderman 3",
+            "releaseDate": [2021, "Jul", 16],
+            "watchOrder": 4400
+        },
+        {
+            "type": "Film",
             "name": "Thor: Love and Thunder",
             "releaseDate": [2021, "Nov", 5],
-            "watchOrder": 4400
+            "watchOrder": 4500
         }
     ]
 }
