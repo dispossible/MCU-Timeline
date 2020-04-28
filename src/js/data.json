@@ -740,32 +740,38 @@
         {
             "type": "Film",
             "name": "Black Widow",
-            "releaseDate": [2020, "May", 1],
+            "releaseDate": [2020, "Nov", 6],
             "watchOrder": 4000
         },
         {
             "type": "Film",
             "name": "The Eternals",
-            "releaseDate": [2020, "Nov", 6],
+            "releaseDate": [2020, "Feb", 12],
             "watchOrder": 4100
         },
         {
             "type": "Film",
             "name": "Shang-Chi and the Legend of the Ten Rings",
-            "releaseDate": [2021, "Feb", 12],
+            "releaseDate": [2021, "May", 7],
             "watchOrder": 4200
         },
         {
             "type": "Film",
-            "name": "Doctor Strange in the Multiverse of Madness",
-            "releaseDate": [2021, "May", 7],
+            "name": "Spiderman: 3",
+            "releaseDate": [2021, "Nov", 5],
             "watchOrder": 4300
         },
         {
             "type": "Film",
             "name": "Thor: Love and Thunder",
-            "releaseDate": [2021, "Nov", 5],
+            "releaseDate": [2022, "Feb", 11],
             "watchOrder": 4400
+        },
+        {
+            "type": "Film",
+            "name": "Doctor Strange in the Multiverse of Madness",
+            "releaseDate": [2022, "March", 25],
+            "watchOrder": 4500
         }
     ]
 }
