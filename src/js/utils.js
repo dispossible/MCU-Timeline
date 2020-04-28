@@ -55,6 +55,9 @@ export function writeShortDate(date){
 export function sortData(data, order, flipOrder){
     if( order === "release" ){
         data.sort((a,b)=>{
+            if( a.releaseDate === b.releaseDate ){
+                return a.order - b.order;
+            }
             return a.releaseDate - b.releaseDate;
         });
     } else
