@@ -787,7 +787,7 @@
         {
             "type": "Film",
             "name": "Doctor Strange in the Multiverse of Madness",
-            "releaseDate": [2022, "March", 25],
+            "releaseDate": [2022, "Mar", 25],
             "watchOrder": 4500
         }
     ]
