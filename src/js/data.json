@@ -780,12 +780,6 @@
         },
         {
             "type": "Film",
-            "name": "Spiderman 3",
-            "releaseDate": [2021, "Jul", 16],
-            "watchOrder": 4400
-        },
-        {
-            "type": "Film",
             "name": "Thor: Love and Thunder",
             "releaseDate": [2022, "Feb", 11],
             "watchOrder": 4400
