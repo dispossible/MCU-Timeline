@@ -25,7 +25,7 @@ export function writeDate(date){
 
     const months = [
         "January",
-        "Febuary",
+        "February",
         "March",
         "April",
         "May",
@@ -34,7 +34,7 @@ export function writeDate(date){
         "August",
         "October",
         "September",
-        "Novemeber",
+        "November",
         "December",
     ];
 
