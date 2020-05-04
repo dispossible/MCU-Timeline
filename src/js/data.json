@@ -48,7 +48,7 @@
             "name": "Captain America: The First Avenger",
             "releaseDate": [2011, 6, 22],
             "watchOrder": 70,
-            "cronoOrder": 10,
+            "cronoOrder": -1000,
             "img": "CaptainAmerica1.jpg"
         },
         {
@@ -56,7 +56,7 @@
             "name": "Agent Carter",
             "releaseDate": [2013, 8, 3],
             "watchOrder": 80,
-            "cronoOrder": 100,
+            "cronoOrder": -800,
             "img": "AgentCarter.jpg"
         },
         {
@@ -191,14 +191,14 @@
             "name": "Agent Carter",
             "img": "AgentCarter1.jpg",
             "episodes": [
-                {"season": 1, "episode": 1, "title": "Now is Not the End", "releaseDate": [2015, 0, 6], "watchOrder": 610, "cronoOrder": 20},
-                {"season": 1, "episode": 2, "title": "Bridge and Tunnel", "releaseDate": [2015, 0, 6], "watchOrder": 620, "cronoOrder": 30},
-                {"season": 1, "episode": 3, "title": "Time and Tide", "releaseDate": [2015, 0, 13], "watchOrder": 630, "cronoOrder": 40},
-                {"season": 1, "episode": 4, "title": "The Blitzkrieg Button", "releaseDate": [2015, 0, 27], "watchOrder": 640, "cronoOrder": 50},
-                {"season": 1, "episode": 5, "title": "The Iron Ceiling", "releaseDate": [2015, 1, 3], "watchOrder": 650, "cronoOrder": 60},
-                {"season": 1, "episode": 6, "title": "A Sin to Err", "releaseDate": [2015, 1, 10], "watchOrder": 660, "cronoOrder": 70},
-                {"season": 1, "episode": 7, "title": "Snafu", "releaseDate": [2015, 1, 17], "watchOrder": 670, "cronoOrder": 80},
-                {"season": 1, "episode": 8, "title": "Valediction", "releaseDate": [2015, 1, 24], "watchOrder": 680, "cronoOrder": 90}
+                {"season": 1, "episode": 1, "title": "Now is Not the End", "releaseDate": [2015, 0, 6], "watchOrder": 610, "cronoOrder": -990},
+                {"season": 1, "episode": 2, "title": "Bridge and Tunnel", "releaseDate": [2015, 0, 6], "watchOrder": 620, "cronoOrder": -980},
+                {"season": 1, "episode": 3, "title": "Time and Tide", "releaseDate": [2015, 0, 13], "watchOrder": 630, "cronoOrder": -970},
+                {"season": 1, "episode": 4, "title": "The Blitzkrieg Button", "releaseDate": [2015, 0, 27], "watchOrder": 640, "cronoOrder": -960},
+                {"season": 1, "episode": 5, "title": "The Iron Ceiling", "releaseDate": [2015, 1, 3], "watchOrder": 650, "cronoOrder": -950},
+                {"season": 1, "episode": 6, "title": "A Sin to Err", "releaseDate": [2015, 1, 10], "watchOrder": 660, "cronoOrder": -940},
+                {"season": 1, "episode": 7, "title": "Snafu", "releaseDate": [2015, 1, 17], "watchOrder": 670, "cronoOrder": -930},
+                {"season": 1, "episode": 8, "title": "Valediction", "releaseDate": [2015, 1, 24], "watchOrder": 680, "cronoOrder": -920}
             ]
         },
         {
@@ -269,16 +269,16 @@
             "name": "Agent Carter",
             "img": "AgentCarter2.jpg",
             "episodes": [
-                {"season": 2, "episode": 1, "title": "The Lady in the Lake", "releaseDate": [2016, 0, 19], "watchOrder": 1060, "cronoOrder": 110},
-                {"season": 2, "episode": 2, "title": "A View in the Dark", "releaseDate": [2016, 0, 19], "watchOrder": 1070, "cronoOrder": 120},
-                {"season": 2, "episode": 3, "title": "Better Angels", "releaseDate": [2016, 0, 26], "watchOrder": 1080, "cronoOrder": 130},
-                {"season": 2, "episode": 4, "title": "Smoke & Mirrors", "releaseDate": [2016, 1, 2], "watchOrder": 1090, "cronoOrder": 140},
-                {"season": 2, "episode": 5, "title": "The Atomic Job", "releaseDate": [2016, 1, 9], "watchOrder": 1100, "cronoOrder": 150},
-                {"season": 2, "episode": 6, "title": "Life of the Party", "releaseDate": [2016, 1, 16], "watchOrder": 1110, "cronoOrder": 160},
-                {"season": 2, "episode": 7, "title": "Monsters", "releaseDate": [2016, 1, 16], "watchOrder": 1120, "cronoOrder": 170},
-                {"season": 2, "episode": 8, "title": "The Edge of Mystery", "releaseDate": [2016, 1, 23], "watchOrder": 1130, "cronoOrder": 180},
-                {"season": 2, "episode": 9, "title": "A Little Song and Dance", "releaseDate": [2016, 1, 23], "watchOrder": 1140, "cronoOrder": 190},
-                {"season": 2, "episode": 10, "title": "Hollywood Ending", "releaseDate": [2016, 2, 1], "watchOrder": 1150, "cronoOrder": 200}
+                {"season": 2, "episode": 1, "title": "The Lady in the Lake", "releaseDate": [2016, 0, 19], "watchOrder": 1060, "cronoOrder": -790},
+                {"season": 2, "episode": 2, "title": "A View in the Dark", "releaseDate": [2016, 0, 19], "watchOrder": 1070, "cronoOrder": -780},
+                {"season": 2, "episode": 3, "title": "Better Angels", "releaseDate": [2016, 0, 26], "watchOrder": 1080, "cronoOrder": -770},
+                {"season": 2, "episode": 4, "title": "Smoke & Mirrors", "releaseDate": [2016, 1, 2], "watchOrder": 1090, "cronoOrder": -760},
+                {"season": 2, "episode": 5, "title": "The Atomic Job", "releaseDate": [2016, 1, 9], "watchOrder": 1100, "cronoOrder": -750},
+                {"season": 2, "episode": 6, "title": "Life of the Party", "releaseDate": [2016, 1, 16], "watchOrder": 1110, "cronoOrder": -740},
+                {"season": 2, "episode": 7, "title": "Monsters", "releaseDate": [2016, 1, 16], "watchOrder": 1120, "cronoOrder": -730},
+                {"season": 2, "episode": 8, "title": "The Edge of Mystery", "releaseDate": [2016, 1, 23], "watchOrder": 1130, "cronoOrder": -720},
+                {"season": 2, "episode": 9, "title": "A Little Song and Dance", "releaseDate": [2016, 1, 23], "watchOrder": 1140, "cronoOrder": -710},
+                {"season": 2, "episode": 10, "title": "Hollywood Ending", "releaseDate": [2016, 2, 1], "watchOrder": 1150, "cronoOrder": -700}
             ]
         },
         {
@@ -389,6 +389,7 @@
             "name": "Guardians of the Galaxy Vol. 2",
             "releaseDate": [2017, 4, 5],
             "watchOrder": 1910,
+            "cronoOrder": 505,
             "img": "Guardians2.jpg"
         },
         {
@@ -655,7 +656,7 @@
             "name": "Captain Marvel",
             "img": "CaptainMarvel1.jpg",
             "releaseDate": [2019, "Mar", 8],
-            "cronoOrder": 400,
+            "cronoOrder": -400,
             "watchOrder": 2300,
             "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'"
         },

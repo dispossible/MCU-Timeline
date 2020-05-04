@@ -5,7 +5,7 @@ export default class Show {
 
     constructor(show, type){
 
-        let crono = ( isNumber(show.cronoOrder) )? show.cronoOrder : show.watchOrder + 100000;
+        let crono = ( isNumber(show.cronoOrder) )? show.cronoOrder : show.watchOrder;
 
         const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
