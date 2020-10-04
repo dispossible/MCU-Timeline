@@ -756,27 +756,78 @@
             ]
         },
         {
-            "type": "Film",
-            "name": "Black Widow",
-            "releaseDate": [2020, "Nov", 6],
-            "watchOrder": 4000
+            "type": "Television",
+            "name": "Agents of S.H.I.E.L.D.",
+            "img": "AoS7.jpg",
+            "episodes": [
+                {"season": 7, "episode": 1, "title": "The New Deal", "releaseDate": [2020, "May", 27], "watchOrder": 3000},
+                {"season": 7, "episode": 2, "title": "Know Your Onions", "releaseDate": [2020, "Jun", 3], "watchOrder": 3001},
+                {"season": 7, "episode": 3, "title": "Alien Commies fromthe Future!", "releaseDate": [2020, "Jun", 10], "watchOrder": 3002},
+                {"season": 7, "episode": 4, "title": "Out of the Past", "releaseDate": [2020, "Jun", 17], "watchOrder": 3003},
+                {"season": 7, "episode": 5, "title": "A Trout in the Milk", "releaseDate": [2020, "Jun", 24], "watchOrder": 3004},
+                {"season": 7, "episode": 6, "title": "Adapt or Die", "releaseDate": [2020, "Jul", 1], "watchOrder": 3005},
+                {"season": 7, "episode": 7, "title": "The Totally Excellent Adventures of Mack and The D", "releaseDate": [2020, "Jul", 8], "watchOrder": 3006},
+                {"season": 7, "episode": 8, "title": "After, Before", "releaseDate": [2020, "Jul", 15], "watchOrder": 3007},
+                {"season": 7, "episode": 9, "title": "As I Have Always Been", "releaseDate": [2020, "Jul", 22], "watchOrder": 3008},
+                {"season": 7, "episode": 10, "title": "Stolen", "releaseDate": [2020, "Jul", 29], "watchOrder": 3009},
+                {"season": 7, "episode": 11, "title": "Brand New Day", "releaseDate": [2020, "Aug", 5], "watchOrder": 3010},
+                {"season": 7, "episode": 12, "title": "The End is at Hand", "releaseDate": [2020, "Aug", 12], "watchOrder": 3011},
+                {"season": 7, "episode": 13, "title": "What We're Fighting For", "releaseDate": [2020, "Aug", 12], "watchOrder": 3012}
+            ]
+        },
+        {
+            "type": "Television",
+            "name": "Helstrom",
+            "img": "Helstrom1.jpg",
+            "episodes": [
+                {"season": 1, "episode": 1, "title": "Mother's Little Helpers", "releaseDate": [2020, "Oct", 16], "watchOrder": 3050},
+                {"season": 1, "episode": 2, "title": "Viaticum", "releaseDate": [2020, "Oct", 16], "watchOrder": 3051},
+                {"season": 1, "episode": 3, "title": "The One Who Got Away", "releaseDate": [2020, "Oct", 16], "watchOrder": 3052},
+                {"season": 1, "episode": 4, "title": "Containment", "releaseDate": [2020, "Oct", 16], "watchOrder": 3053},
+                {"season": 1, "episode": 5, "title": "Committed", "releaseDate": [2020, "Oct", 16], "watchOrder": 3054},
+                {"season": 1, "episode": 6, "title": "Leviathan", "releaseDate": [2020, "Oct", 16], "watchOrder": 3055},
+                {"season": 1, "episode": 7, "title": "Scars", "releaseDate": [2020, "Oct", 16], "watchOrder": 3056},
+                {"season": 1, "episode": 8, "title": "Underneath", "releaseDate": [2020, "Oct", 16], "watchOrder": 3057},
+                {"season": 1, "episode": 9, "title": "Vessels", "releaseDate": [2020, "Oct", 16], "watchOrder": 3058},
+                {"season": 1, "episode": 10, "title": "Hell Storm", "releaseDate": [2020, "Oct", 16], "watchOrder": 3059}
+            ]
+        },
+        {
+            "type": "Television",
+            "name": "WandaVision",
+            "img": "WandaVision1.jpg",
+            "episodes": [
+                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2020, "Dec", 25], "watchOrder": 3100},
+                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2020, "Dec", 25], "watchOrder": 3101},
+                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2020, "Dec", 25], "watchOrder": 3102},
+                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2020, "Dec", 25], "watchOrder": 3103},
+                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2020, "Dec", 25], "watchOrder": 3104},
+                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2020, "Dec", 25], "watchOrder": 3105}
+            ]
         },
         {
             "type": "Film",
-            "name": "The Eternals",
-            "releaseDate": [2021, "Feb", 12],
-            "watchOrder": 4100
+            "name": "Black Widow",
+            "releaseDate": [2021, "May", 7],
+            "watchOrder": 4000,
+            "img": "BlackWidow1.jpg"
         },
         {
             "type": "Film",
             "name": "Shang-Chi and the Legend of the Ten Rings",
-            "releaseDate": [2021, "May", 7],
+            "releaseDate": [2021, "Jul", 9],
+            "watchOrder": 4100
+        },
+        {
+            "type": "Film",
+            "name": "The Eternals",
+            "releaseDate": [2021, "Nov", 5],
             "watchOrder": 4200
         },
         {
             "type": "Film",
             "name": "Spiderman: 3",
-            "releaseDate": [2021, "Nov", 5],
+            "releaseDate": [2021, "Dec", 17],
             "watchOrder": 4300
         },
         {
@@ -790,6 +841,18 @@
             "name": "Doctor Strange in the Multiverse of Madness",
             "releaseDate": [2022, "Mar", 25],
             "watchOrder": 4500
+        },
+        {
+            "type": "Film",
+            "name": "Black Panther 2",
+            "releaseDate": [2022, "May", 6],
+            "watchOrder": 4600
+        },
+        {
+            "type": "Film",
+            "name": "Captain Marvel 2",
+            "releaseDate": [2022, "Jul", 8],
+            "watchOrder": 4700
         }
     ]
 }
