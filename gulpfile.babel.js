@@ -10,7 +10,7 @@ import postCss from 'gulp-postcss';
 import postCssPresetEnv from 'postcss-preset-env';
 import postCssImport from 'postcss-import';
 import precss from 'precss';
-import cssNano from 'cssNano';
+import cssNano from 'cssnano';
 import postCssScss from 'postcss-scss';
 
 import imageMin from 'gulp-imagemin';
