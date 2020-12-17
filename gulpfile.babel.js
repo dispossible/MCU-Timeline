@@ -6,8 +6,14 @@ import del from 'del';
 import browserSync from 'browser-sync';
 const bs = browserSync.create();
 
-import imageMin from 'gulp-imagemin';
 import postCss from 'gulp-postcss';
+import postCssPresetEnv from 'postcss-preset-env';
+import postCssImport from 'postcss-import';
+import precss from 'precss';
+import cssNano from 'cssNano';
+import postCssScss from 'postcss-scss';
+
+import imageMin from 'gulp-imagemin';
 import rename from 'gulp-rename';
 import htmlMin from 'gulp-htmlmin';
 import inject from 'gulp-inject-string';
@@ -42,7 +48,16 @@ function compressImages(){
 
 function styling(){
     return src("src/css/template.scss")
-        .pipe(postCss())
+        .pipe(postCss([
+            postCssImport(),
+            precss(),
+            postCssPresetEnv({ stage: 0, features: {
+                'color-mod-function': true
+            }}),
+            cssNano(),
+        ], {
+            parser: postCssScss,
+        }))
         .pipe(rename("style.css"))
         .pipe(dest("dist/"))
         .pipe(bs.stream());
