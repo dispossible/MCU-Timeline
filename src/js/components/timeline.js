@@ -34,15 +34,15 @@ export default class Timeline {
 
                 if( el.getAttribute("data-toggle") === "tv" ){
                     this.showTV = !this.showTV;
-                    gtag({ event: "Toggle TV visibility", value: this.showTV });
+                    gtag("event", "Toggle TV visibility", {value: this.showTV});
                 }
                 else if( el.getAttribute("data-toggle") === "short" ){
                     this.showShorts = !this.showShorts;
-                    gtag({ event: "Toggle Shorts visibility", value: this.showShorts });
+                    gtag("event", "Toggle Shorts visibility", {value: this.showShorts});
                 }
                 else if( el.getAttribute("data-toggle") === "film" ){
                     this.showFilms = !this.showFilms;
-                    gtag({ event: "Toggle Film visibility", value: this.showFilms });
+                    gtag("event", "Toggle Film visibility", {value: this.showFilms});
                 }
 
                 this.setClasses();
@@ -55,7 +55,7 @@ export default class Timeline {
         if( sort ){
             sort.addEventListener("change", e => {
                 this.order = e.target.value;
-                gtag({ event: "Change sort type", value: this.order });
+                gtag("event", "Change sort type", {value: this.order});
                 this.sort();
                 this.render();
             });
@@ -69,7 +69,7 @@ export default class Timeline {
                 if( !this.flipOrder ) document.body.classList.add("is-flipped");
                 else document.body.classList.remove("is-flipped");
 
-                gtag({ event: "Flip sort order", value: this.flipOrder });
+                gtag("event", "Flip sort order", {value: this.flipOrder});
 
                 this.sort();
                 this.render();
