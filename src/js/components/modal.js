@@ -43,7 +43,7 @@ export default class Modal {
 
     open(){
         this.el.classList.add("is-open");
-        gtag("event", "open_modal", { modalId: this.id });
+        gtag("event", "Open modal", { modalId: this.id });
     }
 
     close(){
