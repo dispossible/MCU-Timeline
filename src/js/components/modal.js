@@ -4,9 +4,9 @@ export default class Modal {
 
         this.button = el;
 
-        const id = this.button.getAttribute("data-modal");
+        this.id = this.button.getAttribute("data-modal");
 
-        const html = document.querySelector(`[data-modal-content='${id}']`);
+        const html = document.querySelector(`[data-modal-content='${this.id}']`);
         if(!html) return;
         html.remove();
 
@@ -43,7 +43,7 @@ export default class Modal {
 
     open(){
         this.el.classList.add("is-open");
-        gtag("event", "open_modal");
+        gtag("event", "open_modal", { modalId: this.id });
     }
 
     close(){
