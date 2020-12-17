@@ -829,12 +829,12 @@
             "type": "Television",
             "name": "Loki",
             "episodes": [
-                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "May", 21], "watchOrder": 3100},
-                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "May", 28], "watchOrder": 3101},
-                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Jun", 4], "watchOrder": 3102},
-                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Jun", 11], "watchOrder": 3103},
-                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Jun", 18], "watchOrder": 3104},
-                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Jun", 25], "watchOrder": 3105}
+                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "May", 21], "watchOrder": 4100},
+                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "May", 28], "watchOrder": 4101},
+                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Jun", 4], "watchOrder": 4102},
+                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Jun", 11], "watchOrder": 4103},
+                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Jun", 18], "watchOrder": 4104},
+                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Jun", 25], "watchOrder": 4105}
             ]
         },
         {
