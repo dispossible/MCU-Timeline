@@ -802,7 +802,10 @@
                 {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Jan", 29], "watchOrder": 3102},
                 {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Jan", 5], "watchOrder": 3103},
                 {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Feb", 12], "watchOrder": 3104},
-                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Feb", 19], "watchOrder": 3105}
+                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Feb", 19], "watchOrder": 3105},
+                {"season": 1, "episode": 7, "title": "-", "releaseDate": [2021, "Feb", 26], "watchOrder": 3106},
+                {"season": 1, "episode": 8, "title": "-", "releaseDate": [2021, "Mar", 5], "watchOrder": 3107},
+                {"season": 1, "episode": 9, "title": "-", "releaseDate": [2021, "Mar", 12], "watchOrder": 3108}
             ]
         },
         {
