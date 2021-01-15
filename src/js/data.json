@@ -797,15 +797,15 @@
             "name": "WandaVision",
             "img": "WandaVision1.jpg",
             "episodes": [
-                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Jan", 15], "watchOrder": 3100},
-                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "Jan", 22], "watchOrder": 3101},
-                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Jan", 29], "watchOrder": 3102},
-                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Feb", 5], "watchOrder": 3103},
-                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Feb", 12], "watchOrder": 3104},
-                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Feb", 19], "watchOrder": 3105},
-                {"season": 1, "episode": 7, "title": "-", "releaseDate": [2021, "Feb", 26], "watchOrder": 3106},
-                {"season": 1, "episode": 8, "title": "-", "releaseDate": [2021, "Mar", 5], "watchOrder": 3107},
-                {"season": 1, "episode": 9, "title": "-", "releaseDate": [2021, "Mar", 12], "watchOrder": 3108}
+                {"season": 1, "episode": 1, "title": "Episode 1", "releaseDate": [2021, "Jan", 15], "watchOrder": 3100},
+                {"season": 1, "episode": 2, "title": "Episode 2", "releaseDate": [2021, "Jan", 15], "watchOrder": 3101},
+                {"season": 1, "episode": 3, "title": "Episode 3", "releaseDate": [2021, "Jan", 22], "watchOrder": 3102},
+                {"season": 1, "episode": 4, "title": "Episode 4", "releaseDate": [2021, "Jan", 29], "watchOrder": 3103},
+                {"season": 1, "episode": 5, "title": "Episode 5", "releaseDate": [2021, "Feb", 5], "watchOrder": 3104},
+                {"season": 1, "episode": 6, "title": "Episode 6", "releaseDate": [2021, "Feb", 12], "watchOrder": 3105},
+                {"season": 1, "episode": 7, "title": "Episode 7", "releaseDate": [2021, "Feb", 19], "watchOrder": 3106},
+                {"season": 1, "episode": 8, "title": "Episode 8", "releaseDate": [2021, "Feb", 26], "watchOrder": 3107},
+                {"season": 1, "episode": 9, "title": "Episode 9", "releaseDate": [2021, "Mar", 5], "watchOrder": 3108}
             ]
         },
         {
