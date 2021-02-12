@@ -209,6 +209,18 @@
             "img": "Avengers2.jpg"
         },
         {
+            "type": "Television",
+            "name": "WHIH Newsfront",
+            "img": "WHIH1.jpg",
+            "episodes": [
+                {"season": 1, "episode": 1, "title": "WHIH Newsfront Promo", "releaseDate": [2015, "Jul", 2], "watchOrder": 815},
+                {"season": 1, "episode": 2, "title": "WHIH Newsfront Top Stories", "releaseDate": [2015, "Jul", 7], "watchOrder": 816},
+                {"season": 1, "episode": 3, "title": "WHIH EXCLUSIVE: 2012 VistaCorp break-in security footage involving cyber-criminal Scott Lang", "releaseDate": [2015, "Jul", 11], "watchOrder": 817},
+                {"season": 1, "episode": 4, "title": "WIRED Insider Interviews Darren Cross, CEO of Pym Technologies", "releaseDate": [2015, "Jul", 13], "watchOrder": 818},
+                {"season": 1, "episode": 5, "title": "WHIH EXCLUSIVE: Scott Lang Interview", "releaseDate": [2015, "Jul", 16], "watchOrder": 819}
+            ]
+        },
+        {
             "type": "Film",
             "name": "Ant-Man",
             "releaseDate": [2015, 6, 17],
@@ -302,6 +314,18 @@
             ]
         },
         {
+            "type": "Television",
+            "name": "WHIH Newsfront",
+            "img": "WHIH2.jpg",
+            "episodes": [
+                {"season": 2, "episode": 1, "title": "AVENGERS IMPACT: A WHIH Newsfront Special Report", "releaseDate": [2016, "Apr", 22], "watchOrder": 1371},
+                {"season": 2, "episode": 2, "title": "WHIH Newsfront: The Cost of Saving the World", "releaseDate": [2016, "Apr", 26], "watchOrder": 1372},
+                {"season": 2, "episode": 3, "title": "WHIH Newsfront: The Avengers and The White House", "releaseDate": [2016, "Apr", 28], "watchOrder": 1373},
+                {"season": 2, "episode": 4, "title": "WHIH Newsfront Exclusive: President Ellis Discusses the Avengers", "releaseDate": [2016, "May", 3], "watchOrder": 1374},
+                {"season": 2, "episode": 5, "title": "WHIH Breaking News: Attack in Lagos", "releaseDate": [2016, "May", 3], "watchOrder": 1375}
+            ]
+        },
+        {
             "type": "Film",
             "name": "Captain America: Civil War",
             "releaseDate": [2016, 4, 6],
@@ -334,6 +358,19 @@
             "releaseDate": [2016, 10, 4],
             "watchOrder": 1550,
             "img": "DrStrange1.jpg"
+        },
+        {
+            "type": "Television",
+            "name": "Agents of S.H.I.E.L.D.: Slingshot",
+            "img": "Slingshot.jpg",
+            "episodes": [
+                {"season": 1, "episode": 1, "title": "Vendetta", "releaseDate": [2016, "Dec", 13], "watchOrder": 1551},
+                {"season": 1, "episode": 2, "title": "John Hancock", "releaseDate": [2016, "Dec", 13], "watchOrder": 1552},
+                {"season": 1, "episode": 3, "title": "Progress", "releaseDate": [2016, "Dec", 13], "watchOrder": 1553},
+                {"season": 1, "episode": 4, "title": "Reunion", "releaseDate": [2016, "Dec", 13], "watchOrder": 1554},
+                {"season": 1, "episode": 5, "title": "Deal Breaker", "releaseDate": [2016, "Dec", 13], "watchOrder": 1555},
+                {"season": 1, "episode": 6, "title": "Justicia", "releaseDate": [2016, "Dec", 13], "watchOrder": 1556}
+            ]
         },
         {
             "type": "Television",
@@ -800,8 +837,8 @@
                 {"season": 1, "episode": 1, "title": "Filmed Before a Live Studio Audience", "releaseDate": [2021, "Jan", 15], "watchOrder": 3100},
                 {"season": 1, "episode": 2, "title": "Don't Touch That Dial", "releaseDate": [2021, "Jan", 15], "watchOrder": 3101},
                 {"season": 1, "episode": 3, "title": "Now in Color", "releaseDate": [2021, "Jan", 22], "watchOrder": 3102},
-                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Jan", 29], "watchOrder": 3103},
-                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Feb", 5], "watchOrder": 3104},
+                {"season": 1, "episode": 4, "title": "We Interrupt This Program", "releaseDate": [2021, "Jan", 29], "watchOrder": 3103},
+                {"season": 1, "episode": 5, "title": "On a Very Special Episode...", "releaseDate": [2021, "Feb", 5], "watchOrder": 3104},
                 {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Feb", 12], "watchOrder": 3105},
                 {"season": 1, "episode": 7, "title": "-", "releaseDate": [2021, "Feb", 19], "watchOrder": 3106},
                 {"season": 1, "episode": 8, "title": "-", "releaseDate": [2021, "Feb", 26], "watchOrder": 3107},
