@@ -839,10 +839,10 @@
                 {"season": 1, "episode": 3, "title": "Now in Color", "releaseDate": [2021, "Jan", 22], "watchOrder": 3102},
                 {"season": 1, "episode": 4, "title": "We Interrupt This Program", "releaseDate": [2021, "Jan", 29], "watchOrder": 3103},
                 {"season": 1, "episode": 5, "title": "On a Very Special Episode...", "releaseDate": [2021, "Feb", 5], "watchOrder": 3104},
-                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Feb", 12], "watchOrder": 3105},
-                {"season": 1, "episode": 7, "title": "-", "releaseDate": [2021, "Feb", 19], "watchOrder": 3106},
-                {"season": 1, "episode": 8, "title": "-", "releaseDate": [2021, "Feb", 26], "watchOrder": 3107},
-                {"season": 1, "episode": 9, "title": "-", "releaseDate": [2021, "Mar", 5], "watchOrder": 3108}
+                {"season": 1, "episode": 6, "title": "All-New Halloween Spooktacular", "releaseDate": [2021, "Feb", 12], "watchOrder": 3105},
+                {"season": 1, "episode": 7, "title": "Breaking The Fourth Wall", "releaseDate": [2021, "Feb", 19], "watchOrder": 3106},
+                {"season": 1, "episode": 8, "title": "Previously On", "releaseDate": [2021, "Feb", 26], "watchOrder": 3107},
+                {"season": 1, "episode": 9, "title": "The Series Finale", "releaseDate": [2021, "Mar", 5], "watchOrder": 3108}
             ]
         },
         {
@@ -850,7 +850,7 @@
             "name": "The Falcon and the Winter Soldier",
             "img": "FalconWinterSoldier1.jpg",
             "episodes": [
-                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Mar", 19], "watchOrder": 3150},
+                {"season": 1, "episode": 1, "title": "New World Order", "releaseDate": [2021, "Mar", 19], "watchOrder": 3150},
                 {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "Mar", 26], "watchOrder": 3151},
                 {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Apr", 2], "watchOrder": 3152},
                 {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Apr", 9], "watchOrder": 3153},
@@ -858,29 +858,30 @@
                 {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Apr", 23], "watchOrder": 3155}
             ]
         },
-        {
-            "type": "Film",
-            "name": "Black Widow",
-            "releaseDate": [2021, "May", 7],
-            "watchOrder": 4000,
-            "img": "BlackWidow1.jpg"
-        },
+        
         {
             "type": "Television",
             "name": "Loki",
             "episodes": [
-                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "May", 21], "watchOrder": 4100},
-                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "May", 28], "watchOrder": 4101},
-                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Jun", 4], "watchOrder": 4102},
-                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Jun", 11], "watchOrder": 4103},
-                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Jun", 18], "watchOrder": 4104},
-                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Jun", 25], "watchOrder": 4105}
+                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Jun", 11], "watchOrder": 4000},
+                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "Jun", 18], "watchOrder": 4001},
+                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Jun", 25], "watchOrder": 4002},
+                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Jul", 2], "watchOrder": 4003},
+                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Jul", 9], "watchOrder": 4004},
+                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Jul", 16], "watchOrder": 4005}
             ]
         },
         {
             "type": "Film",
-            "name": "Shang-Chi and the Legend of the Ten Rings",
+            "name": "Black Widow",
             "releaseDate": [2021, "Jul", 9],
+            "watchOrder": 4100,
+            "img": "BlackWidow1.jpg"
+        },
+        {
+            "type": "Film",
+            "name": "Shang-Chi and the Legend of the Ten Rings",
+            "releaseDate": [2021, "Sep", 3],
             "watchOrder": 4150
         },
         {
