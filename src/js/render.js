@@ -47,7 +47,8 @@ function buildTimelineCard(show, index){
         isReleased: show.releaseDate < Date.now(),
         releaseDate: show.releaseDate,
         name: show.name,
-        notes: show.notes
+        notes: show.notes,
+        link: show.link
     });
 }
 
@@ -69,7 +70,7 @@ function buildTimelineEpisodesCard(episodes, index, isReleased){
     });
 }
 
-function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, season, additionalHtml}){
+function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, season, additionalHtml, link}){
     imgSrc = (isString(imgSrc))? `img/poster/${imgSrc}` : `img/poster/default.jpg`;
     return `<li>
             <div class="timeline-card timeline-card_${type} ${!isReleased?"is-unreleased":""}">
@@ -79,7 +80,8 @@ function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, s
                 <div class="timeline-detail">
                     <div class="timeline-vol"> ${index} </div>
                     <div class="timeline-type"> ${type} </div>
-                    <h2 class="timeline-title"> ${name} </h2>
+                    <h2 class="timeline-title">${name}</h2>
+                    <button type="button" class="Dlink"><a href="${link}"> Watch On Disney + </a></button>
                     ${season?`<small class="timeline-subTitle"> Season ${season} </small>`:``}
                     ${releaseDate?`<time class="timeline-date">${isReleased?'Released':'Releases'}: ${writeDate(releaseDate)}</time>`:``}
                     ${notes?`<div class="timeline-notes">${notes}</div>`:``}
