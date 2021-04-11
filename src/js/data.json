@@ -15,7 +15,8 @@
             "releaseDate": [2008, 5, 13],
             "watchOrder": 20,
             "img": "Hulk1.jpg",
-            "notes": "The main character of this film 'Bruce Banner' is played by Edward Norton, who is re-cast following this film to be played in future appearances by Mark Ruffalo"
+            "notes": "The main character of this film 'Bruce Banner' is played by Edward Norton, who is re-cast following this film to be played in future appearances by Mark Ruffalo",
+            "youtubeCode": "uyk19i9Ib0g"
         },
         {
             "type": "Short Film",
@@ -29,7 +30,9 @@
             "name": "Iron Man 2",
             "releaseDate": [2010, 4, 7],
             "watchOrder": 40,
-            "img": "IronMan2.jpg"
+            "img": "IronMan2.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-iron-man-2/lXjCr9QmGGQJ",
+            "youtubeCode": "7IUVKSR8h10"
         },
         {
             "type": "Short Film",
@@ -43,7 +46,9 @@
             "name": "Thor",
             "releaseDate": [2011, 4, 6],
             "watchOrder": 60,
-            "img": "Thor1.jpg"
+            "img": "Thor1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-thor/1p4vdKzTuhzr",
+            "youtubeCode": "XwbEUoUCxWk"
         },
         {
             "type": "Film",
@@ -51,7 +56,9 @@
             "releaseDate": [2011, 6, 22],
             "watchOrder": 70,
             "cronoOrder": -1000,
-            "img": "CaptainAmerica1.jpg"
+            "img": "CaptainAmerica1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-captain-america-the-first-avenger/6xvB6xZ4r95O",
+            "youtubeCode": "72KYxSBkd6M"
         },
         {
             "type": "Short Film",
@@ -66,7 +73,9 @@
             "name": "The Avengers",
             "releaseDate": [2012, 3, 4],
             "watchOrder": 90,
-            "img": "Avengers1.jpg"
+            "img": "Avengers1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-the-avengers/2h6PcHFDbsPy",
+            "youtubeCode": "pyeC8Fg1j9o"
         },
         {
             "type": "Short Film",
@@ -80,7 +89,9 @@
             "name": "Iron Man 3",
             "releaseDate": [2013, 4, 3],
             "watchOrder": 110,
-            "img": "IronMan3.jpg"
+            "img": "IronMan3.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-iron-man-3/3s4Ihq7P2c6e",
+            "youtubeCode": "FgGXyg87v4o"
         },
         {
             "type": "Short Film",
@@ -93,6 +104,7 @@
             "type": "Television",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS1.jpg",
+            "disneyLink": "https://disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi",
             "episodes": [
                 {"season": 1, "episode": 1, "title": "Pilot", "releaseDate": [2013, 8, 24], "watchOrder": 130},
                 {"season": 1, "episode": 2, "title": "0-8-4", "releaseDate": [2013, 9, 1], "watchOrder": 140},
@@ -123,21 +135,27 @@
             "name": "Thor: The Dark World",
             "releaseDate": [2013, 10, 8],
             "watchOrder": 200,
-            "img": "Thor2.jpg"
+            "img": "Thor2.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-thor-the-dark-world/ZHk7aM5xTbW7",
+            "youtubeCode": "VIvpOpkITbo"
         },
         {
             "type": "Film",
             "name": "Captain America: The Winter Soldier",
             "releaseDate": [2014, 3, 4],
             "watchOrder": 300,
-            "img": "CaptainAmerica2.jpg"
+            "img": "CaptainAmerica2.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-captain-america-the-winter-soldier/TVme5whcowSy",
+            "youtubeCode": "C35QDKiKPxA"
         },
         {
             "type": "Film",
             "name": "Guardians of the Galaxy",
             "releaseDate": [2014, 7, 1],
             "watchOrder": 370,
-            "img": "Guardians1.jpg"
+            "img": "Guardians1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-guardians-of-the-galaxy/1S4WM9h3KRR6",
+            "youtubeCode": "91tu3aA0NVU"
         },
         {
             "type": "Television",
@@ -163,6 +181,7 @@
             "type": "Television",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS2.jpg",
+            "disneyLink": "https://disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi",
             "episodes": [
                 {"season": 2, "episode": 1, "title": "Shadows", "releaseDate": [2014, 8, 23], "watchOrder": 510},
                 {"season": 2, "episode": 2, "title": "Heavy Is the Head", "releaseDate": [2014, 8, 30], "watchOrder": 520},
@@ -192,6 +211,7 @@
             "type": "Television",
             "name": "Agent Carter",
             "img": "AgentCarter1.jpg",
+            "disneyLink": "https://disneyplus.com/series/agent-carter/3rh3uclvsNsT",
             "episodes": [
                 {"season": 1, "episode": 1, "title": "Now is Not the End", "releaseDate": [2015, 0, 6], "watchOrder": 610, "cronoOrder": -990},
                 {"season": 1, "episode": 2, "title": "Bridge and Tunnel", "releaseDate": [2015, 0, 6], "watchOrder": 620, "cronoOrder": -980},
@@ -208,7 +228,9 @@
             "name": "The Avengers: Age of Ultron",
             "releaseDate": [2015, 4, 1],
             "watchOrder": 780,
-            "img": "Avengers2.jpg"
+            "img": "Avengers2.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-avengers-age-of-ultron/76IUxY0rNHzt",
+            "youtubeCode": "BO-XTF7ZM-I"
         },
         {
             "type": "Television",
@@ -227,7 +249,9 @@
             "name": "Ant-Man",
             "releaseDate": [2015, 6, 17],
             "watchOrder": 820,
-            "img": "AntMan1.jpg"
+            "img": "AntMan1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-ant-man/5c92KVf1zgUX",
+            "youtubeCode": "v2hfdCKHSes"
         },
         {
             "type": "Television",
@@ -253,6 +277,7 @@
             "type": "Television",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS3.jpg",
+            "disneyLink": "https://disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi",
             "episodes": [
                 {"season": 3, "episode": 1, "title": "Laws of Nature", "releaseDate": [2015, 8, 29], "watchOrder": 960},
                 {"season": 3, "episode": 2, "title": "Purpose in the Machine", "releaseDate": [2015, 9, 6], "watchOrder": 970},
@@ -282,6 +307,7 @@
             "type": "Television",
             "name": "Agent Carter",
             "img": "AgentCarter2.jpg",
+            "disneyLink": "https://disneyplus.com/series/agent-carter/3rh3uclvsNsT",
             "episodes": [
                 {"season": 2, "episode": 1, "title": "The Lady in the Lake", "releaseDate": [2016, 0, 19], "watchOrder": 1060, "cronoOrder": -790},
                 {"season": 2, "episode": 2, "title": "A View in the Dark", "releaseDate": [2016, 0, 19], "watchOrder": 1070, "cronoOrder": -780},
@@ -332,7 +358,9 @@
             "name": "Captain America: Civil War",
             "releaseDate": [2016, 4, 6],
             "watchOrder": 1380,
-            "img": "CaptainAmerica3.jpg"
+            "img": "CaptainAmerica3.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-captain-america-civil-war/4ovfyKnnIBCg",
+            "youtubeCode": "BFqVx6s0yR4"
         },
         {
             "type": "Television",
@@ -359,12 +387,15 @@
             "name": "Doctor Strange",
             "releaseDate": [2016, 10, 4],
             "watchOrder": 1550,
-            "img": "DrStrange1.jpg"
+            "img": "DrStrange1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-doctor-strange/4GgMJ1aHKHA2",
+            "youtubeCode": "bLaKpGUsMmU"
         },
         {
             "type": "Television",
             "name": "Agents of S.H.I.E.L.D.: Slingshot",
             "img": "Slingshot.jpg",
+            "disneyLink": "https://disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi",
             "episodes": [
                 {"season": 1, "episode": 1, "title": "Vendetta", "releaseDate": [2016, "Dec", 13], "watchOrder": 1551},
                 {"season": 1, "episode": 2, "title": "John Hancock", "releaseDate": [2016, "Dec", 13], "watchOrder": 1552},
@@ -378,6 +409,7 @@
             "type": "Television",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS4.jpg",
+            "disneyLink": "https://disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi",
             "episodes": [
                 {"season": 4, "episode": 1, "title": "The Ghost", "releaseDate": [2016, 8, 20], "watchOrder": 1560},
                 {"season": 4, "episode": 2, "title": "Meet the New Boss", "releaseDate": [2016, 8, 27], "watchOrder": 1570},
@@ -429,14 +461,17 @@
             "releaseDate": [2017, 4, 5],
             "watchOrder": 1910,
             "cronoOrder": 505,
-            "img": "Guardians2.jpg"
+            "img": "Guardians2.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-guardians-of-the-galaxy-vol-2/ZdRX4mMbp1gM",
+            "youtubeCode": "wwwZEplyHLM"
         },
         {
             "type": "Film",
             "name": "Spider-Man: Homecoming",
             "releaseDate": [2017, 6, 7],
             "watchOrder": 1920,
-            "img": "SpiderMan1.jpg"
+            "img": "SpiderMan1.jpg",
+            "youtubeCode": "HQgZKcRIg28"
         },
         {
             "type": "Television",
@@ -457,6 +492,7 @@
             "type": "Television",
             "name": "Inhumans",
             "img": "Inhumans1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-thor/1p4vdKzTuhzr",
             "episodes": [
                 {"season": 1, "episode": 1, "title": "Behold... The Inhumans", "releaseDate": [2017, 8, 29], "watchOrder": 1930},
                 {"season": 1, "episode": 2, "title": "Those Who Would Destroy Us", "releaseDate": [2017, 8, 29], "watchOrder": 1940},
@@ -473,7 +509,9 @@
             "name": "Thor: Ragnarok",
             "releaseDate": [2017, 10, 3],
             "watchOrder": 2010,
-            "img": "Thor3.jpg"
+            "img": "Thor3.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-thor-ragnarok/3XqAT8UV8ojS",
+            "youtubeCode": "ZXiBPdVrrT4"
         },
         {
             "type": "Television",
@@ -499,6 +537,7 @@
             "type": "Television",
             "name": "Runaways",
             "img": "Runaways1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-thor/1p4vdKzTuhzr",
             "episodes": [
                 {"season": 1, "episode": 1, "title": "Reunion", "releaseDate": [2017, "Nov", 21], "watchOrder": 2025},
                 {"season": 1, "episode": 2, "title": "Rewind", "releaseDate": [2017, "Nov", 21], "watchOrder": 2026},
@@ -517,7 +556,9 @@
             "name": "Black Panther",
             "releaseDate": [2018, "Feb", 16],
             "watchOrder": 2035,
-            "img": "BlackPanther1.jpg"
+            "img": "BlackPanther1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-black-panther/1GuXuYPj99Ke",
+            "youtubeCode": "Dd_TqLTGxpM"
         },
         {
             "type": "Television",
@@ -543,6 +584,7 @@
             "type": "Television",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS5.jpg",
+            "disneyLink": "https://disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi",
             "episodes": [
                 {"season": 5, "episode": 1, "title": "Orientation", "releaseDate": [2017, "Dec", 1], "watchOrder": 2060},
                 {"season": 5, "episode": 2, "title": "Orientation", "releaseDate": [2017, "Dec", 1], "watchOrder": 2061},
@@ -611,7 +653,9 @@
             "releaseDate": [2018, "Jul", 6],
             "watchOrder": 2185,
             "img": "AntMan2.jpg",
-            "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'. It is important to the plot of 'Avengers: Endgame'"
+            "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'. It is important to the plot of 'Avengers: Endgame'",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-ant-man-and-the-wasp/5D7wkVHmlCKU",
+            "youtubeCode": "1L4C1PDWkNA"
         },
         {
             "type": "Television",
@@ -654,6 +698,7 @@
             "type": "Television",
             "name": "Runaways",
             "img": "Runaways2.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-thor/1p4vdKzTuhzr",
             "episodes": [
                 {"season": 2, "episode": 1, "title": "Gimmie Shelter", "releaseDate": [2018, "Dec", 21], "watchOrder": 2235},
                 {"season": 2, "episode": 2, "title": "Radio One", "releaseDate": [2018, "Dec", 21], "watchOrder": 2236},
@@ -697,7 +742,9 @@
             "releaseDate": [2019, "Mar", 8],
             "cronoOrder": -400,
             "watchOrder": 2300,
-            "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'"
+            "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-captain-marvel/38xJGlLAQy9a",
+            "youtubeCode": "BPS2_D_R8TI"
         },
         {
             "type": "Television",
@@ -741,19 +788,24 @@
             "name": "Avengers: Infinity War",
             "releaseDate": [2018, "Apr", 27],
             "watchOrder": 2700,
-            "img": "Avengers3.jpg"
+            "img": "Avengers3.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-avengers-infinity-war/1WEuZ7H6y39v",
+            "youtubeCode": "mVP4vSHg0C8"
         },
         {
             "type": "Film",
             "name": "Avengers: Endgame",
             "img": "Avengers4.jpg",
             "releaseDate": [2019, "Apr", 26],
-            "watchOrder": 2800
+            "watchOrder": 2800,
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-avengers-endgame/aRbVJUb2h2Rf",
+            "youtubeCode": "W8CXEjr0hWg"
         },
         {
             "type": "Television",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS6.jpg",
+            "disneyLink": "https://disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi",
             "episodes": [
                 {"season": 6, "episode": 1, "title": "Missing Pieces", "releaseDate": [2019, "May", 10], "watchOrder": 2850},
                 {"season": 6, "episode": 2, "title": "Window of Opportunity", "releaseDate": [2019, "May", 17], "watchOrder": 2851},
@@ -775,12 +827,14 @@
             "name": "Spiderman: Far From Home",
             "img": "SpiderMan2.jpg",
             "releaseDate": [2019, "Jul", 5],
-            "watchOrder": 2900
+            "watchOrder": 2900,
+            "youtubeCode": "ryhnsHUERyo"
         },
         {
             "type": "Television",
             "name": "Runaways",
             "img": "Runaways3.jpg",
+            "disneyLink": "https://disneyplus.com/movies/marvel-studios-thor/1p4vdKzTuhzr",
             "episodes": [
                 {"season": 3, "episode": 1, "title": "Smoke and Mirrors", "releaseDate": [2019, "Dec", 13], "watchOrder": 2920},
                 {"season": 3, "episode": 2, "title": "The Great Escape", "releaseDate": [2019, "Dec", 13], "watchOrder": 2921},
@@ -798,6 +852,7 @@
             "type": "Television",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS7.jpg",
+            "disneyLink": "https://disneyplus.com/series/agents-of-shield/2UT4VQrwpVgi",
             "episodes": [
                 {"season": 7, "episode": 1, "title": "The New Deal", "releaseDate": [2020, "May", 27], "watchOrder": 3000},
                 {"season": 7, "episode": 2, "title": "Know Your Onions", "releaseDate": [2020, "Jun", 3], "watchOrder": 3001},
@@ -835,6 +890,7 @@
             "type": "Television",
             "name": "WandaVision",
             "img": "WandaVision1.jpg",
+            "disneyLink": "https://disneyplus.com/series/wandavision/4SrN28ZjDLwH",
             "episodes": [
                 {"season": 1, "episode": 1, "title": "Filmed Before a Live Studio Audience", "releaseDate": [2021, "Jan", 15], "watchOrder": 3100},
                 {"season": 1, "episode": 2, "title": "Don't Touch That Dial", "releaseDate": [2021, "Jan", 15], "watchOrder": 3101},
@@ -851,6 +907,7 @@
             "type": "Television",
             "name": "The Falcon and the Winter Soldier",
             "img": "FalconWinterSoldier1.jpg",
+            "disneyLink": "https://disneyplus.com/series/the-falcon-and-the-winter-soldier/4gglDBMx8icA",
             "episodes": [
                 {"season": 1, "episode": 1, "title": "New World Order", "releaseDate": [2021, "Mar", 19], "watchOrder": 3150},
                 {"season": 1, "episode": 2, "title": "The Star-Spangled Man", "releaseDate": [2021, "Mar", 26], "watchOrder": 3151},
@@ -878,7 +935,8 @@
             "name": "Black Widow",
             "releaseDate": [2021, "Jul", 9],
             "watchOrder": 4100,
-            "img": "BlackWidow1.jpg"
+            "img": "BlackWidow1.jpg",
+            "disneyLink": "https://disneyplus.com/movies/black-widow/3VfTap90rwZC"
         },
         {
             "type": "Film",
