@@ -20,6 +20,9 @@ export default class Show {
         this.crono = crono;
         this.imgSrc = show.img;
         this.notes = show.notes;
+        this.disneyLink = show.disneyLink
+        this.primeLink = show.primeLink
+        this.youtubeCode = show.youtubeCode
 
     }
 

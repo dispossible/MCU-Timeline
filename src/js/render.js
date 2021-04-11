@@ -1,5 +1,6 @@
 import isArray from 'lodash/isArray';
 import isString from 'lodash/isString';
+import Show from './objects/show';
 import { writeDate, writeShortDate } from './utils';
 
 export default function render(data, showFilms = true, showTV = true, showShorts = true, flipOrder = true){
@@ -48,7 +49,9 @@ function buildTimelineCard(show, index){
         releaseDate: show.releaseDate,
         name: show.name,
         notes: show.notes,
-        link: show.link
+        disneyLink: show.disneyLink,
+        primeLink: show.primeLink,
+        youtubeCode: show.youtubeCode
     });
 }
 
@@ -70,7 +73,7 @@ function buildTimelineEpisodesCard(episodes, index, isReleased){
     });
 }
 
-function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, season, additionalHtml, link}){
+function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, season, additionalHtml, disneyLink, youtubeCode, primeLink}){
     imgSrc = (isString(imgSrc))? `img/poster/${imgSrc}` : `img/poster/default.jpg`;
     return `<li>
             <div class="timeline-card timeline-card_${type} ${!isReleased?"is-unreleased":""}">
@@ -81,7 +84,9 @@ function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, s
                     <div class="timeline-vol"> ${index} </div>
                     <div class="timeline-type"> ${type} </div>
                     <h2 class="timeline-title">${name}</h2>
-                    <button type="button" class="Dlink"><a href="http://disneyplus.com" class="link"><img src="img/DisneyPlus.png" class="DisneyImg"></a></button>
+                    ${disneyLink?`<a href="${disneyLink}"><img src="img/DisneyPlus.png" class="LinkImg"></a>`:``}
+                    ${primeLink?`<a href="${primeLink}"><img src="img/Prime.png" class="LinkImg"></a>`:``}
+                    ${youtubeCode?`<a href="http://youtu.be/${youtubeCode}"><img src="img/YouTube.png" class="LinkImg"></a>`:``}<br>
                     ${season?`<small class="timeline-subTitle"> Season ${season} </small>`:``}
                     ${releaseDate?`<time class="timeline-date">${isReleased?'Released':'Releases'}: ${writeDate(releaseDate)}</time>`:``}
                     ${notes?`<div class="timeline-notes">${notes}</div>`:``}
