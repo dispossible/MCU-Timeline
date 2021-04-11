@@ -73,12 +73,20 @@
 }
 
 .link {
+    color: white;
+}
+
+.Dlink {
     background-color: #0b235d; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
+    padding: 5px 5px;
+    text-align: left;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    display: inline;
   }
+
+.DisneyImg{
+    height: 5%;
+    width: 5%;
+}
