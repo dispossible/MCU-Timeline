@@ -50,7 +50,6 @@ function buildTimelineCard(show, index){
         name: show.name,
         notes: show.notes,
         disneyLink: show.disneyLink,
-        primeLink: show.primeLink,
         youtubeCode: show.youtubeCode
     });
 }
@@ -73,7 +72,7 @@ function buildTimelineEpisodesCard(episodes, index, isReleased){
     });
 }
 
-function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, season, additionalHtml, disneyLink, youtubeCode, primeLink}){
+function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, season, additionalHtml, disneyLink, youtubeCode}){
     imgSrc = (isString(imgSrc))? `img/poster/${imgSrc}` : `img/poster/default.jpg`;
     return `<li>
             <div class="timeline-card timeline-card_${type} ${!isReleased?"is-unreleased":""}">
@@ -85,7 +84,6 @@ function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, s
                     <div class="timeline-type"> ${type} </div>
                     <h2 class="timeline-title">${name}</h2>
                     ${disneyLink?`<a href="${disneyLink}"><img src="img/DisneyPlus.png" class="LinkImg"></a>`:``}
-                    ${primeLink?`<a href="${primeLink}"><img src="img/Prime.png" class="LinkImg"></a>`:``}
                     ${youtubeCode?`<a href="http://youtu.be/${youtubeCode}"><img src="img/YouTube.png" class="LinkImg"></a>`:``}<br>
                     ${season?`<small class="timeline-subTitle"> Season ${season} </small>`:``}
                     ${releaseDate?`<time class="timeline-date">${isReleased?'Released':'Releases'}: ${writeDate(releaseDate)}</time>`:``}
