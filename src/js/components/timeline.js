@@ -38,9 +38,21 @@ export default class Timeline {
                 const el = e.target.closest("[data-toggle]");
                 if( !el ) return;
 
-                if( el.getAttribute("data-toggle") === "tv" ){
+                if( el.getAttribute("data-toggle") === "other tv" ){
                     this.showOtherTV = !this.showOtherTV;
                     gtag("event", `Toggle TV visibility ${this.showOtherTV?'on':'off'}`);
+                }
+                else if( el.getAttribute("data-toggle") === "MCU tv" ){
+                    this.showMCUTV = !this.showMCUTV;
+                    gtag("event", `Toggle TV visibility ${this.showMCUTV?'on':'off'}`);
+                }
+                else if( el.getAttribute("data-toggle") === "Defender tv" ){
+                    this.showDefendersTv = !this.showDefendersTv;
+                    gtag("event", `Toggle TV visibility ${this.showDefendersTv?'on':'off'}`);
+                }
+                else if( el.getAttribute("data-toggle") === "Web Shows" ){
+                    this.showWebShow = !this.showWebShow;
+                    gtag("event", `Toggle Shorts visibility ${this.showWebShow?'on':'off'}`);
                 }
                 else if( el.getAttribute("data-toggle") === "short" ){
                     this.showShorts = !this.showShorts;
@@ -97,8 +109,17 @@ export default class Timeline {
 
     setClasses(){
 
-        if( !this.showOtherTV ) document.body.classList.add("is-hideTv");
-        else document.body.classList.remove("is-hideTv");
+        if( !this.showOtherTV ) document.body.classList.add("is-hideOtherTv");
+        else document.body.classList.remove("is-hideOtherTv");
+
+        if( !this.showMCUTV ) document.body.classList.add("is-hideMCUTv");
+        else document.body.classList.remove("is-hideMCUTv");
+
+        if( !this.showDefendersTv ) document.body.classList.add("is-hideDefendersTv");
+        else document.body.classList.remove("is-hideDefendersTv");
+
+        if( !this.showWebShow ) document.body.classList.add("is-hideWebShows");
+        else document.body.classList.remove("is-hideWebShows");
 
         if( !this.showShorts ) document.body.classList.add("is-hideShorts");
         else document.body.classList.remove("is-hideShorts");

@@ -11,7 +11,7 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 - &check; Add new categories to data
 - &cross; Add phase number to data
 - &check; Update how categories are hiden (code the new ones in)
-- &cross; Add buttons for new categories
+- &check; Add buttons for new categories
 - &cross; Design way to display phase Number
 - &cross; Add a way to filter by phase
 
