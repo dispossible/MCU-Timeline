@@ -1,20 +1,29 @@
 # MCU-Timeline
 A timeline of the Marvel Cinematic Universe
 
-## Development:
+## To Do List:
+If you are planning to contribute please refer to the to do list for ideas or add your plans to the suggestions list
+### Under Development:
 
-### To Do List:
+#### End of Phase 3 Update:
+&cross; Decide new categories
+&cross; Add new categories to data
 &cross; Add phase number to data
+&cross; Design new way to display categories
+
+
+### Suggestions:
+#### End Of Phase 4 Update:
 &cross; Add timelines to data (Will Replace Type)
-&cross; Find what diffrent Timelines there are for TV shows (eg Netflix, Main MCU, AoS)
+&cross; Find what different Timelines there are for TV shows (eg Netflix, Main MCU, AoS)
 &cross; Design a way to display timelines
-&cross; Code in new types
 &cross; Code in timelines
+### Different Timelines & Categories:
 
-### Different Timelines & Types:
+MCU: MCU TV, Film, Shorts                                                   {RED}
+! Loki Timeline                                                             {Green}
+! Agents of Shield S6+ (Could also be season 4+ due to darkhold appearence) {Blue}
+Defenders TV                                                                {Purple}
+Other TV                                                                    {Yellow}
 
-MCU: MCU TV, Film, Shorts
- - Loki Timeline
- - Agents of Shield S6+ (Could also be season 4+ due to darkhold appearence)
-Defenders TV
-Other TV
+### Completed Updates:
