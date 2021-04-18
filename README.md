@@ -12,13 +12,13 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 &cross; Design new way to display categories
 
 ##### Different Timelines & Categories for Phase 3 & 4 Update:
-| Timeline            | Branches         | Categorys            | Colour |
-| :-------------      | :----------      | :-----------         | :----- |
-| MCU                 | Main Timline     | Film, MCU TV, Shorts | Red    |
-| -                   | Agents Of Shield | MCU TV               | Blue   |
-| -                   | Loki             | MCU TV               | Green  |
-| Defenders (Netflix) | N/A              | Defenders TV         | Purple |
-| Other               | N/A              | Other TV             | Yellow |
+| Timeline            | Branches         | Categorys                      | Colour |
+| :-------------      | :----------      | :-----------                   | :----- |
+| MCU                 | Main Timline     | Film, MCU TV, Shorts, Web Show | Red    |
+| -                   | Agents Of Shield | MCU TV                         | Blue   |
+| -                   | Loki             | MCU TV                         | Green  |
+| Defenders (Netflix) | N/A              | Defenders TV                   | Purple |
+| Other               | N/A              | Other TV                       | Yellow |
 
 
 ### Suggestions:
