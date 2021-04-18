@@ -6,7 +6,7 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 ### Under Development:
 
 ##### End of Phase 3 Update:
-&cross; Decide new categories
+&check; Decide new categories
 &cross; Add new categories to data
 &cross; Add phase number to data
 &cross; Design new way to display categories
