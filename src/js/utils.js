@@ -6,7 +6,7 @@ import Short from './objects/short';
 export function parseData(dataIn){
     const data = [];
     dataIn.forEach(show=>{
-        if( show.type === "Television" ){
+        if( show.type === "Television" || show.type === "MCU TV" ){
             show.episodes.forEach(episode=>{
                 data.push( new Episode(show, episode) );
             });

@@ -17,6 +17,7 @@ export default class Episode extends Show {
         }, "episode");
 
         this.show = show.name;
+        this.showType = show.type;
         this.season = episode.season;
         this.episodeNumber = episode.episode;
         this.episodeNotes = episode.notes;
