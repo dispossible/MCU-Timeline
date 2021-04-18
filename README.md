@@ -12,6 +12,7 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 - &cross; Update how categories are displayed (code the new ones in)
 - &cross; Add buttons for new categories
 - &cross; Design way to display phase Number
+- &cross; Add a way to filter by phase
 
 ##### Different Timelines & Categories for Phase 3 & 4 Update:
 | Timeline            | Branches         | Categorys                      | Colour |
