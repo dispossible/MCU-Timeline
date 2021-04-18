@@ -8,9 +8,9 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 
 ##### End of Phase 3 Update:
 - &check; Decide new categories
-- &cross; Add new categories to data
+- &check; Add new categories to data
 - &cross; Add phase number to data
-- &cross; Update how categories are displayed (code the new ones in)
+- &check; Update how categories are hiden (code the new ones in)
 - &cross; Add buttons for new categories
 - &cross; Design way to display phase Number
 - &cross; Add a way to filter by phase
