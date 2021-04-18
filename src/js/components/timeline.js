@@ -7,6 +7,7 @@ export const defaults = {
     showShorts: true,
     order: "watch",
     flipOrder: true,
+    showMCUTV: true
 }
 
 export default class Timeline {
@@ -21,6 +22,7 @@ export default class Timeline {
         this.showFilms = defaults.showFilms;
         this.showTV = defaults.showTV;
         this.showShorts = defaults.showShorts;
+        this.showMCUTV = defaults.showMCUTV
         this.order = defaults.order;
         this.flipOrder = defaults.flipOrder;
 
@@ -109,7 +111,7 @@ export default class Timeline {
 
 
     render(){
-        this.el.innerHTML = render(this.data, this.showFilms, this.showTV, this.showShorts, this.flipOrder);
+        this.el.innerHTML = render(this.data, this.showFilms, this.showTV, this.showMCUTV, this.showShorts, this.flipOrder);
     }
 
 }

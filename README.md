@@ -10,6 +10,7 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 - &cross; Add new categories to data
 - &cross; Add phase number to data
 - &cross; Update how categories are displayed (code the new ones in)
+- &cross; Add buttons for new categories
 - &cross; Design way to display phase Number
 
 ##### Different Timelines & Categories for Phase 3 & 4 Update:
@@ -23,7 +24,7 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 
 
 ### Suggestions:
-##### End Of Phase 4 Update:
+##### Halfway through Phase 4 Updates:
 - Add timelines to data (Will Replace Type)
 - Find what different Timelines there are for TV shows (eg Netflix, Main MCU, AoS)
 - Design a way to display timelines
