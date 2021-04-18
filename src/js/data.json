@@ -138,7 +138,7 @@
             "img": "Guardians1.jpg"
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Daredevil",
             "img": "Daredevil1.jpg",
             "episodes": [
@@ -158,7 +158,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS2.jpg",
             "episodes": [
@@ -187,7 +187,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Agent Carter",
             "img": "AgentCarter1.jpg",
             "episodes": [
@@ -209,7 +209,7 @@
             "img": "Avengers2.jpg"
         },
         {
-            "type": "Television",
+            "type": "Web Show",
             "name": "WHIH Newsfront",
             "img": "WHIH1.jpg",
             "episodes": [
@@ -228,7 +228,7 @@
             "img": "AntMan1.jpg"
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Jessica Jones",
             "img": "JessicaJones1.jpg",
             "episodes": [
@@ -248,7 +248,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS3.jpg",
             "episodes": [
@@ -277,7 +277,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Agent Carter",
             "img": "AgentCarter2.jpg",
             "episodes": [
@@ -294,7 +294,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Daredevil",
             "img": "Daredevil2.jpg",
             "episodes": [
@@ -314,7 +314,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Web Show",
             "name": "WHIH Newsfront",
             "img": "WHIH2.jpg",
             "episodes": [
@@ -333,7 +333,7 @@
             "img": "CaptainAmerica3.jpg"
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Luke Cage",
             "img": "LukeCage1.jpg",
             "episodes": [
@@ -360,7 +360,7 @@
             "img": "DrStrange1.jpg"
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Agents of S.H.I.E.L.D.: Slingshot",
             "img": "Slingshot.jpg",
             "episodes": [
@@ -373,7 +373,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS4.jpg",
             "episodes": [
@@ -402,7 +402,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Iron Fist",
             "img": "IronFist1.jpg",
             "episodes": [
@@ -437,7 +437,7 @@
             "img": "SpiderMan1.jpg"
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "The Defenders",
             "img": "Defenders1.jpg",
             "episodes": [
@@ -452,7 +452,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Other TV",
             "name": "Inhumans",
             "img": "Inhumans1.jpg",
             "episodes": [
@@ -474,7 +474,7 @@
             "img": "Thor3.jpg"
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "The Punisher",
             "img": "Punisher1.jpg",
             "episodes": [
@@ -494,7 +494,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Other TV",
             "name": "Runaways",
             "img": "Runaways1.jpg",
             "episodes": [
@@ -518,7 +518,7 @@
             "img": "BlackPanther1.jpg"
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Jessica Jones",
             "img": "JessicaJones2.jpg",
             "episodes": [
@@ -538,7 +538,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS5.jpg",
             "episodes": [
@@ -567,7 +567,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Other TV",
             "name": "Cloak & Dagger",
             "img": "CloakAndDagger1.jpg",
             "episodes": [
@@ -584,7 +584,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Luke Cage",
             "img": "LukeCage2.jpg",
             "episodes": [
@@ -612,7 +612,7 @@
             "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'. It is important to the plot of 'Avengers: Endgame'"
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Iron Fist",
             "img": "IronFist2.jpg",
             "episodes": [
@@ -629,7 +629,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Daredevil",
             "img": "Daredevil3.jpg",
             "episodes": [
@@ -649,7 +649,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Other TV",
             "name": "Runaways",
             "img": "Runaways2.jpg",
             "episodes": [
@@ -669,7 +669,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "The Punisher",
             "img": "Punisher2.jpg",
             "episodes": [
@@ -698,7 +698,7 @@
             "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'"
         },
         {
-            "type": "Television",
+            "type": "Other TV",
             "name": "Cloak & Dagger",
             "img": "CloakAndDagger2.jpg",
             "episodes": [
@@ -715,7 +715,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Defenders TV",
             "name": "Jessica Jones",
             "img": "JessicaJones3.jpg",
             "episodes": [
@@ -749,7 +749,7 @@
             "watchOrder": 2800
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS6.jpg",
             "episodes": [
@@ -776,7 +776,7 @@
             "watchOrder": 2900
         },
         {
-            "type": "Television",
+            "type": "Other TV",
             "name": "Runaways",
             "img": "Runaways3.jpg",
             "episodes": [
@@ -793,7 +793,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS7.jpg",
             "episodes": [
@@ -813,7 +813,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "Other TV",
             "name": "Helstrom",
             "img": "Helstrom1.jpg",
             "episodes": [
@@ -830,7 +830,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "WandaVision",
             "img": "WandaVision1.jpg",
             "episodes": [
@@ -846,7 +846,7 @@
             ]
         },
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "The Falcon and the Winter Soldier",
             "img": "FalconWinterSoldier1.jpg",
             "episodes": [
@@ -860,7 +860,7 @@
         },
         
         {
-            "type": "Television",
+            "type": "MCU TV",
             "name": "Loki",
             "episodes": [
                 {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Jun", 11], "watchOrder": 4000},

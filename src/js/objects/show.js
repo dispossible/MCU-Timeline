@@ -24,10 +24,12 @@ export default class Show {
 
     }
 
-    isVisible(showFilm,showTv,showShort,showMCUTV){
+    isVisible(showFilm,showOtherTv,showShort,showMCUTV,showDefendersTv,showWebShow){
         return (
             (this.type === "film" && showFilm) ||
-            (this.type === "episode" && showTv) ||
+            (this.showType === "Other TV" && showOtherTv) ||
+            (this.showType === "Web Show" && showWebShow) ||
+            (this.showType === "Defenders TV" && showDefendersTv) ||
             (this.showType === "MCU TV" && showMCUTV) ||
             (this.type === "short" && showShort)
         );

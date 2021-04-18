@@ -3,11 +3,13 @@ import { parseData, sortData } from '../utils';
 
 export const defaults = {
     showFilms: true,
-    showTV: true,
+    showOtherTV: true,
     showShorts: true,
     order: "watch",
     flipOrder: true,
-    showMCUTV: true
+    showMCUTV: true,
+    showWebShow: true,
+    showDefendersTv: true
 }
 
 export default class Timeline {
@@ -20,9 +22,11 @@ export default class Timeline {
 
         //Ctrls
         this.showFilms = defaults.showFilms;
-        this.showTV = defaults.showTV;
+        this.showOtherTV = defaults.showOtherTV;
         this.showShorts = defaults.showShorts;
-        this.showMCUTV = defaults.showMCUTV
+        this.showMCUTV = defaults.showMCUTV;
+        this.showWebShow = defaults.showWebShow;
+        this.showDefendersTv = defaults.showDefendersTv;
         this.order = defaults.order;
         this.flipOrder = defaults.flipOrder;
 
@@ -35,8 +39,8 @@ export default class Timeline {
                 if( !el ) return;
 
                 if( el.getAttribute("data-toggle") === "tv" ){
-                    this.showTV = !this.showTV;
-                    gtag("event", `Toggle TV visibility ${this.showTV?'on':'off'}`);
+                    this.showOtherTV = !this.showOtherTV;
+                    gtag("event", `Toggle TV visibility ${this.showOtherTV?'on':'off'}`);
                 }
                 else if( el.getAttribute("data-toggle") === "short" ){
                     this.showShorts = !this.showShorts;
@@ -93,7 +97,7 @@ export default class Timeline {
 
     setClasses(){
 
-        if( !this.showTV ) document.body.classList.add("is-hideTv");
+        if( !this.showOtherTV ) document.body.classList.add("is-hideTv");
         else document.body.classList.remove("is-hideTv");
 
         if( !this.showShorts ) document.body.classList.add("is-hideShorts");
@@ -111,7 +115,7 @@ export default class Timeline {
 
 
     render(){
-        this.el.innerHTML = render(this.data, this.showFilms, this.showTV, this.showMCUTV, this.showShorts, this.flipOrder);
+        this.el.innerHTML = render(this.data, this.showFilms, this.showOtherTV, this.showDefendersTv, this.showMCUTV, this.showShorts, this.showWebShow, this.flipOrder);
     }
 
 }

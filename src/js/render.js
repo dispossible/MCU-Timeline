@@ -2,12 +2,12 @@ import isArray from 'lodash/isArray';
 import isString from 'lodash/isString';
 import { writeDate, writeShortDate } from './utils';
 
-export default function render(data, showFilms = true, showTV = true, showShorts = true, showMCUTV = false, flipOrder = true){
+export default function render(data, showFilms = true, showOtherTV = true, showDefendersTv = true, showShorts = true, showMCUTV = true, showWebShow = true, flipOrder = true){
 
     const showList = [];
 
     data.forEach( show => {
-        if( !show.isVisible(showFilms, showTV, showMCUTV, showShorts) ) return;
+        if( !show.isVisible(showFilms, showOtherTV, showMCUTV, showShorts, showDefendersTv,showWebShow) ) return;
         if( show.type === "episode" ){
             if( 
                 isArray(showList[showList.length-1]) &&
