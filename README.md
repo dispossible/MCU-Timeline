@@ -3,6 +3,7 @@ A timeline of the Marvel Cinematic Universe
 
 ## To Do List:
 If you are planning to contribute please refer to the to do list for ideas or add your plans to the suggestions list
+
 ### Under Development:
 
 ##### End of Phase 3 Update:
@@ -25,6 +26,10 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 
 
 ### Suggestions:
+
+#### General:
+- Add General Community profile items (eg Code of Conduct, Pull request template, etc)
+
 ##### Halfway through Phase 4 Updates:
 - Add timelines to data (Will Replace Type)
 - Find what different Timelines there are for TV shows (eg Netflix, Main MCU, AoS)
