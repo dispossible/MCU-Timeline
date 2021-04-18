@@ -11,6 +11,12 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 &cross; Add phase number to data
 &cross; Design new way to display categories
 
+#### Different Timelines & Categories for Phase 3 & 4 Update:
+MCU: MCU TV, Film, Shorts {RED}
+! Loki Timeline {Green}
+! Agents of Shield S6+ (Could also be season 4+ due to darkhold appearence) {Blue}
+Defenders TV {Purple}
+Other TV {Yellow}
 
 ### Suggestions:
 #### End Of Phase 4 Update:
@@ -18,12 +24,5 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 &cross; Find what different Timelines there are for TV shows (eg Netflix, Main MCU, AoS)
 &cross; Design a way to display timelines
 &cross; Code in timelines
-### Different Timelines & Categories:
 
-MCU: MCU TV, Film, Shorts                                                   {RED}
-! Loki Timeline                                                             {Green}
-! Agents of Shield S6+ (Could also be season 4+ due to darkhold appearence) {Blue}
-Defenders TV                                                                {Purple}
-Other TV                                                                    {Yellow}
-
-### Completed Updates:
+## Completed Updates:
