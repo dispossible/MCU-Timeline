@@ -6,11 +6,11 @@ If you are planning to contribute please refer to the to do list for ideas or ad
 ### Under Development:
 
 ##### End of Phase 3 Update:
-&check; Decide new categories
-&cross; Add new categories to data
-&cross; Add phase number to data
-&cross; Update how categories are displayed (code the new ones in)
-&cross; Design way to display phase Number
+- &check; Decide new categories
+- &cross; Add new categories to data
+- &cross; Add phase number to data
+- &cross; Update how categories are displayed (code the new ones in)
+- &cross; Design way to display phase Number
 
 ##### Different Timelines & Categories for Phase 3 & 4 Update:
 | Timeline            | Branches         | Categorys                      | Colour |
