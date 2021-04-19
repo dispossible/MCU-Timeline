@@ -55,7 +55,7 @@ function buildTimelineEpisodesCard(episodes, index, isReleased){
     return buildCard({
         index, 
         imgSrc: episodes[0].imgSrc,
-        type: 'tv',
+        type: episodes[0].showType,
         isReleased, 
         name: episodes[0].show,
         notes: episodes[0].notes, 

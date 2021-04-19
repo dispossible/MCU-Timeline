@@ -1,6 +1,4 @@
 import Show from './show';
-import isString from 'lodash/isString';
-import { writeShortDate } from '../utils';
 
 export default class Episode extends Show {
 
@@ -16,6 +14,7 @@ export default class Episode extends Show {
             notes: show.notes,
         }, "episode");
 
+        this.showType = show.type;
         this.show = show.name;
         this.season = episode.season;
         this.episodeNumber = episode.episode;

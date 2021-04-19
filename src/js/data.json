@@ -154,7 +154,7 @@
             "img": "Guardians1.jpg"
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Daredevil",
             "img": "Daredevil1.jpg",
             "episodes": [
@@ -249,7 +249,7 @@
             "img": "AntMan1.jpg"
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Jessica Jones",
             "img": "JessicaJones1.jpg",
             "episodes": [
@@ -317,7 +317,7 @@
             ]
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Daredevil",
             "img": "Daredevil2.jpg",
             "episodes": [
@@ -358,7 +358,7 @@
             "img": "CaptainAmerica3.jpg"
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Luke Cage",
             "img": "LukeCage1.jpg",
             "episodes": [
@@ -386,7 +386,7 @@
             "img": "DrStrange1.jpg"
         },
         {
-            "type": "MCU TV",
+            "type": "Web Show",
             "name": "Agents of S.H.I.E.L.D.: Slingshot",
             "img": "Slingshot.jpg",
             "phase": 3,
@@ -430,7 +430,7 @@
             ]
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Iron Fist",
             "img": "IronFist1.jpg",
             "episodes": [
@@ -467,7 +467,7 @@
             "img": "SpiderMan1.jpg"
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "The Defenders",
             "img": "Defenders1.jpg",
             "episodes": [
@@ -482,7 +482,7 @@
             ]
         },
         {
-            "type": "Other TV",
+            "type": "TV",
             "name": "Inhumans",
             "img": "Inhumans1.jpg",
             "episodes": [
@@ -505,7 +505,7 @@
             "img": "Thor3.jpg"
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "The Punisher",
             "img": "Punisher1.jpg",
             "episodes": [
@@ -525,7 +525,7 @@
             ]
         },
         {
-            "type": "Other TV",
+            "type": "TV",
             "name": "Runaways",
             "img": "Runaways1.jpg",
             "episodes": [
@@ -550,7 +550,7 @@
             "img": "BlackPanther1.jpg"
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Jessica Jones",
             "img": "JessicaJones2.jpg",
             "episodes": [
@@ -600,7 +600,7 @@
             ]
         },
         {
-            "type": "Other TV",
+            "type": "TV",
             "name": "Cloak & Dagger",
             "img": "CloakAndDagger1.jpg",
             "episodes": [
@@ -617,7 +617,7 @@
             ]
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Luke Cage",
             "img": "LukeCage2.jpg",
             "episodes": [
@@ -646,7 +646,7 @@
             "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'. It is important to the plot of 'Avengers: Endgame'"
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Iron Fist",
             "img": "IronFist2.jpg",
             "episodes": [
@@ -663,7 +663,7 @@
             ]
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Daredevil",
             "img": "Daredevil3.jpg",
             "episodes": [
@@ -683,7 +683,7 @@
             ]
         },
         {
-            "type": "Other TV",
+            "type": "TV",
             "name": "Runaways",
             "img": "Runaways2.jpg",
             "episodes": [
@@ -703,7 +703,7 @@
             ]
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "The Punisher",
             "img": "Punisher2.jpg",
             "episodes": [
@@ -733,7 +733,7 @@
             "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'"
         },
         {
-            "type": "Other TV",
+            "type": "TV",
             "name": "Cloak & Dagger",
             "img": "CloakAndDagger2.jpg",
             "episodes": [
@@ -750,7 +750,7 @@
             ]
         },
         {
-            "type": "Defenders TV",
+            "type": "Defenders",
             "name": "Jessica Jones",
             "img": "JessicaJones3.jpg",
             "episodes": [
@@ -814,7 +814,7 @@
             "watchOrder": 2900
         },
         {
-            "type": "Other TV",
+            "type": "TV",
             "name": "Runaways",
             "img": "Runaways3.jpg",
             "episodes": [
@@ -851,7 +851,7 @@
             ]
         },
         {
-            "type": "Other TV",
+            "type": "TV",
             "name": "Helstrom",
             "img": "Helstrom1.jpg",
             "episodes": [

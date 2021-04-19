@@ -2,11 +2,12 @@ import padStart from 'lodash/padStart';
 import Episode from './objects/episode';
 import Film from './objects/film';
 import Short from './objects/short';
+import isArray from 'lodash/isArray';
 
 export function parseData(dataIn){
     const data = [];
     dataIn.forEach(show=>{
-        if(show.type === "MCU TV" || show.type === "Defenders TV" || show.type === "Web Show" || show.type === "Other TV"){
+        if(isArray(show.episodes)){
             show.episodes.forEach(episode=>{
                 data.push( new Episode(show, episode) );
             });
