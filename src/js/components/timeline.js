@@ -6,7 +6,7 @@ export const defaults = {
     showTV: true,
     showShorts: true,
     order: "watch",
-    flipOrder: true
+    flipOrder: true,
 }
 
 export default class Timeline {
