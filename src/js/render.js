@@ -2,12 +2,12 @@ import isArray from 'lodash/isArray';
 import isString from 'lodash/isString';
 import { writeDate, writeShortDate } from './utils';
 
-export default function render(data, showFilms = true, showOtherTV = true, showDefendersTv = true, showShorts = true, showMCUTV = true, showWebShow = true, flipOrder = true){
+export default function render(data, showFilms = true, showTV = true, showShorts = true, flipOrder = true){
 
     const showList = [];
 
     data.forEach( show => {
-        if( !show.isVisible(showFilms, showOtherTV, showMCUTV, showShorts, showDefendersTv,showWebShow) ) return;
+        if( !show.isVisible(showFilms, showTV, showShorts) ) return;
         if( show.type === "episode" ){
             if( 
                 isArray(showList[showList.length-1]) &&
@@ -55,7 +55,7 @@ function buildTimelineEpisodesCard(episodes, index, isReleased){
     return buildCard({
         index, 
         imgSrc: episodes[0].imgSrc,
-        type: episodes[0].showType,
+        type: 'tv',
         isReleased, 
         name: episodes[0].show,
         notes: episodes[0].notes, 

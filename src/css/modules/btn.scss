@@ -37,16 +37,7 @@
     .is-hideShorts &_short {
         opacity: 0.5;
     }
-    .is-hideOtherTv &_othertv {
-        opacity: 0.5;
-    }
-    .is-hideMCUTv &_mcutv {
-        opacity: 0.5;
-    }
-    .is-hideDefendersTv &_defenderstv {
-        opacity: 0.5;
-    }
-    .is-hideWebShows &_webshows {
+    .is-hideTv &_tv {   
         opacity: 0.5;
     }
     .is-hideFilms &_film {

@@ -16,7 +16,6 @@ export default class Show {
         this.name = show.name;
         this.releaseDate = new Date(...show.releaseDate);
         this.type = type;
-        this.showType = show.type;
         this.order = show.watchOrder;
         this.crono = crono;
         this.imgSrc = show.img;
@@ -24,13 +23,10 @@ export default class Show {
 
     }
 
-    isVisible(showFilm,showOtherTv,showShort,showMCUTV,showDefendersTv,showWebShow){
+    isVisible(showFilm,showTv,showShort){
         return (
             (this.type === "film" && showFilm) ||
-            (this.showType === "Other TV" && showOtherTv) ||
-            (this.showType === "Web Show" && showWebShow) ||
-            (this.showType === "Defenders TV" && showDefendersTv) ||
-            (this.showType === "MCU TV" && showMCUTV) ||
+            (this.type === "episode" && showTv) ||
             (this.type === "short" && showShort)
         );
     }

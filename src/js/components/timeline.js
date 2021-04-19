@@ -3,13 +3,10 @@ import { parseData, sortData } from '../utils';
 
 export const defaults = {
     showFilms: true,
-    showOtherTV: true,
+    showTV: true,
     showShorts: true,
     order: "watch",
-    flipOrder: true,
-    showMCUTV: true,
-    showWebShow: true,
-    showDefendersTv: true
+    flipOrder: true
 }
 
 export default class Timeline {
@@ -22,11 +19,8 @@ export default class Timeline {
 
         //Ctrls
         this.showFilms = defaults.showFilms;
-        this.showOtherTV = defaults.showOtherTV;
+        this.showTV = defaults.showTV;
         this.showShorts = defaults.showShorts;
-        this.showMCUTV = defaults.showMCUTV;
-        this.showWebShow = defaults.showWebShow;
-        this.showDefendersTv = defaults.showDefendersTv;
         this.order = defaults.order;
         this.flipOrder = defaults.flipOrder;
 
@@ -38,21 +32,9 @@ export default class Timeline {
                 const el = e.target.closest("[data-toggle]");
                 if( !el ) return;
 
-                if( el.getAttribute("data-toggle") === "other tv" ){
-                    this.showOtherTV = !this.showOtherTV;
-                    gtag("event", `Toggle TV visibility ${this.showOtherTV?'on':'off'}`);
-                }
-                else if( el.getAttribute("data-toggle") === "MCU tv" ){
-                    this.showMCUTV = !this.showMCUTV;
-                    gtag("event", `Toggle TV visibility ${this.showMCUTV?'on':'off'}`);
-                }
-                else if( el.getAttribute("data-toggle") === "Defender tv" ){
-                    this.showDefendersTv = !this.showDefendersTv;
-                    gtag("event", `Toggle TV visibility ${this.showDefendersTv?'on':'off'}`);
-                }
-                else if( el.getAttribute("data-toggle") === "Web Shows" ){
-                    this.showWebShow = !this.showWebShow;
-                    gtag("event", `Toggle Shorts visibility ${this.showWebShow?'on':'off'}`);
+                if( el.getAttribute("data-toggle") === "tv" ){
+                    this.showTV = !this.showTV;
+                    gtag("event", `Toggle TV visibility ${this.showTV?'on':'off'}`);
                 }
                 else if( el.getAttribute("data-toggle") === "short" ){
                     this.showShorts = !this.showShorts;
@@ -109,17 +91,8 @@ export default class Timeline {
 
     setClasses(){
 
-        if( !this.showOtherTV ) document.body.classList.add("is-hideOtherTv");
-        else document.body.classList.remove("is-hideOtherTv");
-
-        if( !this.showMCUTV ) document.body.classList.add("is-hideMCUTv");
-        else document.body.classList.remove("is-hideMCUTv");
-
-        if( !this.showDefendersTv ) document.body.classList.add("is-hideDefendersTv");
-        else document.body.classList.remove("is-hideDefendersTv");
-
-        if( !this.showWebShow ) document.body.classList.add("is-hideWebShows");
-        else document.body.classList.remove("is-hideWebShows");
+        if( !this.showTV ) document.body.classList.add("is-hideTv");
+        else document.body.classList.remove("is-hideTv");
 
         if( !this.showShorts ) document.body.classList.add("is-hideShorts");
         else document.body.classList.remove("is-hideShorts");
@@ -136,7 +109,7 @@ export default class Timeline {
 
 
     render(){
-        this.el.innerHTML = render(this.data, this.showFilms, this.showOtherTV, this.showDefendersTv, this.showMCUTV, this.showShorts, this.showWebShow, this.flipOrder);
+        this.el.innerHTML = render(this.data, this.showFilms, this.showTV, this.showShorts, this.flipOrder);
     }
 
 }
