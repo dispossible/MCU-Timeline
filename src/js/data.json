@@ -895,7 +895,7 @@
                 {"season": 1, "episode": 3, "title": "Power Broker", "releaseDate": [2021, "Apr", 2], "watchOrder": 3152},
                 {"season": 1, "episode": 4, "title": "The Whole World Is Watching", "releaseDate": [2021, "Apr", 9], "watchOrder": 3153},
                 {"season": 1, "episode": 5, "title": "Truth", "releaseDate": [2021, "Apr", 16], "watchOrder": 3154},
-                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Apr", 23], "watchOrder": 3155}
+                {"season": 1, "episode": 6, "title": "One World, One People", "releaseDate": [2021, "Apr", 23], "watchOrder": 3155}
             ]
         },
         
@@ -957,16 +957,30 @@
         },
         {
             "type": "Film",
-            "name": "Black Panther 2",
+            "name": "Black Panther: Wakanda Forever",
             "releaseDate": [2022, "Jul", 8],
             "watchOrder": 4600,
             "phase": 4
         },
         {
             "type": "Film",
-            "name": "Captain Marvel 2",
+            "name": "The Marvels",
             "releaseDate": [2022, "Nov", 11],
             "watchOrder": 4700,
+            "phase": 4
+        },
+        {
+            "type": "Film",
+            "name": "Ant-Man and the Wasp: Quantumania",
+            "releaseDate": [2023, "Feb", 17],
+            "watchOrder": 4800,
+            "phase": 4
+        },
+        {
+            "type": "Film",
+            "name": "Guardians of the Galaxy Vol. 3",
+            "releaseDate": [2023, "May", 5],
+            "watchOrder": 4900,
             "phase": 4
         }
     ]
