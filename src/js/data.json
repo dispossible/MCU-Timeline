@@ -917,6 +917,7 @@
             "name": "Black Widow",
             "releaseDate": [2021, "Jul", 9],
             "watchOrder": 4100,
+            "cronoOrder": 1385,
             "phase": 4,
             "img": "BlackWidow1.jpg"
         },
