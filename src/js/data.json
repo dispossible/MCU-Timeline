@@ -898,17 +898,17 @@
                 {"season": 1, "episode": 6, "title": "One World, One People", "releaseDate": [2021, "Apr", 23], "watchOrder": 3155}
             ]
         },
-        
         {
             "type": "MCU TV",
             "name": "Loki",
+            "img": "Loki1.jpg",
             "phase": 4,
             "episodes": [
-                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Jun", 11], "watchOrder": 4000},
-                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "Jun", 18], "watchOrder": 4001},
-                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Jun", 25], "watchOrder": 4002},
-                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Jul", 2], "watchOrder": 4003},
-                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Jul", 9], "watchOrder": 4004},
+                {"season": 1, "episode": 1, "title": "Glorious Purpose", "releaseDate": [2021, "Jun", 11], "watchOrder": 4000},
+                {"season": 1, "episode": 2, "title": "The Variant", "releaseDate": [2021, "Jun", 18], "watchOrder": 4001},
+                {"season": 1, "episode": 3, "title": "Lamentis", "releaseDate": [2021, "Jun", 25], "watchOrder": 4002},
+                {"season": 1, "episode": 4, "title": "The Nexus Event", "releaseDate": [2021, "Jul", 2], "watchOrder": 4003},
+                {"season": 1, "episode": 5, "title": "Journey into Mystery", "releaseDate": [2021, "Jul", 9], "watchOrder": 4004},
                 {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Jul", 16], "watchOrder": 4005}
             ]
         },
@@ -922,18 +922,38 @@
             "img": "BlackWidow1.jpg"
         },
         {
+            "type": "MCU TV",
+            "name": "What If...?",
+            "img": "WhatIf1.jpg",
+            "phase": 4,
+            "episodes": [
+                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Aug", 11], "watchOrder": 4110},
+                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "Aug", 18], "watchOrder": 4111},
+                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Aug", 25], "watchOrder": 4112},
+                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Sep", 1], "watchOrder": 4113},
+                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Sep", 8], "watchOrder": 4114},
+                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Sep", 15], "watchOrder": 4115},
+                {"season": 1, "episode": 7, "title": "-", "releaseDate": [2021, "Sep", 22], "watchOrder": 4116},
+                {"season": 1, "episode": 8, "title": "-", "releaseDate": [2021, "Sep", 29], "watchOrder": 4117},
+                {"season": 1, "episode": 9, "title": "-", "releaseDate": [2021, "Oct", 6], "watchOrder": 4118},
+                {"season": 1, "episode": 10, "title": "-", "releaseDate": [2021, "Oct", 13], "watchOrder": 4119}
+            ]
+        },
+        {
             "type": "Film",
             "name": "Shang-Chi and the Legend of the Ten Rings",
             "releaseDate": [2021, "Sep", 3],
             "watchOrder": 4150,
-            "phase": 4
+            "phase": 4,
+            "img": "ShangChi1.jpg"
         },
         {
             "type": "Film",
             "name": "Eternals",
             "releaseDate": [2021, "Nov", 5],
             "watchOrder": 4200,
-            "phase": 4
+            "phase": 4,
+            "img": "Eternals.jpg"
         },
         {
             "type": "Film",
