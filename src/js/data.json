@@ -904,12 +904,12 @@
             "img": "Loki1.jpg",
             "phase": 4,
             "episodes": [
-                {"season": 1, "episode": 1, "title": "Glorious Purpose", "releaseDate": [2021, "Jun", 11], "watchOrder": 4000},
-                {"season": 1, "episode": 2, "title": "The Variant", "releaseDate": [2021, "Jun", 18], "watchOrder": 4001},
-                {"season": 1, "episode": 3, "title": "Lamentis", "releaseDate": [2021, "Jun", 25], "watchOrder": 4002},
-                {"season": 1, "episode": 4, "title": "The Nexus Event", "releaseDate": [2021, "Jul", 2], "watchOrder": 4003},
-                {"season": 1, "episode": 5, "title": "Journey into Mystery", "releaseDate": [2021, "Jul", 9], "watchOrder": 4004},
-                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Jul", 16], "watchOrder": 4005}
+                {"season": 1, "episode": 1, "title": "Glorious Purpose", "releaseDate": [2021, "Jun", 9], "watchOrder": 4000},
+                {"season": 1, "episode": 2, "title": "The Variant", "releaseDate": [2021, "Jun", 16], "watchOrder": 4001},
+                {"season": 1, "episode": 3, "title": "Lamentis", "releaseDate": [2021, "Jun", 23], "watchOrder": 4002},
+                {"season": 1, "episode": 4, "title": "The Nexus Event", "releaseDate": [2021, "Jun", 30], "watchOrder": 4003},
+                {"season": 1, "episode": 5, "title": "Journey into Mystery", "releaseDate": [2021, "Jul", 7], "watchOrder": 4004},
+                {"season": 1, "episode": 6, "title": "For All Time. Always.", "releaseDate": [2021, "Jul", 14], "watchOrder": 4005}
             ]
         },
         {
