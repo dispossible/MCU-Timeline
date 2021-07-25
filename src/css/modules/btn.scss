@@ -5,19 +5,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $color-primary;
+    color: var(--color-primary);
     border: 0;
     position: relative;
     background: none;
     transition: 300ms ease;
     outline: 0;
+    cursor: pointer;
+    flex-direction: row;
 
-    @media(min-width: 600px){
-        flex-direction: row;
-
+    &_icon {
+        flex-direction: column;
         svg {
-            margin-right: 8px;
-            margin-left: -4px;
+            margin-bottom: 8px;
         }
     }
 
@@ -30,31 +30,29 @@
     }
 
     &_invert {
-        background: $color-primary;
+        background: var(--color-primary);
         color: white;
     }
 
-    .is-hideShorts &_short {
-        opacity: 0.5;
-    }
-    .is-hideTv &_tv {
-        opacity: 0.5;
-    }
-    .is-hideFilms &_film {
-        opacity: 0.5;
-    }
     &_flip {
+        text-align: center;
+        justify-content: start;
+        color: white;
+        border: 1px solid white;
         svg {
             transition: transform 200ms ease;
         }
-        .is-flipped & svg {
+        &.is-flipped svg {
             transform: rotate(180deg);
+        }
+        span {
+            flex-grow: 1;
         }
     }
 
 
     &_modal {
-        background: $color-primary;
+        background: var(--color-primary);
         color: white;
         position: absolute;
         top: 4px;

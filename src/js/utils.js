@@ -1,8 +1,8 @@
 import padStart from 'lodash/padStart';
 import Episode from './objects/episode';
-import Film from './objects/film';
-import Short from './objects/short';
+import Show from './objects/show';
 import isArray from 'lodash/isArray';
+import { showNames } from './objects/ShowType';
 
 export function parseData(dataIn){
     const data = [];
@@ -11,12 +11,8 @@ export function parseData(dataIn){
             show.episodes.forEach(episode=>{
                 data.push( new Episode(show, episode) );
             });
-        } else
-        if( show.type === "Film" ){
-            data.push( new Film(show) );
-        } else
-        if( show.type === "Short Film" ) {
-            data.push( new Short(show) );
+        } else {
+            data.push( new Show(show) );
         }
     });
     return data;
@@ -80,4 +76,21 @@ export function sortData(data, order, flipOrder){
     }
 
     return data;
+}
+
+
+export function getFilterLists(data){
+    const phases = data.reduce((ps, show) => {
+            if( !ps.includes(show.phase) ){
+                ps.push(show.phase);
+            }
+            return ps;
+        }, [])
+        .sort()
+        .map(p => [p, p === 0 ? "None" : p.toString() ]);
+    const types = Object.entries(showNames);
+    return {
+        phases,
+        types,
+    };
 }

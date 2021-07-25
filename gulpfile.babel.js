@@ -18,10 +18,10 @@ import rename from 'gulp-rename';
 import htmlMin from 'gulp-htmlmin';
 import inject from 'gulp-inject-string';
 
-import { parseData, sortData } from './src/js/utils';
+import { parseData, sortData, getFilterLists } from './src/js/utils';
 import mcuData from './src/js/data.json';
 import { defaults } from './src/js/components/timeline';
-import render from './src/js/render';
+import render, { buildFilterList } from './src/js/render';
 
 
 
@@ -64,11 +64,17 @@ function styling(){
 }
 
 function createHtml(){
-    let data = sortData(parseData(mcuData.shows), defaults.order, defaults.flipOrder);
-    const html = render(data, defaults.showFilms, defaults.showTV, defaults.showShorts, defaults.flipOrder);
+    const data = sortData(parseData(mcuData.shows), defaults.order, defaults.flipOrder);
+    const html = render(data, defaults.filters, defaults.flipOrder);
+
+    const filters = getFilterLists(data);
+    const phases = buildFilterList("PHASE", filters.phases);
+    const types = buildFilterList("TYPE", filters.types);
 
     return src("src/index.html")
-        .pipe(inject.replace("{{prerender}}", html))
+        .pipe(inject.replace("{{prerenderList}}", html))
+        .pipe(inject.replace("{{prerenderPhase}}", phases))
+        .pipe(inject.replace("{{prerenderType}}", types))
         .pipe(htmlMin({
             removeComments: true,
             collapseWhitespace: true

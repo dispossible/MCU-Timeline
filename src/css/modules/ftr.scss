@@ -1,11 +1,27 @@
 .ftr {
-    background: color-mod( black alpha(0.6) );
-    text-align: center;
+    background: rgba(0,0,0,0.6);
     padding: 8px;
-    margin-top: 32px;
-    position: relative;
-    z-index: 6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-top: 3px solid black;
     @media(min-width: 500px){
         padding: 12px;
+        flex-direction: row;
+    }
+}
+
+.ftr_lnk {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 8px 16px;
+    &:hover {
+        color: hsl(0, 0%, 80%);
+    }
+    @media(min-width: 500px){
+        margin: 0 16px;
     }
 }

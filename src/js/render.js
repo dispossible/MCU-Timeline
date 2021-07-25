@@ -1,17 +1,18 @@
 import isArray from 'lodash/isArray';
 import isString from 'lodash/isString';
 import { writeDate, writeShortDate } from './utils';
+import Episode from './objects/episode';
+import {showNames} from './objects/ShowType';
 
-export default function render(data, showFilms = true, showTV = true, showShorts = true, flipOrder = true){
+export default function render(data, filters, flipOrder = true){
 
     const showList = [];
 
     data.forEach( show => {
-        if( !show.isVisible(showFilms, showTV, showShorts) ) return;
-        if( show.type === "episode" ){
+        if( !show.isVisible(filters) ) return;
+        if( show instanceof Episode ){
             if( 
                 isArray(showList[showList.length-1]) &&
-                showList[showList.length-1][0].type === "episode" &&
                 showList[showList.length-1][0].show === show.show &&
                 showList[showList.length-1][0].season === show.season
             ){
@@ -78,7 +79,7 @@ function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, s
                 </div>
                 <div class="timeline-detail">
                     <div class="timeline-vol"> ${index} </div>
-                    <div class="timeline-type"> ${type} </div>
+                    <div class="timeline-type"> ${showNames[type]} </div>
                     <h2 class="timeline-title"> ${name} </h2>
                     ${season?`<small class="timeline-subTitle"> Season ${season} </small>`:``}
                     ${releaseDate?`<time class="timeline-date">${isReleased?'Released':'Releases'}: ${writeDate(releaseDate)}</time>`:``}
@@ -98,4 +99,18 @@ function buildTimelineEpisode(episode){
             </span>`+
             `<time class="timeline-release"> ${writeShortDate(episode.releaseDate)} </time>`+
         `</li>`;
+}
+
+/**
+ * @param {string} type 
+ * @param {[string, string][]} values 
+ * @returns string
+ */
+export function buildFilterList(type, values){
+    return values.map(([val, name]) => `<li>` +
+        `<label class="filters-btn" for="${type}:${val}">` +
+            `<input type="checkbox" data-filter name="${type}" value="${val}" id="${type}:${val}">` +
+            `<span>${name}</span>` +
+        `</label>` +
+    `</li>`).join(``);
 }

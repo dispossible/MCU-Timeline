@@ -12,7 +12,9 @@ export default class Episode extends Show {
             watchOrder: episode.watchOrder,
             cronoOrder: episode.cronoOrder,
             notes: show.notes,
-        }, "episode");
+            type: show.type,
+            phase: show.phase,
+        });
 
         this.showType = show.type;
         this.show = show.name;

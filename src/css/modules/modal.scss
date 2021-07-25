@@ -1,5 +1,7 @@
 .modal {
-    @include cover();
+    width: 100%;
+    top: 0;
+    left: 0;
     position: fixed;
     z-index: 999;
     padding: 0 16px;
@@ -26,8 +28,12 @@
     }
 
     &-overlay {
-        @include cover();
-        background: color-mod( black alpha(0.5) );
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.5);
         z-index: 1;
         opacity: 0;
         transition: 200ms ease;
@@ -41,7 +47,7 @@
         z-index: 2;
         padding: 16px;
         background: white;
-        box-shadow: 0 1px 2px 0 color-mod( black alpha(0.8) );
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.8);
         max-width: 500px;
         opacity: 0;
         transition: 200ms ease-in;
@@ -61,11 +67,11 @@
         }
 
         h2 {
-            font-weight: bold;
+            font-weight: normal;
             font-size: 1.5em;
             margin: 0 0 16px;
-            color: color-mod( $color-text alpha(0.8) );
-            font-family: Passion One, Arial, sans-sreif;
+            color: rgba(0,0,0,0.8);
+            font-family: var(--fontLogo);
         }
 
         p {

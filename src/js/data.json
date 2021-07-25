@@ -1,7 +1,7 @@
 {
     "shows": [
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Iron Man",
             "releaseDate": [2008, 4, 2],
             "watchOrder": 10,
@@ -9,7 +9,7 @@
             "img": "IronMan1.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "The Incredible Hulk",
             "releaseDate": [2008, 5, 13],
             "watchOrder": 20,
@@ -18,7 +18,7 @@
             "notes": "The main character of this film 'Bruce Banner' is played by Edward Norton, who is re-cast following this film to be played in future appearances by Mark Ruffalo"
         },
         {
-            "type": "Short Film",
+            "type": "SHORT",
             "name": "The Consultant",
             "releaseDate": [2011, 8, 13],
             "watchOrder": 30,
@@ -26,7 +26,7 @@
             "img": "TheConsultant.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Iron Man 2",
             "releaseDate": [2010, 4, 7],
             "watchOrder": 40,
@@ -34,7 +34,7 @@
             "img": "IronMan2.jpg"
         },
         {
-            "type": "Short Film",
+            "type": "SHORT",
             "name": "A Funny Thing Happened on the Way to Thor's Hammer",
             "releaseDate": [2011, 9, 25],
             "watchOrder": 50,
@@ -42,7 +42,7 @@
             "img": "ThorsHammer.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Thor",
             "releaseDate": [2011, 4, 6],
             "watchOrder": 60,
@@ -50,7 +50,7 @@
             "img": "Thor1.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Captain America: The First Avenger",
             "releaseDate": [2011, 6, 22],
             "watchOrder": 70,
@@ -59,7 +59,7 @@
             "img": "CaptainAmerica1.jpg"
         },
         {
-            "type": "Short Film",
+            "type": "SHORT",
             "name": "Agent Carter",
             "releaseDate": [2013, 8, 3],
             "watchOrder": 80,
@@ -68,7 +68,7 @@
             "img": "AgentCarter.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "The Avengers",
             "releaseDate": [2012, 3, 4],
             "watchOrder": 90,
@@ -76,7 +76,7 @@
             "img": "Avengers1.jpg"
         },
         {
-            "type": "Short Film",
+            "type": "SHORT",
             "name": "Item 47",
             "releaseDate": [2012, 8, 25],
             "watchOrder": 100,
@@ -84,7 +84,7 @@
             "img": "Item47.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Iron Man 3",
             "releaseDate": [2013, 4, 3],
             "watchOrder": 110,
@@ -92,7 +92,7 @@
             "img": "IronMan3.jpg"
         },
         {
-            "type": "Short Film",
+            "type": "SHORT",
             "name": "All Hail the King",
             "releaseDate": [2014, 1, 4],
             "watchOrder": 120,
@@ -100,7 +100,7 @@
             "img": "AllHailTheKing.jpg"
         },
         {
-            "type": "MCU TV",
+            "type": "TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS1.jpg",
             "phase": 2,
@@ -130,7 +130,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Thor: The Dark World",
             "releaseDate": [2013, 10, 8],
             "watchOrder": 200,
@@ -138,7 +138,7 @@
             "img": "Thor2.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Captain America: The Winter Soldier",
             "releaseDate": [2014, 3, 4],
             "watchOrder": 300,
@@ -146,7 +146,7 @@
             "img": "CaptainAmerica2.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Guardians of the Galaxy",
             "releaseDate": [2014, 7, 1],
             "watchOrder": 370,
@@ -154,7 +154,7 @@
             "img": "Guardians1.jpg"
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Daredevil",
             "img": "Daredevil1.jpg",
             "episodes": [
@@ -174,7 +174,7 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS2.jpg",
             "phase": 2,
@@ -204,7 +204,7 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "TV",
             "name": "Agent Carter",
             "img": "AgentCarter1.jpg",
             "phase": 2,
@@ -220,7 +220,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "The Avengers: Age of Ultron",
             "releaseDate": [2015, 4, 1],
             "watchOrder": 780,
@@ -228,7 +228,7 @@
             "img": "Avengers2.jpg"
         },
         {
-            "type": "Web Show",
+            "type": "WEB",
             "name": "WHIH Newsfront",
             "img": "WHIH1.jpg",
             "phase": 2,
@@ -241,7 +241,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Ant-Man",
             "releaseDate": [2015, 6, 17],
             "watchOrder": 820,
@@ -249,7 +249,7 @@
             "img": "AntMan1.jpg"
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Jessica Jones",
             "img": "JessicaJones1.jpg",
             "episodes": [
@@ -269,7 +269,7 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS3.jpg",
             "phase": 2,
@@ -299,7 +299,7 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "TV",
             "name": "Agent Carter",
             "img": "AgentCarter2.jpg",
             "phase": 2,
@@ -317,7 +317,7 @@
             ]
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Daredevil",
             "img": "Daredevil2.jpg",
             "episodes": [
@@ -337,7 +337,7 @@
             ]
         },
         {
-            "type": "Web Show",
+            "type": "WEB",
             "name": "WHIH Newsfront",
             "img": "WHIH2.jpg",
             "phase": 2,
@@ -350,7 +350,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Captain America: Civil War",
             "releaseDate": [2016, 4, 6],
             "watchOrder": 1380,
@@ -358,7 +358,7 @@
             "img": "CaptainAmerica3.jpg"
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Luke Cage",
             "img": "LukeCage1.jpg",
             "episodes": [
@@ -378,7 +378,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Doctor Strange",
             "releaseDate": [2016, 10, 4],
             "watchOrder": 1550,
@@ -386,7 +386,7 @@
             "img": "DrStrange1.jpg"
         },
         {
-            "type": "Web Show",
+            "type": "WEB",
             "name": "Agents of S.H.I.E.L.D.: Slingshot",
             "img": "Slingshot.jpg",
             "phase": 3,
@@ -400,7 +400,7 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS4.jpg",
             "phase": 3,
@@ -430,7 +430,7 @@
             ]
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Iron Fist",
             "img": "IronFist1.jpg",
             "episodes": [
@@ -450,7 +450,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Guardians of the Galaxy Vol. 2",
             "releaseDate": [2017, 4, 5],
             "watchOrder": 1910,
@@ -459,7 +459,7 @@
             "img": "Guardians2.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Spider-Man: Homecoming",
             "releaseDate": [2017, 6, 7],
             "watchOrder": 1920,
@@ -467,7 +467,7 @@
             "img": "SpiderMan1.jpg"
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "The Defenders",
             "img": "Defenders1.jpg",
             "episodes": [
@@ -497,7 +497,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Thor: Ragnarok",
             "releaseDate": [2017, 10, 3],
             "watchOrder": 2010,
@@ -505,7 +505,7 @@
             "img": "Thor3.jpg"
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "The Punisher",
             "img": "Punisher1.jpg",
             "episodes": [
@@ -542,7 +542,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Black Panther",
             "releaseDate": [2018, "Feb", 16],
             "watchOrder": 2035,
@@ -550,7 +550,7 @@
             "img": "BlackPanther1.jpg"
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Jessica Jones",
             "img": "JessicaJones2.jpg",
             "episodes": [
@@ -570,7 +570,7 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS5.jpg",
             "phase": 3,
@@ -617,7 +617,7 @@
             ]
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Luke Cage",
             "img": "LukeCage2.jpg",
             "episodes": [
@@ -637,7 +637,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Ant-Man and the Wasp",
             "releaseDate": [2018, "Jul", 6],
             "watchOrder": 2185,
@@ -646,7 +646,7 @@
             "notes": "The post credits scene of this film is ideally watched between 'Avengers: Infinity War' and 'Avengers: Endgame'. It is important to the plot of 'Avengers: Endgame'"
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Iron Fist",
             "img": "IronFist2.jpg",
             "episodes": [
@@ -663,7 +663,7 @@
             ]
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Daredevil",
             "img": "Daredevil3.jpg",
             "episodes": [
@@ -703,7 +703,7 @@
             ]
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "The Punisher",
             "img": "Punisher2.jpg",
             "episodes": [
@@ -723,7 +723,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Captain Marvel",
             "img": "CaptainMarvel1.jpg",
             "releaseDate": [2019, "Mar", 8],
@@ -750,7 +750,7 @@
             ]
         },
         {
-            "type": "Defenders",
+            "type": "DEFENDERS",
             "name": "Jessica Jones",
             "img": "JessicaJones3.jpg",
             "episodes": [
@@ -770,7 +770,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Avengers: Infinity War",
             "releaseDate": [2018, "Apr", 27],
             "watchOrder": 2700,
@@ -778,7 +778,7 @@
             "img": "Avengers3.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Avengers: Endgame",
             "img": "Avengers4.jpg",
             "releaseDate": [2019, "Apr", 26],
@@ -786,9 +786,10 @@
             "watchOrder": 2800
         },
         {
-            "type": "MCU TV",
+            "type": "TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS6.jpg",
+            "phase": 3,
             "episodes": [
                 {"season": 6, "episode": 1, "title": "Missing Pieces", "releaseDate": [2019, "May", 10], "watchOrder": 2850},
                 {"season": 6, "episode": 2, "title": "Window of Opportunity", "releaseDate": [2019, "May", 17], "watchOrder": 2851},
@@ -806,7 +807,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Spiderman: Far From Home",
             "img": "SpiderMan2.jpg",
             "releaseDate": [2019, "Jul", 5],
@@ -831,9 +832,10 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "TV",
             "name": "Agents of S.H.I.E.L.D.",
             "img": "AoS7.jpg",
+            "phase": 3,
             "episodes": [
                 {"season": 7, "episode": 1, "title": "The New Deal", "releaseDate": [2020, "May", 27], "watchOrder": 3000},
                 {"season": 7, "episode": 2, "title": "Know Your Onions", "releaseDate": [2020, "Jun", 3], "watchOrder": 3001},
@@ -868,7 +870,7 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "MCU_TV",
             "name": "WandaVision",
             "img": "WandaVision1.jpg",
             "phase": 4,
@@ -885,7 +887,7 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "MCU_TV",
             "name": "The Falcon and the Winter Soldier",
             "img": "FalconWinterSoldier1.jpg",
             "phase": 4,
@@ -899,7 +901,7 @@
             ]
         },
         {
-            "type": "MCU TV",
+            "type": "MCU_TV",
             "name": "Loki",
             "img": "Loki1.jpg",
             "phase": 4,
@@ -913,7 +915,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Black Widow",
             "releaseDate": [2021, "Jul", 9],
             "watchOrder": 4100,
@@ -922,7 +924,7 @@
             "img": "BlackWidow1.jpg"
         },
         {
-            "type": "MCU TV",
+            "type": "MCU_TV",
             "name": "What If...?",
             "img": "WhatIf1.jpg",
             "phase": 4,
@@ -940,7 +942,7 @@
             ]
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Shang-Chi and the Legend of the Ten Rings",
             "releaseDate": [2021, "Sep", 3],
             "watchOrder": 4150,
@@ -948,7 +950,7 @@
             "img": "ShangChi1.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Eternals",
             "releaseDate": [2021, "Nov", 5],
             "watchOrder": 4200,
@@ -956,49 +958,49 @@
             "img": "Eternals1.jpg"
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Spiderman: No Way home",
             "releaseDate": [2021, "Dec", 17],
             "watchOrder": 4300,
             "phase": 4
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Doctor Strange in the Multiverse of Madness",
             "releaseDate": [2022, "Mar", 25],
             "watchOrder": 4400,
             "phase": 4
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Thor: Love and Thunder",
             "releaseDate": [2022, "May", 6],
             "watchOrder": 4500,
             "phase": 4
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Black Panther: Wakanda Forever",
             "releaseDate": [2022, "Jul", 8],
             "watchOrder": 4600,
             "phase": 4
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "The Marvels",
             "releaseDate": [2022, "Nov", 11],
             "watchOrder": 4700,
             "phase": 4
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Ant-Man and the Wasp: Quantumania",
             "releaseDate": [2023, "Feb", 17],
             "watchOrder": 4800,
             "phase": 4
         },
         {
-            "type": "Film",
+            "type": "FILM",
             "name": "Guardians of the Galaxy Vol. 3",
             "releaseDate": [2023, "May", 5],
             "watchOrder": 4900,

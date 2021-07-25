@@ -1,7 +1,7 @@
 import WebFont from "webfontloader";
-import mcuData from './data.json';
 import Timeline from './components/timeline';
 import Modal from './components/modal';
+import Nav from './components/nav';
 
 import './polyfills';
 
@@ -23,13 +23,7 @@ WebFont.load({
 });
 
 
-//Global
-window.MCU = {};
+new Timeline();
+new Nav();
 
-
-//Create Main Objects
-const el = document.querySelector("[data-timeline]");
-new Timeline(el, mcuData.shows);
-
-//Modals
 document.querySelectorAll("[data-modal]").forEach(el=>new Modal(el));

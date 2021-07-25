@@ -4,26 +4,13 @@
 }
 
 
-$fontFamily: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Oxygen-Sans, Helvetica Neue, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-$rem: 14px;
+:root {
+    --fontFamily: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Oxygen-Sans, Helvetica Neue, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    --fontLogo: Passion One, Arial, sans-sreif;
+    --rem: 14px;
 
-
-$color-primary: #F44336;
-$color-accent: #607D8B;
-$color-text: #444;
-$color-text_alt: #fff;
-$color-bg: #37474F;
-
-
-
-
-
-@mixin cover(){
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    --color-primary: #F44336;
+    --color-bg: #37474F;
 }
 
 

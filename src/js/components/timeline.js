@@ -1,55 +1,51 @@
 import render from '../render';
+import mcuData from '../data.json';
 import { parseData, sortData } from '../utils';
 
+const data = parseData(mcuData.shows);
+
 export const defaults = {
-    showFilms: true,
-    showTV: true,
-    showShorts: true,
     order: "watch",
     flipOrder: true,
+    filters: {
+        TYPE: [],
+        PHASE: []
+    }
 }
 
 export default class Timeline {
 
-    constructor(el, dataIn){
+    constructor(){
 
-        this.el = el;
-        this.data = parseData(dataIn);
+        this.el = document.querySelector("[data-timeline]");
+        this.data = data;
 
 
         //Ctrls
-        this.showFilms = defaults.showFilms;
-        this.showTV = defaults.showTV;
-        this.showShorts = defaults.showShorts;
         this.order = defaults.order;
         this.flipOrder = defaults.flipOrder;
+        this.filters = defaults.filters;
 
 
         //Bind ctrls
-        const toggleBtns = document.querySelectorAll("[data-toggle]");
-        if( toggleBtns.length > 0 ){
-            toggleBtns[0].parentElement.addEventListener("click", e => {
-                const el = e.target.closest("[data-toggle]");
-                if( !el ) return;
+        const filterGroups = document.querySelectorAll("[data-filter-list]");
+        filterGroups.forEach(filterGroup => {
+            filterGroup.addEventListener("change", e => {
+                const filter = e.target.getAttribute("name");
+                let value = e.target.getAttribute("value");
+                if( filter === "PHASE" ) value = parseInt(value);
 
-                if( el.getAttribute("data-toggle") === "tv" ){
-                    this.showTV = !this.showTV;
-                    gtag("event", `Toggle TV visibility ${this.showTV?'on':'off'}`);
+                if( e.target.checked && !this.filters[filter].includes(value) ){
+                    this.filters[filter].push(value);
+                    gtag("event", `Toggle ${filter}`, { event_label: `${value} on` });
                 }
-                else if( el.getAttribute("data-toggle") === "short" ){
-                    this.showShorts = !this.showShorts;
-                    gtag("event", `Toggle Shorts visibility ${this.showShorts?'on':'off'}`);
+                else if( !e.target.checked && this.filters[filter].includes(value) ){
+                    this.filters[filter] = this.filters[filter].filter(val => val !== value);
+                    gtag("event", `Toggle ${filter}`, { event_label: `${value} off` });
                 }
-                else if( el.getAttribute("data-toggle") === "film" ){
-                    this.showFilms = !this.showFilms;
-                    gtag("event", `Toggle Film visibility ${this.showFilms?'on':'off'}`);
-                }
-
-                this.setClasses();
-                this.sort();
                 this.render();
-            });
-        }
+            })
+        });
 
         const sort = document.querySelector("[data-sort]");
         if( sort ){
@@ -66,8 +62,16 @@ export default class Timeline {
             flip.addEventListener("click", e => {
                 this.flipOrder = !this.flipOrder;
 
-                if( !this.flipOrder ) document.body.classList.add("is-flipped");
-                else document.body.classList.remove("is-flipped");
+                if( !this.flipOrder ) flip.classList.add("is-flipped");
+                else flip.classList.remove("is-flipped");
+
+                const text = flip.querySelector("[data-flip-text]");
+                if( text ){
+                    const t1 = text.dataset.flipText;
+                    const t2 = text.innerText;
+                    text.dataset.flipText = t2;
+                    text.innerText = t1;
+                }
 
                 gtag("event", "Flip sort order", {event_label: this.flipOrder?'Newest first':'Oldest first'});
 
@@ -83,23 +87,8 @@ export default class Timeline {
             }
         }, true);
 
-
-        this.setClasses();
         this.sort();
         this.render();
-    }
-
-    setClasses(){
-
-        if( !this.showTV ) document.body.classList.add("is-hideTv");
-        else document.body.classList.remove("is-hideTv");
-
-        if( !this.showShorts ) document.body.classList.add("is-hideShorts");
-        else document.body.classList.remove("is-hideShorts");
-
-        if( !this.showFilms ) document.body.classList.add("is-hideFilms");
-        else document.body.classList.remove("is-hideFilms");
-
     }
 
 
@@ -109,7 +98,13 @@ export default class Timeline {
 
 
     render(){
-        this.el.innerHTML = render(this.data, this.showFilms, this.showTV, this.showShorts, this.flipOrder);
+        const list = render(this.data, this.filters, this.flipOrder);
+        if( list.length < 1 ){
+            document.querySelector("[data-empty]").style.display = null;
+        } else {
+            document.querySelector("[data-empty]").style.display = "none";
+        }
+        this.el.innerHTML = list;
     }
 
 }

@@ -7,15 +7,15 @@
     outline: 0;
 
     &:focus {
-        box-shadow: 1px 1px 0 0 color-mod( white alpha(0.8) );
+        box-shadow: 1px 1px 0 0 hsla(0, 0%, 100%, 0.8);
     }
 
     &-label {
         display: block;
-        color: color-mod( $color-text_alt alpha(0.8) );
+        color: hsla(0, 0%, 100%, 0.8);
         margin-bottom: 4px;
         text-align: left;
-        font-family: Passion One, Arial, sans-sreif;
+        font-family: var(--fontLogo);
         font-size: 1.2em;
     }
 }

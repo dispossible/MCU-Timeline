@@ -1,62 +1,33 @@
 .timeline {
-    background: $color-bg;
     position: relative;
-
-    &-ctrls {
-        position: sticky;
-        top: 0;
-        margin-bottom: 24px;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        background: white;
-        z-index: 10;
-        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.4);
-        padding: 4px 0;
-        @media(min-width: 800px){
-            padding: 4px 15vw;
-        }
+    padding: 32px 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    max-width: 1300px;
+    margin: auto;
+    & > * {
+        display: block;
     }
-
-    &-sortCtrls {
-        margin-top: 16px;
-        display: grid;
-        grid-gap: 8px;
-        grid-template-columns: 1fr;
-        @media(min-width: 350px){
-            grid-template-columns: 1fr auto;
-        }
+    @media(min-width: 500px){
+        padding: 32px;
     }
-
-    &-list {
-        position: relative;
-        padding: 0 16px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 16px;
-        max-width: 1300px;
-        margin: auto;
+    @media(min-width: 1200px){
+        grid-gap: 32px;
+        grid-template-columns: 1fr 1fr;
         & > * {
-            display: block;
+            grid-row: span 2;
+            display: flex;
+            align-items: center;
+            justify-content: stretch;
         }
-        @media(min-width: 1000px){
-            padding: 0 32px;
-            grid-gap: 32px;
-            grid-template-columns: 1fr 1fr;
-            & > * {
-                grid-row: span 2;
-                display: flex;
-                align-items: center;
-                justify-content: stretch;
-            }
-            // This is selecting the second child element
-            & > *:first-child + * {
-                grid-column: 2;
-                grid-row: 2 / span 2;
-            }
+        // This is selecting the second child element
+        & > *:first-child + * {
+            grid-column: 2;
+            grid-row: 2 / span 2;
         }
     }
-
+    
     &-card {
         position: relative;
         overflow: hidden;
@@ -97,7 +68,7 @@
         font-size: 8em;
         line-height: 1em;
         font-weight: bold;
-        font-family: Passion One, Arial, sans-sreif;
+        font-family: var(--fontLogo);
         opacity: 0.15;
     }
 
@@ -119,7 +90,7 @@
     &-type {
         text-transform: uppercase;
         color: white;
-        font-family: Passion One, Arial, sans-sreif;
+        font-family: var(--fontLogo);
         letter-spacing: 1px;
         font-size: 2em;
         position: absolute;
@@ -180,7 +151,7 @@
     &-epNum {
         display: inline-block;
         vertical-align: top;
-        color: color-mod( $color-text alpha(0.8) );
+        color: hsl(0, 0%, 70%);
         text-align: right;
         position: absolute;
         top: 0;
@@ -201,21 +172,21 @@
     }
 
     &-release {
-        color: color-mod( $color-text alpha(0.8) );
+        color: hsl(0, 0%, 40%);
         text-align: right;
     }
 
     &-notes {
         margin-top: 38px;
         padding: 12px 16px;
-        border: 1px solid color-mod( $color-text alpha(0.6) );
+        border: 1px solid rgba(0,0,0,0.6);
         line-height: 1.5em;
         position: relative;
         &:before {
             content: "i";
             width: 1.6em;
             height: 1.6em;
-            color: color-mod( $color-text alpha(0.6) );
+            color: rgba(0,0,0,0.6);
             border: 1px solid currentColor;
             display: inline-flex;
             justify-content: center;
@@ -229,6 +200,21 @@
             left: -.8em;
             line-height: 0;
             background: white;
+        }
+    }
+
+    &-empty {
+        color: white;
+        text-align: center;
+        padding: 10vw;
+        display: grid;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.7;
+        & svg {
+            width: 100%;
+            filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.4));
         }
     }
 }

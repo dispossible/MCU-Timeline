@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
         <title>MCU Timeline</title>
         <meta name="description" content="A complete timeline of the Marvel Cinematic Universe">
         <link rel="canonical" href="/">
@@ -16,67 +16,81 @@
     </head>
     <body class="l-page">
     
-        <header class="hdr">
-            <div class="hdr-logo">MARVEL</div>
-            <div class="hdr-tagline">Cinematic Universe Timeline</div>
+        <header class="hdr l-hdr">
+            <div>
+                <div class="hdr-logo">MARVEL</div>
+                <div class="hdr-tagline">Cinematic Universe Timeline</div>
+            </div>
+            <button class="btn btn_invert btn_icon hdr-btn" data-nav title="toggle filter menu visibility">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"/></svg>
+                Filters
+            </button>
         </header>
+
+        <noscript>
+            <div class="warn">
+                Warning! This page requires JavaScript to work correctly.
+            </div>
+        </noscript>
+
+        <nav class="filters l-nav">
+
+            <div class="filters-groups">
+
+                <div class="filters-group">
+                    <h2>Sorting</h2>
+
+                    <div class="sorting">
+                        <select class="select" id="sort" data-sort>
+                            <option value="watch">Watch Order</option>
+                            <option value="release">Release Order</option>
+                            <option value="crono">Chronological Order</option>
+                        </select>
+
+                        <button class="btn btn_flip" data-flip title="Toggle sorting direction">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+                            </svg>
+                            <span data-flip-text="Forwards">Reversed</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="filters-group">
+                    <h2>Phase</h2>
+                    <ol data-filter-list="PHASE">
+                        {{prerenderPhase}}
+                    </ol>
+                </div>
+
+                <div class="filters-group">
+                    <h2>Media Type</h2>
+                    <ul data-filter-list="TYPE">
+                        {{prerenderType}}
+                    </ul>
+                </div>
+
+                <button class="btn btn_invert" data-nav>
+                    Apply
+                </button>
+
+            </div>
+
+        </nav>
         
-        <main class="timeline l-pageContent">
-            <div class="timeline-ctrls">
-                <button class="btn btn_flip" data-modal="sort" title="Select your sort order">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
-                    </svg>
-                    Sort
-                </button>
-                <button class="btn btn_film" data-toggle="film" title="Toggle visibility of films">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
-                    </svg>
-                    Films
-                </button>
-                <button class="btn btn_tv" data-toggle="tv" title="Toggle visibility of TV shows">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/>
-                    </svg>
-                    TV Shows
-                </button>
-                <button class="btn btn_short" data-toggle="short" title="Toggle visibility of short films">
-                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
-                    </svg>
-                    Short Films
-                </button>
+        <main class="l-main">
+            <div class="timeline-empty" data-empty style="display:none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1018 443" width="160px" height="70px"><path fill="#B83D00" d="M557.4 67.5L589 8.7h161L637.3 214.2l-80-146.7zM655.1 228.7l-112.4 204h162l30.4-55-80-149z"/><path fill="#FF6508" d="M9.5 198.3V9h519.8l110.5 201-121.5 222.8-233-421.5v421.4h-151V10.1L9.5 198.3zM1008.4 432.8H764.2L653 232.8 775.8 9l232.6 423.8z"/></svg>
+                Sorry, this timeline has been pruned.
             </div>
-            <div class="modal-hidden" data-modal-content="sort">
-                <h2> Sort Order </h2>
-                <div class="timeline-sortCtrls">
-                    <select class="select" id="sort" data-sort>
-                        <option value="watch">Watch Order</option>
-                        <option value="release">Release Order</option>
-                        <option value="crono">Chronological Order</option>
-                    </select>
-                    <button class="btn btn_flip btn_invert" data-flip title="Toggle sorting direction">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
-                        </svg>
-                        Flip
-                    </button>
-                </div>
-            </div>
-            <noscript>
-                <div class="warn">
-                    Warning! This page requires JavaScript to render correctly.
-                </div>
-            </noscript>
-            <ol class="timeline-list" data-timeline>{{prerender}}</ol>
+            <ol class="timeline" data-timeline>{{prerenderList}}</ol>
         </main>
 
-        <footer class="ftr">
-            <button class="lnk lnk_ftr" type="button" data-modal="about">
+        <footer class="ftr l-ftr">
+            <button class="lnk ftr_lnk" type="button" data-modal="about">
                 About
-            </button><!--
-            --><a class="lnk lnk_ftr" href="https://github.com/dispossible/MCU-Timeline/issues" target="_blank">Issues</a>
+            </button>
+            <a class="lnk ftr_lnk" href="https://github.com/dispossible/MCU-Timeline/issues" target="_blank">Issues</a>
             <div class="modal-hidden" data-modal-content="about">
                 <h2> MCU Timeline </h2>
                 <p> Code and design created by me, <a href='//dispossible.com'>Timothy Bailey</a>, the code is available to view on <a href='https://github.com/dispossible/MCU-Timeline'>GitHub</a>. </p>

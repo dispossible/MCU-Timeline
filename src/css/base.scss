@@ -1,9 +1,10 @@
 body {
-    font-family: $fontFamily;
-    font-size: $rem;
-    background: $color-bg;
+    font-family: var(--fontFamily);
+    font-size: var(--rem);
+    background: var(--color-bg);
 }
 
 sup {
     font-size: 0.8em;
+    vertical-align: super;
 }
