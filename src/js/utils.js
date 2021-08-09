@@ -29,8 +29,8 @@ export function writeDate(date){
         "June",
         "July",
         "August",
-        "October",
         "September",
+        "October",
         "November",
         "December",
     ];

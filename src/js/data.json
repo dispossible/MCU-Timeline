@@ -958,6 +958,20 @@
             "img": "Eternals1.jpg"
         },
         {
+            "type": "MCU_TV",
+            "name": "Hawkeye",
+            "phase": 4,
+            "notes": "At time of writing it is assumed 6 episodes to match Falcon & Winter Soldier and Loki's lengths, will confirm or correct this nearer release",
+            "episodes": [
+                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Nov", 24], "watchOrder": 4210},
+                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "Dec", 1], "watchOrder": 4211},
+                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Dec", 8], "watchOrder": 4212},
+                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Dec", 15], "watchOrder": 4213},
+                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Dec", 22], "watchOrder": 4214},
+                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Dec", 29], "watchOrder": 4215}
+            ]
+        },
+        {
             "type": "FILM",
             "name": "Spiderman: No Way home",
             "releaseDate": [2021, "Dec", 17],

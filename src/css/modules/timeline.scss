@@ -34,6 +34,10 @@
         width: 100%;
         &.is-unreleased {
             opacity: 0.6;
+            transition: ease 300ms;
+            &:hover {
+                opacity: 0.95;
+            }
         }
         margin: 0 0 32px;
         @supports(display: grid){
