@@ -5,7 +5,7 @@ export const showNames = {
     SHORT: "One-Shot",
     MCU_TV: "MCU TV",
     TV: "TV",
-    DEFENDERS: "Netfilx Defenders",
+    DEFENDERS: "Netflix Defenders",
     WEB: "Web Show",
 };
 

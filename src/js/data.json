@@ -6,7 +6,8 @@
             "releaseDate": [2008, 4, 2],
             "watchOrder": 10,
             "phase": 1,
-            "img": "IronMan1.jpg"
+            "img": "IronMan1.jpg",
+            "notes": "The character of 'James Rhodes' is played by Terrence Howard in this film, who is recast following this film to be played in future appearances by Don Cheadle"
         },
         {
             "type": "FILM",
@@ -929,16 +930,15 @@
             "img": "WhatIf1.jpg",
             "phase": 4,
             "episodes": [
-                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Aug", 11], "watchOrder": 4110},
-                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "Aug", 18], "watchOrder": 4111},
-                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Aug", 25], "watchOrder": 4112},
-                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Sep", 1], "watchOrder": 4113},
-                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Sep", 8], "watchOrder": 4114},
-                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Sep", 15], "watchOrder": 4115},
-                {"season": 1, "episode": 7, "title": "-", "releaseDate": [2021, "Sep", 22], "watchOrder": 4116},
-                {"season": 1, "episode": 8, "title": "-", "releaseDate": [2021, "Sep", 29], "watchOrder": 4117},
-                {"season": 1, "episode": 9, "title": "-", "releaseDate": [2021, "Oct", 6], "watchOrder": 4118},
-                {"season": 1, "episode": 10, "title": "-", "releaseDate": [2021, "Oct", 13], "watchOrder": 4119}
+                {"season": 1, "episode": 1, "title": "What if... Captain Carter Were the First Avenger?", "releaseDate": [2021, "Aug", 11], "watchOrder": 4110},
+                {"season": 1, "episode": 2, "title": "What if... T'Challa Became a Star-Lord?", "releaseDate": [2021, "Aug", 18], "watchOrder": 4111},
+                {"season": 1, "episode": 3, "title": "What if... the World Lost Its Mightiest Heroes?", "releaseDate": [2021, "Aug", 25], "watchOrder": 4112},
+                {"season": 1, "episode": 4, "title": "What if... Doctor Strange Lost His Heart Instead of His Hands?", "releaseDate": [2021, "Sep", 1], "watchOrder": 4113},
+                {"season": 1, "episode": 5, "title": "What if... Zombies?!", "releaseDate": [2021, "Sep", 8], "watchOrder": 4114},
+                {"season": 1, "episode": 6, "title": "What if... Killmonger Rescued Tony Stark?", "releaseDate": [2021, "Sep", 15], "watchOrder": 4115},
+                {"season": 1, "episode": 7, "title": "What if... ?", "releaseDate": [2021, "Sep", 22], "watchOrder": 4116},
+                {"season": 1, "episode": 8, "title": "What if... ?", "releaseDate": [2021, "Sep", 29], "watchOrder": 4117},
+                {"season": 1, "episode": 9, "title": "What if... ?", "releaseDate": [2021, "Oct", 6], "watchOrder": 4118}
             ]
         },
         {
@@ -960,8 +960,8 @@
         {
             "type": "MCU_TV",
             "name": "Hawkeye",
+            "img": "Hawkeye1.jpg",
             "phase": 4,
-            "notes": "At time of writing it is assumed 6 episodes to match Falcon & Winter Soldier and Loki's lengths, will confirm or correct this nearer release",
             "episodes": [
                 {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Nov", 24], "watchOrder": 4210},
                 {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "Dec", 1], "watchOrder": 4211},
