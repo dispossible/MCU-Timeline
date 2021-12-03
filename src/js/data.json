@@ -963,12 +963,12 @@
             "img": "Hawkeye1.jpg",
             "phase": 4,
             "episodes": [
-                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2021, "Nov", 24], "watchOrder": 4210},
-                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2021, "Dec", 1], "watchOrder": 4211},
-                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2021, "Dec", 8], "watchOrder": 4212},
-                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Dec", 15], "watchOrder": 4213},
-                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Dec", 22], "watchOrder": 4214},
-                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Dec", 29], "watchOrder": 4215}
+                {"season": 1, "episode": 1, "title": "Never Meet Your Heroes", "releaseDate": [2021, "Nov", 24], "watchOrder": 4210},
+                {"season": 1, "episode": 2, "title": "Hide and Seek", "releaseDate": [2021, "Dec", 24], "watchOrder": 4211},
+                {"season": 1, "episode": 3, "title": "Echoes", "releaseDate": [2021, "Dec", 1], "watchOrder": 4212},
+                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2021, "Dec", 8], "watchOrder": 4213},
+                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2021, "Dec", 15], "watchOrder": 4214},
+                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2021, "Dec", 22], "watchOrder": 4215}
             ]
         },
         {
