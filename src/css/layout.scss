@@ -16,6 +16,7 @@ html {
     @media(min-width: 800px){
         grid-template-columns: 250px 1fr;
         grid-template-rows: auto 1fr auto;
+        overflow-x: initial;
     }
 }
 
