@@ -94,3 +94,9 @@ export function getFilterLists(data){
         types,
     };
 }
+
+
+export function markdown(text){
+    return text
+        .replace(/\*([^\*]*?)\*/, "<strong>$1</strong>");
+}

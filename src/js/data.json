@@ -813,7 +813,7 @@
             "img": "SpiderMan2.jpg",
             "releaseDate": [2019, "Jul", 5],
             "phase": 3,
-            "watchOrder": 2900
+            "watchOrder": 4100
         },
         {
             "type": "TV",
@@ -840,7 +840,7 @@
             "episodes": [
                 {"season": 7, "episode": 1, "title": "The New Deal", "releaseDate": [2020, "May", 27], "watchOrder": 3000},
                 {"season": 7, "episode": 2, "title": "Know Your Onions", "releaseDate": [2020, "Jun", 3], "watchOrder": 3001},
-                {"season": 7, "episode": 3, "title": "Alien Commies fromthe Future!", "releaseDate": [2020, "Jun", 10], "watchOrder": 3002},
+                {"season": 7, "episode": 3, "title": "Alien Commies from the Future!", "releaseDate": [2020, "Jun", 10], "watchOrder": 3002},
                 {"season": 7, "episode": 4, "title": "Out of the Past", "releaseDate": [2020, "Jun", 17], "watchOrder": 3003},
                 {"season": 7, "episode": 5, "title": "A Trout in the Milk", "releaseDate": [2020, "Jun", 24], "watchOrder": 3004},
                 {"season": 7, "episode": 6, "title": "Adapt or Die", "releaseDate": [2020, "Jul", 1], "watchOrder": 3005},
@@ -919,10 +919,10 @@
             "type": "FILM",
             "name": "Black Widow",
             "releaseDate": [2021, "Jul", 9],
-            "watchOrder": 4100,
-            "cronoOrder": 1385,
+            "watchOrder": 1385,
             "phase": 4,
-            "img": "BlackWidow1.jpg"
+            "img": "BlackWidow1.jpg",
+            "notes": "The post credits scene of this film has *major spoilers* for 'Avengers: Endgame'. Ideally watched just before 'Hawkeye' season 1."
         },
         {
             "type": "MCU_TV",

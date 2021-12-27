@@ -1,6 +1,6 @@
 import isArray from 'lodash/isArray';
 import isString from 'lodash/isString';
-import { writeDate, writeShortDate } from './utils';
+import { writeDate, writeShortDate, markdown } from './utils';
 import Episode from './objects/episode';
 import {showNames} from './objects/ShowType';
 
@@ -83,7 +83,7 @@ function buildCard({index, imgSrc, type, isReleased, releaseDate, name, notes, s
                     <h2 class="timeline-title"> ${name} </h2>
                     ${season?`<small class="timeline-subTitle"> Season ${season} </small>`:``}
                     ${releaseDate?`<time class="timeline-date">${isReleased?'Released':'Releases'}: ${writeDate(releaseDate)}</time>`:``}
-                    ${notes?`<div class="timeline-notes">${notes}</div>`:``}
+                    ${notes?`<div class="timeline-notes">${markdown(notes)}</div>`:``}
                     ${additionalHtml?additionalHtml:``}
                 </div>
             </div>
@@ -95,7 +95,7 @@ function buildTimelineEpisode(episode){
             `<span class="timeline-epNum"> ${episode.episodeNumber} </span>`+
             `<span class="timeline-epName">
                 ${episode.name}
-                ${(episode.episodeNotes)?`<div class="timeline-notes timeline-notes_episode">${episode.episodeNotes}</div>`:``}
+                ${(episode.episodeNotes)?`<div class="timeline-notes timeline-notes_episode">${markdown(episode.episodeNotes)}</div>`:``}
             </span>`+
             `<time class="timeline-release"> ${writeShortDate(episode.releaseDate)} </time>`+
         `</li>`;
