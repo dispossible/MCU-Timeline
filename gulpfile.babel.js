@@ -13,7 +13,6 @@ import precss from 'precss';
 import cssNano from 'cssnano';
 import postCssScss from 'postcss-scss';
 
-import imageMin from 'gulp-imagemin';
 import rename from 'gulp-rename';
 import htmlMin from 'gulp-htmlmin';
 import inject from 'gulp-inject-string';
@@ -42,7 +41,6 @@ function runWebpack(){
 
 function compressImages(){
     return src("src/img/**/*.{jpg,png,gif,svg}")
-        .pipe(imageMin())
         .pipe(dest("dist/img/"));
 }
 
@@ -51,9 +49,7 @@ function styling(){
         .pipe(postCss([
             postCssImport(),
             precss(),
-            postCssPresetEnv({ stage: 0, features: {
-                'color-mod-function': true
-            }}),
+            postCssPresetEnv({ stage: 0 }),
             cssNano(),
         ], {
             parser: postCssScss,
