@@ -980,15 +980,45 @@
             "phase": 4
         },
         {
+            "type": "MCU_TV",
+            "name": "Moon Knight",
+            "img": "MoonKnight1.jpg",
+            "phase": 4,
+            "episodes": [
+                {"season": 1, "episode": 1, "title": "The Goldfish Problem", "releaseDate": [2022, "Mar", 30], "watchOrder": 4310},
+                {"season": 1, "episode": 2, "title": "Summon the Suit", "releaseDate": [2022, "Apr", 6], "watchOrder": 4311},
+                {"season": 1, "episode": 3, "title": "The Friendly Type", "releaseDate": [2022, "Apr", 13], "watchOrder": 4312},
+                {"season": 1, "episode": 4, "title": "The Tomb", "releaseDate": [2022, "Apr", 20], "watchOrder": 4313},
+                {"season": 1, "episode": 5, "title": "Asylum", "releaseDate": [2022, "Apr", 27], "watchOrder": 4314},
+                {"season": 1, "episode": 6, "title": "Gods and Monsters", "releaseDate": [2022, "May", 4], "watchOrder": 4315}
+            ]
+        },
+        {
             "type": "FILM",
             "name": "Doctor Strange in the Multiverse of Madness",
+            "img": "DrStrange2.jpg",
             "releaseDate": [2022, "May", 6],
             "watchOrder": 4400,
             "phase": 4
         },
         {
+            "type": "MCU_TV",
+            "name": "Ms. Marvel",
+            "img": "MsMarvel1.jpg",
+            "phase": 4,
+            "episodes": [
+                {"season": 1, "episode": 1, "title": "-", "releaseDate": [2022, "Jun", 8], "watchOrder": 4410},
+                {"season": 1, "episode": 2, "title": "-", "releaseDate": [2022, "Jun", 15], "watchOrder": 4411},
+                {"season": 1, "episode": 3, "title": "-", "releaseDate": [2022, "Jun", 22], "watchOrder": 4412},
+                {"season": 1, "episode": 4, "title": "-", "releaseDate": [2022, "Jun", 29], "watchOrder": 4413},
+                {"season": 1, "episode": 5, "title": "-", "releaseDate": [2022, "Jul", 6], "watchOrder": 4414},
+                {"season": 1, "episode": 6, "title": "-", "releaseDate": [2022, "Jul", 13], "watchOrder": 4415}
+            ]
+        },
+        {
             "type": "FILM",
             "name": "Thor: Love and Thunder",
+            "img": "Thor4.jpg",
             "releaseDate": [2022, "Jul", 8],
             "watchOrder": 4500,
             "phase": 4
@@ -1002,7 +1032,7 @@
         },
         {
             "type": "FILM",
-            "name": "The Marvels",
+            "name": "Ant-Man and the Wasp: Quantumania",
             "releaseDate": [2023, "Feb", 17],
             "watchOrder": 4700,
             "phase": 4
@@ -1016,7 +1046,7 @@
         },
         {
             "type": "FILM",
-            "name": "Ant-Man and the Wasp: Quantumania",
+            "name": "The Marvels",
             "releaseDate": [2023, "Jul", 28],
             "watchOrder": 4900,
             "phase": 4

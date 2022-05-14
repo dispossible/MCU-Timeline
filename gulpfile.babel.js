@@ -68,8 +68,8 @@ function createHtml(){
     const html = render(data, defaults.filters, defaults.flipOrder);
 
     const filters = getFilterLists(data);
-    const phases = buildFilterList("PHASE", filters.phases);
-    const types = buildFilterList("TYPE", filters.types);
+    const phases = buildFilterList("PHASE", filters.phases, defaults.filters.PHASE);
+    const types = buildFilterList("TYPE", filters.types, defaults.filters.TYPE);
 
     return src("src/index.html")
         .pipe(inject.replace("{{prerenderList}}", html))

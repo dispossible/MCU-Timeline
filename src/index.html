@@ -57,14 +57,20 @@
                 </div>
 
                 <div class="filters-group">
-                    <h2>Phase</h2>
+                    <div class="filters-heading">
+                        <h2>Phase</h2>
+                        <button class="btn btn_clear" data-filter-clear="PHASE">Clear</button>
+                    </div>
                     <ol data-filter-list="PHASE">
                         {{prerenderPhase}}
                     </ol>
                 </div>
 
                 <div class="filters-group">
-                    <h2>Media Type</h2>
+                    <div class="filters-heading">
+                        <h2>Media Type</h2>
+                        <button class="btn btn_clear" data-filter-clear="TYPE">Clear</button>
+                    </div>
                     <ul data-filter-list="TYPE">
                         {{prerenderType}}
                     </ul>

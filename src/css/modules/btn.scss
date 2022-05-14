@@ -2,7 +2,6 @@
     padding: 6px 12px;
     border-radius: 3px;
     display: inline-flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--color-primary);
@@ -67,5 +66,12 @@
             width: 24px;
             height: 24px;
         }
+    }
+
+    &_clear {
+        border: 1px solid white;
+        color: white;
+        padding: 4px 8px;
+        font-size: 0.8em;
     }
 }

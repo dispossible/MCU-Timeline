@@ -8,7 +8,11 @@ export const defaults = {
     order: "watch",
     flipOrder: true,
     filters: {
-        TYPE: [],
+        TYPE: [
+            "FILM",
+            "SHORT",
+            "MCU_TV",
+        ],
         PHASE: []
     }
 }
@@ -79,6 +83,24 @@ export default class Timeline {
                 this.render();
             });
         }
+
+        const clears = document.querySelectorAll("[data-filter-clear]");
+        clears.forEach(clear => {
+            const type = clear.getAttribute("data-filter-clear");
+            clear.addEventListener("click", (e) => {
+                this.filters[type] = [];
+
+                document
+                    .querySelector(`[data-filter-list='${type}']`)
+                    .querySelectorAll("[data-filter]")
+                    .forEach(filter => {
+                        filter.checked = false;
+                    });
+                    
+                this.sort();
+                this.render();
+            });
+        });
 
 
         this.el.addEventListener("error", e => {

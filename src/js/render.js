@@ -106,10 +106,10 @@ function buildTimelineEpisode(episode){
  * @param {[string, string][]} values 
  * @returns string
  */
-export function buildFilterList(type, values){
+export function buildFilterList(type, values, selected){
     return values.map(([val, name]) => `<li>` +
         `<label class="filters-btn" for="${type}:${val}">` +
-            `<input type="checkbox" data-filter name="${type}" value="${val}" id="${type}:${val}">` +
+            `<input type="checkbox" data-filter name="${type}" value="${val}" id="${type}:${val}" ${selected.includes(val)?'checked="checked"':''}>` +
             `<span>${name}</span>` +
         `</label>` +
     `</li>`).join(``);

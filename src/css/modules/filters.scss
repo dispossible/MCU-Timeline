@@ -33,7 +33,6 @@
         font-family: var(--fontLogo);
         font-size: 1.5em;
         font-weight: normal;
-        margin-bottom: 8px;
     }
     & ol,
     & ul {
@@ -86,4 +85,11 @@
     & input:focus-visible + span {
         text-decoration: underline;
     }
+}
+
+.filters-heading {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+    margin-bottom: 8px;
 }
