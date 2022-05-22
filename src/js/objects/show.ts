@@ -52,8 +52,12 @@ export default class Show {
     }
 
     renderAdditionalHeadings(): string {
-        //Abstract
-        return "";
+        if (this.releaseDate) {
+            return `<time class="timeline-date">${this.released ? "Released" : "Releases"}: ${writeDate(
+                this.releaseDate
+            )}</time>`;
+        }
+        return ``;
     }
 
     render(index: number, additionalHtml?: string, released?: boolean): string {
@@ -68,13 +72,6 @@ export default class Show {
                         <div class="timeline-type"> ${formatShowType(this.type)} </div>
                         <h2 class="timeline-title"> ${this.name} </h2>
                         ${this.renderAdditionalHeadings()}
-                        ${
-                            this.releaseDate
-                                ? `<time class="timeline-date">${this.released ? "Released" : "Releases"}: ${writeDate(
-                                      this.releaseDate
-                                  )}</time>`
-                                : ``
-                        }
                         ${this.notes ? `<div class="timeline-notes">${markdown(this.notes)}</div>` : ``}
                         ${additionalHtml ?? ""}
                     </div>

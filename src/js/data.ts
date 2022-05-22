@@ -1934,6 +1934,23 @@ const data: Data = {
             phase: Phase.FOUR,
         },
         {
+            type: ShowType.MCU_TV,
+            name: "She-Hulk: Attorney at Law",
+            img: "SheHulk1.jpg",
+            phase: Phase.FOUR,
+            episodes: [
+                { season: 1, episode: 1, title: "-", releaseDate: [2022, "Aug", 17], watchOrder: 4510 },
+                { season: 1, episode: 2, title: "-", releaseDate: [2022, "Aug", 24], watchOrder: 4511 },
+                { season: 1, episode: 3, title: "-", releaseDate: [2022, "Aug", 31], watchOrder: 4512 },
+                { season: 1, episode: 4, title: "-", releaseDate: [2022, "Sep", 7], watchOrder: 4513 },
+                { season: 1, episode: 5, title: "-", releaseDate: [2022, "Sep", 14], watchOrder: 4514 },
+                { season: 1, episode: 6, title: "-", releaseDate: [2022, "Sep", 21], watchOrder: 4515 },
+                { season: 1, episode: 7, title: "-", releaseDate: [2022, "Sep", 28], watchOrder: 4516 },
+                { season: 1, episode: 8, title: "-", releaseDate: [2022, "Oct", 5], watchOrder: 4517 },
+                { season: 1, episode: 9, title: "-", releaseDate: [2022, "Oct", 12], watchOrder: 4518 },
+            ],
+        },
+        {
             type: ShowType.FILM,
             name: "Black Panther: Wakanda Forever",
             releaseDate: [2022, "Nov", 11],

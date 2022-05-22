@@ -36,17 +36,17 @@ export default class Timeline {
     constructor(headless: boolean = false) {
         this.data = data;
 
-        //Ctrls
         this.order = defaults.order;
         this.flipOrder = defaults.flipOrder;
         this.showTypes = defaults.showTypes;
         this.phases = defaults.phases;
 
+        this.sort();
+
         if (!headless) {
             this.el = document.querySelector("[data-timeline]") as HTMLElement;
             this.bindControls();
 
-            this.sort();
             this.render();
         }
     }
