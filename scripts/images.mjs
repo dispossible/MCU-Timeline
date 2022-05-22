@@ -1,3 +1,3 @@
-import fs from "fs";
+import copyFolder from "./copyFolder.mjs";
 
-fs.cpSync("./src/img", "./dist/img", { recursive: true });
+copyFolder("./src/img", null, "./dist/img");
