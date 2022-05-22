@@ -1,6 +1,3 @@
 {
-    "parser": "@babel/eslint-parser",
-    "rules": {
-        "strict": 0
-    }
+    "extends": "eslint:recommended"
 }

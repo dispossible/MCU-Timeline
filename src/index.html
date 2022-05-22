@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1" />
         <title>MCU Timeline</title>
-        <meta name="description" content="A complete timeline of the Marvel Cinematic Universe">
-        <link rel="canonical" href="/">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F44336">
-        <meta name="theme-color" content="#F44336">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="description" content="A complete timeline of the Marvel Cinematic Universe" />
+        <link rel="canonical" href="/" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F44336" />
+        <meta name="theme-color" content="#F44336" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body class="l-page">
-    
         <header class="hdr l-hdr">
             <div>
                 <div class="hdr-logo">MARVEL</div>
                 <div class="hdr-tagline">Cinematic Universe Timeline</div>
             </div>
             <button class="btn btn_invert btn_icon hdr-btn" data-nav title="toggle filter menu visibility">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        fill="currentColor"
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"
+                    />
+                </svg>
                 Filters
             </button>
         </header>
 
         <noscript>
-            <div class="warn">
-                Warning! This page requires JavaScript to work correctly.
-            </div>
+            <div class="warn">Warning! This page requires JavaScript to work correctly.</div>
         </noscript>
 
         <nav class="filters l-nav">
-
             <div class="filters-groups">
-
                 <div class="filters-group">
                     <h2>Sorting</h2>
 
                     <div class="sorting">
                         <select class="select" id="sort" data-sort>
-                            <option value="watch">Watch Order</option>
-                            <option value="release">Release Order</option>
-                            <option value="crono">Chronological Order</option>
+                            <option value="WATCH">Watch Order</option>
+                            <option value="RELEASE">Release Order</option>
+                            <option value="CHRONOLOGICAL">Chronological Order</option>
                         </select>
 
                         <button class="btn btn_flip" data-flip title="Toggle sorting direction">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="currentColor" d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+                                <path
+                                    fill="currentColor"
+                                    d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                                />
                             </svg>
                             <span data-flip-text="Forwards">Reversed</span>
                         </button>
@@ -69,42 +72,53 @@
                 <div class="filters-group">
                     <div class="filters-heading">
                         <h2>Media Type</h2>
-                        <button class="btn btn_clear" data-filter-clear="TYPE">Clear</button>
+                        <button class="btn btn_clear" data-filter-clear="SHOW_TYPE">Clear</button>
                     </div>
-                    <ul data-filter-list="TYPE">
+                    <ul data-filter-list="SHOW_TYPE">
                         {{prerenderType}}
                     </ul>
                 </div>
 
-                <button class="btn btn_invert" data-nav>
-                    Apply
-                </button>
-
+                <button class="btn btn_invert" data-nav>Apply</button>
             </div>
-
         </nav>
-        
+
         <main class="l-main">
-            <div class="timeline-empty" data-empty style="display:none">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1018 443" width="160px" height="70px"><path fill="#B83D00" d="M557.4 67.5L589 8.7h161L637.3 214.2l-80-146.7zM655.1 228.7l-112.4 204h162l30.4-55-80-149z"/><path fill="#FF6508" d="M9.5 198.3V9h519.8l110.5 201-121.5 222.8-233-421.5v421.4h-151V10.1L9.5 198.3zM1008.4 432.8H764.2L653 232.8 775.8 9l232.6 423.8z"/></svg>
+            <div class="timeline-empty" data-empty style="display: none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1018 443" width="160px" height="70px">
+                    <path
+                        fill="#B83D00"
+                        d="M557.4 67.5L589 8.7h161L637.3 214.2l-80-146.7zM655.1 228.7l-112.4 204h162l30.4-55-80-149z"
+                    />
+                    <path
+                        fill="#FF6508"
+                        d="M9.5 198.3V9h519.8l110.5 201-121.5 222.8-233-421.5v421.4h-151V10.1L9.5 198.3zM1008.4 432.8H764.2L653 232.8 775.8 9l232.6 423.8z"
+                    />
+                </svg>
                 Sorry, this timeline has been pruned.
             </div>
-            <ol class="timeline" data-timeline>{{prerenderList}}</ol>
+            <ol class="timeline" data-timeline>
+                {{prerenderList}}
+            </ol>
         </main>
 
         <footer class="ftr l-ftr">
-            <button class="lnk ftr_lnk" type="button" data-modal="about">
-                About
-            </button>
+            <button class="lnk ftr_lnk" type="button" data-modal="about">About</button>
             <a class="lnk ftr_lnk" href="https://github.com/dispossible/MCU-Timeline/issues" target="_blank">Issues</a>
             <div class="modal-hidden" data-modal-content="about">
-                <h2> MCU Timeline </h2>
-                <p> Code and design created by me, <a href='//dispossible.com'>Timothy Bailey</a>, the code is available to view on <a href='https://github.com/dispossible/MCU-Timeline'>GitHub</a>. </p>
-                <p> Marvel logo, images and characters belong to <a href='//marvel.com/'>Marvel&copy;</a>. </p>
-                <p> If you like what I do here then consider <a target="_blank" href="//www.buymeacoffee.com/dispossible">buying me a coffee</a>. </p>
+                <h2>MCU Timeline</h2>
+                <p>
+                    Code and design created by me, <a href="//dispossible.com">Timothy Bailey</a>, the code is available
+                    to view on <a href="https://github.com/dispossible/MCU-Timeline">GitHub</a>.
+                </p>
+                <p>Marvel logo, images and characters belong to <a href="//marvel.com/">Marvel&copy;</a>.</p>
+                <p>
+                    If you like what I do here then consider
+                    <a target="_blank" href="//www.buymeacoffee.com/dispossible">buying me a coffee</a>.
+                </p>
             </div>
         </footer>
-        
+
         <script defer src="app.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40732084-2"></script>
     </body>
