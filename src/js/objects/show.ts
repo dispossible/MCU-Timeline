@@ -63,7 +63,7 @@ export default class Show {
     render(index: number, additionalHtml?: string, released?: boolean): string {
         released = released ?? this.released;
         return `<li>
-                <div class="timeline-card timeline-card_${this.type} ${!this.released ? "is-unreleased" : ""}">
+                <div class="timeline-card timeline-card_${this.type} ${!released ? "is-unreleased" : ""}">
                     <div class="timeline-posterFrame">
                         <img class="timeline-poster" src="${this.imgUrl}" alt="Poster for ${this.name}"/>
                     </div>
