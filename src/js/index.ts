@@ -15,7 +15,7 @@ window.gtag = function (...args) {
     window.dataLayer.push(args);
 };
 window.gtag("js", new Date());
-window.gtag("config", "UA-40732084-2");
+window.gtag("config", "G-4RHJGS2LH9");
 
 //Load fonts
 WebFont.load({
