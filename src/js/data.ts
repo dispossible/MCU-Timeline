@@ -1922,7 +1922,7 @@ const data: Data = {
                 { season: 1, episode: 3, title: "Destined", releaseDate: [2022, "Jun", 22], watchOrder: 4412 },
                 { season: 1, episode: 4, title: "Seeing Red", releaseDate: [2022, "Jun", 29], watchOrder: 4413 },
                 { season: 1, episode: 5, title: "Time and Again", releaseDate: [2022, "Jul", 6], watchOrder: 4414 },
-                { season: 1, episode: 6, title: "-", releaseDate: [2022, "Jul", 13], watchOrder: 4415 },
+                { season: 1, episode: 6, title: "No Normal", releaseDate: [2022, "Jul", 13], watchOrder: 4415 },
             ],
         },
         {
