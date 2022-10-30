@@ -93,5 +93,7 @@ export function formatPhase(phase: Phase): string {
             return "3";
         case Phase.FOUR:
             return "4";
+        case Phase.FIVE:
+            return "5";
     }
 }
