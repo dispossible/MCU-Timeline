@@ -75,7 +75,7 @@ export function formatShowType(type: ShowType): string {
         case ShowType.TV:
             return "TV";
         case ShowType.DEFENDERS:
-            return "Netflix Defenders";
+            return "Defenders Saga";
         case ShowType.WEB:
             return "Web Show";
     }
@@ -86,14 +86,16 @@ export function formatPhase(phase: Phase): string {
         case Phase.NONE:
             return "None";
         case Phase.ONE:
-            return "1";
+            return "1 - Infinity Saga";
         case Phase.TWO:
-            return "2";
+            return "2 - Infinity Saga";
         case Phase.THREE:
-            return "3";
+            return "3 - Infinity Saga";
         case Phase.FOUR:
-            return "4";
+            return "4 - Multiverse";
         case Phase.FIVE:
-            return "5";
+            return "5 - Multiverse";
+        case Phase.SIX:
+            return "6 - Multiverse";
     }
 }

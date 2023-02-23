@@ -14,6 +14,7 @@ export enum Phase {
     THREE = "THREE",
     FOUR = "FOUR",
     FIVE = "FIVE",
+    SIX = "SIX",
 }
 
 interface BaseShowData {
