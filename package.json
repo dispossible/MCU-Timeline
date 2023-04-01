@@ -42,7 +42,7 @@
         "@types/webfontloader": "^1.6.34",
         "@types/webpack": "^5.28.0",
         "babel-loader": "^8.2.5",
-        "browser-sync": "^2.27.10",
+        "browser-sync": "^2.29.1",
         "cssnano": "^5.1.7",
         "eslint": "^8.15.0",
         "eslint-webpack-plugin": "^3.1.1",
