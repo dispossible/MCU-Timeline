@@ -2110,7 +2110,7 @@ const data: Data = {
         {
             type: ShowType.FILM,
             name: "Thunderbolts",
-            releaseDate: [2024, "July", 26],
+            releaseDate: [2024, "Jul", 26],
             watchOrder: 5100,
             phase: Phase.FIVE,
         },
