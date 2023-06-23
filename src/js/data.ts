@@ -2093,6 +2093,20 @@ const data: Data = {
             img: "Guardians3.jpg",
         },
         {
+            type: ShowType.MCU_TV,
+            name: "Secret Invasion",
+            img: "SecretInvasion1.jpg",
+            phase: Phase.FIVE,
+            episodes: [
+                { season: 1, episode: 1, title: "Resurrection", releaseDate: [2023, "Jun", 21], watchOrder: 4810 },
+                { season: 1, episode: 2, title: "-", releaseDate: [2023, "Jun", 28], watchOrder: 4811 },
+                { season: 1, episode: 3, title: "-", releaseDate: [2023, "Jul", 5], watchOrder: 4812 },
+                { season: 1, episode: 4, title: "-", releaseDate: [2023, "Jul", 12], watchOrder: 4813 },
+                { season: 1, episode: 5, title: "-", releaseDate: [2023, "Jul", 19], watchOrder: 4814 },
+                { season: 1, episode: 6, title: "-", releaseDate: [2023, "Jul", 26], watchOrder: 4815 },
+            ],
+        },
+        {
             type: ShowType.FILM,
             name: "The Marvels",
             releaseDate: [2023, "Nov", 10],
