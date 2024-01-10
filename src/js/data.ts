@@ -2263,7 +2263,7 @@ const data: Data = {
         {
             type: ShowType.FILM,
             name: "Deadpool 3",
-            releaseDate: [2024, "July", 26],
+            releaseDate: [2024, "Jul", 26],
             watchOrder: 4970,
             phase: Phase.FIVE,
             notes: "Currently unknown if Deadpool 1 and 2 should be considered part of the MCU",
