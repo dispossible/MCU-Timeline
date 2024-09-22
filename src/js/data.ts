@@ -2276,8 +2276,20 @@ const data: Data = {
             img: "Agatha1.jpg",
             phase: Phase.FIVE,
             episodes: [
-                { season: 1, episode: 1, title: "-", releaseDate: [2024, "Sep", 18], watchOrder: 4975 },
-                { season: 1, episode: 2, title: "-", releaseDate: [2024, "Sep", 18], watchOrder: 4976 },
+                {
+                    season: 1,
+                    episode: 1,
+                    title: "Seekest Thou the Road",
+                    releaseDate: [2024, "Sep", 18],
+                    watchOrder: 4975,
+                },
+                {
+                    season: 1,
+                    episode: 2,
+                    title: "Circle Sewn With Fate / Unlock Thy Hidden Gate",
+                    releaseDate: [2024, "Sep", 18],
+                    watchOrder: 4976,
+                },
                 { season: 1, episode: 3, title: "-", releaseDate: [2024, "Sep", 25], watchOrder: 4977 },
                 { season: 1, episode: 4, title: "-", releaseDate: [2024, "Oct", 2], watchOrder: 4978 },
                 { season: 1, episode: 5, title: "-", releaseDate: [2024, "Oct", 9], watchOrder: 4979 },
