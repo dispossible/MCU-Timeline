@@ -1,0 +1,23 @@
+[build]
+    command = "npm run build"
+    publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = '''
+    max-age=31536000,
+    immutable
+    '''
+
+
+[[redirects]]
+    from = "/index.html"
+    to = "/"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 404
