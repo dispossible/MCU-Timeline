@@ -2300,7 +2300,7 @@ const data: Data = {
                 {
                     season: 1,
                     episode: 4,
-                    title: "If I Can’t Reach You / Let My Song Teach You",
+                    title: "If I Can't Reach You / Let My Song Teach You",
                     releaseDate: [2024, "Oct", 2],
                     watchOrder: 4978,
                 },
@@ -2321,7 +2321,7 @@ const data: Data = {
                 {
                     season: 1,
                     episode: 7,
-                    title: "Death’s Hand in Mine",
+                    title: "Death's Hand in Mine",
                     releaseDate: [2024, "Oct", 23],
                     watchOrder: 4981,
                 },
