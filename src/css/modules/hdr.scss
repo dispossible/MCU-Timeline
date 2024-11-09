@@ -7,7 +7,7 @@
     border-bottom: 3px solid black;
     display: grid;
     grid-template-columns: 1fr auto;
-    @media(min-width: 500px){
+    @media (min-width: 500px) {
         padding: 12px 32px 16px;
     }
 }
@@ -25,7 +25,7 @@
         letter-spacing: -0.05em;
         font-size: 3em;
     }
-    @media(min-width: 700px){
+    @media (min-width: 700px) {
         font-size: 2.5em;
         .wf-passionone-n4-active & {
             font-size: 3.5em;
@@ -36,7 +36,7 @@
 .hdr-tagline {
     display: inline-block;
     vertical-align: middle;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: 0.2em;
     text-shadow: 1px 1px 0 black;
 }

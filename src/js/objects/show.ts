@@ -65,7 +65,7 @@ export default class Show {
         return `<li>
                 <div class="timeline-card timeline-card_${this.type} ${!released ? "is-unreleased" : ""}">
                     <div class="timeline-posterFrame">
-                        <img class="timeline-poster" src="${this.imgUrl}" alt="Poster for ${this.name}"/>
+                        <img class="timeline-poster" src="${this.imgUrl}" alt="Poster for ${this.name}" loading="lazy"/>
                     </div>
                     <div class="timeline-detail">
                         <div class="timeline-vol"> ${index} </div>
