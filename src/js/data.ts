@@ -2394,6 +2394,26 @@ const data: Data = {
             img: "Thunderbolts1.jpg",
         },
         {
+            type: ShowType.MCU_TV,
+            name: "Ironheart",
+            img: "Ironheart1.jpg",
+            phase: Phase.FIVE,
+            episodes: [
+                { season: 1, episode: 1, title: "Take Me Home", releaseDate: [2025, "Jun", 24], watchOrder: 5110 },
+                {
+                    season: 1,
+                    episode: 2,
+                    title: "Will the Real Natalie Please Stand Up?",
+                    releaseDate: [2025, "Jun", 24],
+                    watchOrder: 5111,
+                },
+                { season: 1, episode: 3, title: "We in Danger, Girl", releaseDate: [2025, "Jun", 24], watchOrder: 5112 },
+                { season: 1, episode: 4, title: "Bad Magic", releaseDate: [2025, "Jul", 1], watchOrder: 5113 },
+                { season: 1, episode: 5, title: "Karma's a Glitch", releaseDate: [2025, "Jul", 1], watchOrder: 5114 },
+                { season: 1, episode: 6, title: "The Past Is the Past", releaseDate: [2025, "Jul", 1], watchOrder: 5115 },
+            ],
+        },
+        {
             type: ShowType.FILM,
             name: "Fantastic Four: First Steps",
             releaseDate: [2025, "Jul", 25],
