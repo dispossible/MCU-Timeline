@@ -2422,6 +2422,18 @@ const data: Data = {
             img: "FantasticFour1.jpg",
         },
         {
+            type: ShowType.MCU_TV,
+            name: "Eyes of Wakanda",
+            img: "EyesOfWakanda1.jpg",
+            phase: Phase.SIX,
+            episodes: [
+                { season: 1, episode: 1, title: "Into the Lion's Den", releaseDate: [2025, "Aug", 1], watchOrder: 5211 },
+                { season: 1, episode: 2, title: "-", releaseDate: [2025, "Aug", 1], watchOrder: 5212 },
+                { season: 1, episode: 3, title: "-", releaseDate: [2025, "Aug", 1], watchOrder: 5213 },
+                { season: 1, episode: 4, title: "-", releaseDate: [2025, "Aug", 1], watchOrder: 5214 },
+            ],
+        },
+        {
             type: ShowType.FILM,
             name: "Avengers: Doomsday",
             releaseDate: [2026, "May", 1],
