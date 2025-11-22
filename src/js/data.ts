@@ -1636,7 +1636,7 @@ const data: Data = {
         },
         {
             type: ShowType.FILM,
-            name: "Spiderman: Far From Home",
+            name: "Spider-Man: Far From Home",
             img: "SpiderMan2.jpg",
             releaseDate: [2019, "Jul", 5],
             phase: Phase.THREE,
@@ -1997,7 +1997,7 @@ const data: Data = {
         },
         {
             type: ShowType.FILM,
-            name: "Spiderman: No Way home",
+            name: "Spider-Man: No Way Home",
             img: "SpiderMan3.jpg",
             releaseDate: [2021, "Dec", 17],
             watchOrder: 4300,
@@ -2488,7 +2488,7 @@ const data: Data = {
         },
         {
             type: ShowType.FILM,
-            name: "Spiderman: Brand New Day",
+            name: "Spider-Man: Brand New Day",
             releaseDate: [2026, "Jul", 31],
             watchOrder: 5600,
             phase: Phase.SIX,
