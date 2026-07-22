@@ -2482,7 +2482,7 @@ const data: Data = {
         {
             type: ShowType.FILM,
             name: "Avengers: Doomsday",
-            releaseDate: [2026, "May", 1],
+            releaseDate: [2026, "December", 18],
             watchOrder: 5400,
             phase: Phase.SIX,
         },
@@ -2496,7 +2496,7 @@ const data: Data = {
         {
             type: ShowType.FILM,
             name: "Avengers: Secret Wars",
-            releaseDate: [2027, "May", 7],
+            releaseDate: [2027, "December", 17],
             watchOrder: 5800,
             phase: Phase.SIX,
         },
