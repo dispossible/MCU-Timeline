@@ -2489,7 +2489,7 @@ const data: Data = {
         {
             type: ShowType.FILM,
             name: "Avengers: Doomsday",
-            releaseDate: [2028, "December", 18],
+            releaseDate: [2027, "December", 18],
             watchOrder: 5600,
             phase: Phase.SIX,
         },
