@@ -2496,7 +2496,7 @@ const data: Data = {
         {
             type: ShowType.FILM,
             name: "Avengers: Secret Wars",
-            releaseDate: [2027, "December", 17],
+            releaseDate: [2028, "December", 17],
             watchOrder: 5800,
             phase: Phase.SIX,
         },
