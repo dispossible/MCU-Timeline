@@ -2485,7 +2485,6 @@ const data: Data = {
             releaseDate: [2026, "May", 1],
             watchOrder: 5400,
             phase: Phase.SIX,
-			img: "SpiderMan4.jpg",
         },
         {
             type: ShowType.FILM,
@@ -2493,6 +2492,7 @@ const data: Data = {
             releaseDate: [2026, "Jul", 31],
             watchOrder: 5600,
             phase: Phase.SIX,
+			img: "SpiderMan4.jpg",
         },
         {
             type: ShowType.FILM,
