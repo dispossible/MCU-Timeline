@@ -33,7 +33,7 @@
         top: 0;
         left: 0;
         position: absolute;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0, 0, 0, 0.5);
         z-index: 1;
         opacity: 0;
         transition: 200ms ease;
@@ -47,7 +47,7 @@
         z-index: 2;
         padding: 16px;
         background: white;
-        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.8);
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.8);
         max-width: 500px;
         opacity: 0;
         transition: 200ms ease-in;
@@ -55,7 +55,7 @@
         max-height: 90vh;
         overflow-y: auto;
 
-        @media(min-width: 600px){
+        @media (min-width: 600px) {
             padding: 32px;
         }
 
@@ -70,7 +70,7 @@
             font-weight: normal;
             font-size: 1.5em;
             margin: 0 0 16px;
-            color: rgba(0,0,0,0.8);
+            color: rgba(0, 0, 0, 0.8);
             font-family: var(--fontLogo);
         }
 
@@ -85,6 +85,5 @@
         a {
             @extend .lnk;
         }
-
     }
 }

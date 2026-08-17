@@ -1,4 +1,3 @@
-
 html {
     overflow-x: hidden;
 }
@@ -13,7 +12,7 @@ html {
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
     overflow-x: hidden;
-    @media(min-width: 800px){
+    @media (min-width: 800px) {
         grid-template-columns: 250px 1fr;
         grid-template-rows: auto 1fr auto;
         overflow-x: initial;
@@ -21,7 +20,7 @@ html {
 }
 
 .l-hdr {
-    @media(min-width: 800px){
+    @media (min-width: 800px) {
         grid-row: 1;
         grid-column: span 2;
     }
@@ -31,7 +30,7 @@ html {
     grid-row: 2;
     grid-column: 1;
     transition: 300ms cubic-bezier(0.16, 1.6, 0.49, 1);
-    @media(min-width: 800px){
+    @media (min-width: 800px) {
         grid-column: 2;
     }
 }
@@ -41,18 +40,17 @@ html {
     grid-column: 1;
     transform: translateX(-100%);
     transition: 300ms cubic-bezier(0.16, 1.6, 0.49, 1);
-    @media(min-width: 800px){
+    @media (min-width: 800px) {
         transform: none;
     }
 }
 
 .l-ftr {
-    @media(min-width: 800px){
+    @media (min-width: 800px) {
         grid-row: 3;
         grid-column: span 2;
     }
 }
-
 
 // Nav states
 
@@ -61,12 +59,12 @@ html {
 }
 
 .is-navOpen .l-nav {
-    @media(max-width: 799px){
+    @media (max-width: 799px) {
         transform: translateX(0%);
     }
 }
 .is-navOpen .l-main {
-    @media(max-width: 799px){
+    @media (max-width: 799px) {
         transform: translateX(100%);
         overflow: hidden;
     }
@@ -74,7 +72,7 @@ html {
 
 // this is a naff place to have this code, but it's along side the rest of the nav related styles
 [data-nav] {
-    @media(min-width: 800px){
+    @media (min-width: 800px) {
         display: none !important;
     }
 }

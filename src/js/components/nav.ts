@@ -11,7 +11,7 @@ export default class Nav {
             btn.addEventListener("click", (e) => {
                 e.preventDefault();
                 this.toggle();
-            })
+            }),
         );
     }
 

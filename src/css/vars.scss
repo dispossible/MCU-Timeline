@@ -1,12 +1,13 @@
 :root {
-    --fontFamily: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Oxygen-Sans, Helvetica Neue, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    --fontFamily:
+        system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Oxygen-Sans,
+        Helvetica Neue, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     --fontLogo: Passion One, Arial, sans-sreif;
     --rem: 14px;
 
-    --color-primary: #F44336;
-    --color-bg: #37474F;
+    --color-primary: #f44336;
+    --color-bg: #37474f;
 }
-
 
 @keyframes spin {
     0% {

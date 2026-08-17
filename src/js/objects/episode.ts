@@ -50,11 +50,7 @@ export default class Episode extends Show {
                 <span class="timeline-epNum"> ${this.episode} </span>
                 <span class="timeline-epName">
                     ${this.episodeName}
-                    ${
-                        this.episodeNotes
-                            ? `<div class="timeline-notes timeline-notes_episode">${markdown(this.episodeNotes)}</div>`
-                            : ``
-                    }
+                    ${this.episodeNotes ? `<div class="timeline-notes timeline-notes_episode">${markdown(this.episodeNotes)}</div>` : ``}
                 </span>
                 <time class="timeline-release"> ${this.releaseDate ? writeShortDate(this.releaseDate) : "-"} </time>
             </li>`;

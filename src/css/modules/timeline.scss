@@ -9,10 +9,10 @@
     & > * {
         display: block;
     }
-    @media(min-width: 500px){
+    @media (min-width: 500px) {
         padding: 32px;
     }
-    @media(min-width: 1200px){
+    @media (min-width: 1200px) {
         grid-gap: 32px;
         grid-template-columns: 1fr 1fr;
         & > * {
@@ -27,7 +27,7 @@
             grid-row: 2 / span 2;
         }
     }
-    
+
     &-card {
         position: relative;
         overflow: hidden;
@@ -40,7 +40,7 @@
             }
         }
         margin: 0 0 32px;
-        @supports(display: grid){
+        @supports (display: grid) {
             margin: auto;
         }
     }
@@ -48,7 +48,7 @@
     &-posterFrame {
         position: absolute;
         z-index: 1;
-        box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5);
+        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
     }
 
     &-poster {
@@ -56,7 +56,7 @@
         height: 100px;
         display: block;
         margin: auto;
-        @media(min-width: 600px){
+        @media (min-width: 600px) {
             :not(.is-unreleased) > * > & {
                 width: 130px;
                 height: 200px;
@@ -75,7 +75,6 @@
         font-family: var(--fontLogo);
         opacity: 0.15;
     }
-
 
     &-title {
         font-weight: bold;
@@ -111,7 +110,7 @@
         padding-left: calc(32px + 16px);
         margin-top: 32px;
         position: relative;
-        @media(min-width: 600px){
+        @media (min-width: 600px) {
             :not(.is-unreleased) > & {
                 margin-left: 65px;
                 padding-left: calc(65px + 16px);
@@ -144,10 +143,10 @@
         &.is-unreleased {
             opacity: 0.6;
         }
-        @media(min-width: 400px){
+        @media (min-width: 400px) {
             grid-template-columns: 1fr auto;
         }
-        @media(min-width: 600px){
+        @media (min-width: 600px) {
             grid-template-columns: 2em 1fr auto;
         }
     }
@@ -160,7 +159,7 @@
         position: absolute;
         top: 0;
         right: calc(100% + 8px);
-        @media(min-width: 600px){
+        @media (min-width: 600px) {
             position: static;
         }
     }
@@ -170,7 +169,7 @@
         vertical-align: top;
         flex-grow: 1;
         padding: 0 8px;
-        @supports(display: grid){
+        @supports (display: grid) {
             padding: 0;
         }
     }
@@ -183,14 +182,14 @@
     &-notes {
         margin-top: 38px;
         padding: 12px 16px;
-        border: 1px solid rgba(0,0,0,0.6);
+        border: 1px solid rgba(0, 0, 0, 0.6);
         line-height: 1.5em;
         position: relative;
         &:before {
             content: "i";
             width: 1.6em;
             height: 1.6em;
-            color: rgba(0,0,0,0.6);
+            color: rgba(0, 0, 0, 0.6);
             border: 1px solid currentColor;
             display: inline-flex;
             justify-content: center;
@@ -200,8 +199,8 @@
             font-weight: bold;
             font-size: 0.7em;
             position: absolute;
-            top: -.8em;
-            left: -.8em;
+            top: -0.8em;
+            left: -0.8em;
             line-height: 0;
             background: white;
         }
@@ -218,7 +217,7 @@
         opacity: 0.7;
         & svg {
             width: 100%;
-            filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.4));
+            filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.4));
         }
     }
 }

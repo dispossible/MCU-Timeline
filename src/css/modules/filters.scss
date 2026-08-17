@@ -1,9 +1,9 @@
 .filters {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     padding: 16px;
     color: white;
-    box-shadow: -100px 0 0 rgba(0,0,0,0.2);
-    @media(min-width: 800px){
+    box-shadow: -100px 0 0 rgba(0, 0, 0, 0.2);
+    @media (min-width: 800px) {
         border-right: 3px solid black;
     }
 }
@@ -13,7 +13,7 @@
     gap: 32px;
     position: sticky;
     top: 32px;
-    @media(max-width: 799px){
+    @media (max-width: 799px) {
         position: static;
         height: 100%;
         display: flex;

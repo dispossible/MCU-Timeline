@@ -148,7 +148,7 @@ export default class Timeline {
                     target.remove();
                 }
             },
-            true
+            true,
         );
     }
 
@@ -241,7 +241,7 @@ export default class Timeline {
                             >
                             <span>${formatName(value)}</span>
                         </label>
-                    </li>`
+                    </li>`,
                 )
                 .join(``);
 
