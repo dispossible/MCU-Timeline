@@ -2484,7 +2484,7 @@ const data: Data = {
             name: "The Punisher: One Last Kill",
             releaseDate: [2026, "May", 12],
             watchOrder: 5350,
-            phase: Phase.FOUR,
+            phase: Phase.SIX,
             img: "ThePunisherOneLastKill.jpg",
         },		
         {
