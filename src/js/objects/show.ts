@@ -1,5 +1,5 @@
 import { EpisodeData, FilmData, Phase, ShowType } from "../data.types";
-import { formatShowType, markdown, writeDate } from "../utils";
+import { formatShowType, markdown, parseDate, writeDate } from "../utils";
 
 export default class Show {
     type: ShowType;
@@ -15,13 +15,8 @@ export default class Show {
     constructor(show: FilmData) {
         let chronologicalOrder = show.chronologicalOrder ?? show.watchOrder;
 
-        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
         if (show.releaseDate) {
-            if (typeof show.releaseDate?.[1] === "string") {
-                show.releaseDate[1] = months.indexOf(show.releaseDate[1]);
-            }
-            this.releaseDate = new Date(...(show.releaseDate as [number, number, number]));
+            this.releaseDate = parseDate(show.releaseDate);
         }
 
         this.name = show.name;
@@ -34,10 +29,7 @@ export default class Show {
     }
 
     isVisible(phases: Phase[], showTypes: ShowType[]) {
-        return (
-            (phases.includes(this.phase) || phases.length === 0) &&
-            (showTypes.includes(this.type) || showTypes.length === 0)
-        );
+        return (phases.includes(this.phase) || phases.length === 0) && (showTypes.includes(this.type) || showTypes.length === 0);
     }
 
     get released() {
@@ -53,9 +45,7 @@ export default class Show {
 
     renderAdditionalHeadings(): string {
         if (this.releaseDate) {
-            return `<time class="timeline-date">${this.released ? "Released" : "Releases"}: ${writeDate(
-                this.releaseDate
-            )}</time>`;
+            return `<time class="timeline-date">${this.released ? "Released" : "Releases"}: ${writeDate(this.releaseDate)}</time>`;
         }
         return ``;
     }

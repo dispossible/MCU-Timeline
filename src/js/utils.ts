@@ -1,5 +1,5 @@
 import { SortOrder } from "./components/timeline";
-import { FilmData, Phase, ShowData, ShowType, TVShowData } from "./data.types";
+import { FilmData, Phase, ReleaseDate, ShowData, ShowType, TVShowData } from "./data.types";
 import Episode from "./objects/episode";
 import Show from "./objects/show";
 
@@ -15,6 +15,31 @@ export function parseData(input: ShowData[]): Show[] {
         }
     });
     return data;
+}
+
+const monthsA = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const monthsB = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "Septemper", "October", "November", "December"];
+
+export function parseDate(input: [...ReleaseDate, number?]): Date {
+    if (input.length < 3 || input.length > 4) {
+        throw new Error(`Unknown date format: "${input}"`);
+    }
+
+    let month = input[1];
+
+    if (typeof month === "string") {
+        if (monthsA.includes(month)) {
+            month = monthsA.indexOf(month);
+        } else if (monthsB.includes(month)) {
+            month = monthsB.indexOf(month);
+        } else {
+            throw new Error(`Invalid month name: "${month}"`);
+        }
+    }
+
+    // Episodes pass in their episode number as a 4th value, we use this as minutes to keep episodes
+    // that released on the same day in their intended watch order. Technical max of 59 episodes a season.
+    return new Date(input[0], month, input[2], 0, input[3] ?? 0, 0, 0);
 }
 
 export function writeDate(date: Date) {
