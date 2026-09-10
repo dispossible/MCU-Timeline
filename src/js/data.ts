@@ -2276,7 +2276,7 @@ const data: Data = {
             releaseDate: [2024, "Jul", 26],
             watchOrder: 4970,
             phase: Phase.FIVE,
-            notes: "Deadpool 1 and 2 are now technically included in the MCU, but not listed here",
+            notes: "This film continues from and references many non-MCU films. Most relevant are Deadpool 1 & 2, and Logan.",
         },
         {
             type: ShowType.MCU_TV,
@@ -2492,7 +2492,7 @@ const data: Data = {
             name: "Marvel Zombies",
             img: "Zombies1.jpg",
             phase: Phase.SIX,
-			notes: "Set in an alternate timeline to other MCU events, continuation of What If...? S1:E5",
+            notes: "Set in an alternate timeline to other MCU events, continuation of What If...? S1:E5",
             episodes: [
                 { season: 1, episode: 1, title: "Episode 1", releaseDate: [2025, "Sep", 24], watchOrder: 5250 },
                 { season: 1, episode: 2, title: "Episode 2", releaseDate: [2025, "Sep", 24], watchOrder: 5251 },
