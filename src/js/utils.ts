@@ -18,7 +18,7 @@ export function parseData(input: ShowData[]): Show[] {
 }
 
 const monthsA = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const monthsB = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "Septemper", "October", "November", "December"];
+const monthsB = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 export function parseDate(input: [...ReleaseDate, number?]): Date {
     if (input.length < 3 || input.length > 4) {

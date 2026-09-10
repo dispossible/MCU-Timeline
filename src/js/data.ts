@@ -2492,6 +2492,7 @@ const data: Data = {
             name: "Marvel Zombies",
             img: "Zombies1.jpg",
             phase: Phase.SIX,
+			notes: "Set in an alternate timeline to other MCU events, continuation of What If...? S1:E5",
             episodes: [
                 { season: 1, episode: 1, title: "Episode 1", releaseDate: [2025, "Sep", 24], watchOrder: 5250 },
                 { season: 1, episode: 2, title: "Episode 2", releaseDate: [2025, "Sep", 24], watchOrder: 5251 },
